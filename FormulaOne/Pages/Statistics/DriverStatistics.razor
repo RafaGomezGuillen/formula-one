@@ -1,0 +1,86 @@
+﻿@page "/Statistics/DriverStatistics"
+@inject HttpClient Http
+
+<PageTitle> DriverStatistics </PageTitle>
+
+<Chart @ref="barChart" Type="ChartType.Bar" TItem="double" Clicked="@OnClicked" />
+
+@code {
+    private static List<Root> TeamStandings = new List<Root>();
+
+    public class Root
+    {
+        public int Pos { get; set; }
+        public string Team { get; set; }
+        public string? Chasis { get; set; }
+        public string? Engine { get; set; }
+        public int GrandPrix { get; set; }
+        public int Wins { get; set; }
+        public int Podiums { get; set; }
+        public int PolePositions { get; set; }
+        public int FastestLaps { get; set; }
+        public int LapsLed { get; set; }
+        public int Points { get; set; }
+    }
+
+    protected override async Task OnInitializedAsync ()
+    {
+        TeamStandings = await Http.GetFromJsonAsync<List<Root>>("sample-data/TeamStats.json");
+    }
+
+    Chart<double> barChart;
+
+    protected override async Task OnAfterRenderAsync (bool firstRender)
+    {
+        if (firstRender)
+        {
+            await HandleRedraw();
+        }
+    }
+
+    async Task HandleRedraw ()
+    {
+        await barChart.Clear();
+
+        await barChart.AddLabelsDatasetsAndUpdate(Labels, GetBarChartDataset());
+    }
+
+    private BarChartDataset<double> GetBarChartDataset ()
+    {
+        return new()
+            {
+                Label = "# of randoms",
+                Data = RandomizeData(),
+                BackgroundColor = backgroundColors,
+                BorderColor = borderColors,
+                BorderWidth = 1
+            };
+    }
+    
+    //private static string[] hola = TeamStandings.Select(p => p.Team).ToArray();
+    string[] Labels = { "red", "Blue", "Yellow", "Green", "Purple", "Orange" };
+    
+    List<string> backgroundColors = new List<string> { ChartColor.FromRgba(255, 99, 132, 0.2f), ChartColor.FromRgba(54, 162, 235, 0.2f), ChartColor.FromRgba(255, 206, 86, 0.2f), ChartColor.FromRgba(75, 192, 192, 0.2f), ChartColor.FromRgba(153, 102, 255, 0.2f), ChartColor.FromRgba(255, 159, 64, 0.2f) };
+    List<string> borderColors = new List<string> { ChartColor.FromRgba(255, 99, 132, 1f), ChartColor.FromRgba(54, 162, 235, 1f), ChartColor.FromRgba(255, 206, 86, 1f), ChartColor.FromRgba(75, 192, 192, 1f), ChartColor.FromRgba(153, 102, 255, 1f), ChartColor.FromRgba(255, 159, 64, 1f) };
+
+    List<double> RandomizeData ()
+    {
+        var r = new Random(DateTime.Now.Millisecond);
+
+        return new List<double> {
+            r.Next( 3, 50 ) * r.NextDouble(),
+            r.Next( 3, 50 ) * r.NextDouble(),
+            r.Next( 3, 50 ) * r.NextDouble(),
+            r.Next( 3, 50 ) * r.NextDouble(),
+            r.Next( 3, 50 ) * r.NextDouble(),
+            r.Next( 3, 50 ) * r.NextDouble() };
+    }
+
+    Task OnClicked (ChartMouseEventArgs e)
+    {
+        var model = e.Model as BarChartModel;
+
+        Console.WriteLine($"Handling event for {nameof(BarChartModel)}: x:{model.X} y:{model.Y}");
+        return Task.CompletedTask;
+    }
+}

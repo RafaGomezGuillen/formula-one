@@ -1,0 +1,53 @@
+﻿@inject HttpClient Http
+<div style="background-color: #e10600;">
+    <Bar Breakpoint="Breakpoint.Desktop"
+         Style="color:white"
+    >
+        <a href="/" >
+            <img src="/img/F1Logo.svg" style="width: 110px; margin-right: 10px;" />
+        </a>
+        <BarToggler />
+        <BarMenu>
+            <BarStart>
+                <BarItem>
+                    <BarLink To="/Drivers">Drivers</BarLink>
+                </BarItem>
+                <BarItem>
+                    <BarLink To="/Schedule">Schedule</BarLink>
+                </BarItem>
+                <BarItem>
+                    <BarDropdown>
+                        <BarDropdownToggle>Teams</BarDropdownToggle>
+                        <BarDropdownMenu>
+                            <table>
+                                <tr>
+                                    <td><BarDropdownItem><a href="/Teams/AlfaRomeo">Alfa Romeo </a><img src="/img/header/alfa-romeo.png" alt="Alfa Romeo" /></BarDropdownItem></td>
+                                    <td><BarDropdownItem><a href="/Teams/AlphaTauri">AlphaTauri</a><img src="/img/header/alphatauri.png" /></BarDropdownItem></td>
+                                </tr>
+                                <tr>
+                                    <td><BarDropdownItem><a href="/Teams/Alpine">Alpine</a><img src="/img/header/alpine.png" /></BarDropdownItem></td>
+                                    <td><BarDropdownItem><a href="/Teams/AstonMartin">Aston Martin</a><img src="/img/header/aston.png" /></BarDropdownItem></td>
+                                </tr>
+                                <tr>
+                                    <td><BarDropdownItem><a href="/Teams/Ferrari">Ferrari</a><img src="/img/header/ferrari.png" /></BarDropdownItem></td>
+                                    <td><BarDropdownItem><a href="/Teams/Haas">Haas</a><img src="/img/header/haas.png" /></BarDropdownItem></td>
+                                </tr>
+                                <tr>
+                                    <td><BarDropdownItem><a href="/Teams/McLaren">McLaren</a><img src="/img/header/mclaren.png" /></BarDropdownItem></td>
+                                    <td><BarDropdownItem><a href="/Teams/Mercedes">Mercedes</a><img src="/img/header/mercedes.png" /></BarDropdownItem></td>
+                                </tr>
+                                <tr>
+                                    <td><BarDropdownItem><a href="/Teams/RedBull">Red Bull</a><img src="/img/header/red-bull.png" /></BarDropdownItem></td>
+                                    <td><BarDropdownItem><a href="/Teams/Williams">Williams</a><img src="/img/header/williams.png" /></BarDropdownItem></td>
+                                </tr>
+                            </table>
+                        </BarDropdownMenu>
+                    </BarDropdown>
+                </BarItem>
+                <BarItem>
+                    <BarLink To="/Results">Results</BarLink>
+                </BarItem>
+            </BarStart>
+        </BarMenu>
+    </Bar>
+</div>

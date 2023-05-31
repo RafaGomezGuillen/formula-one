@@ -1,0 +1,421 @@
+﻿@page "/Drivers/ValtteriBottas"
+@inject HttpClient Http
+
+<PageTitle>Valtteri Bottas</PageTitle>
+
+<Layout>
+    <LayoutHeader Fixed="true">
+        <Header />
+    </LayoutHeader>
+    <LayoutContent style="margin-top: 70px; position: absolute;">
+        <Jumbotron style="border-bottom: solid grey 5px; border-right: solid grey 5px; border-bottom-right-radius: 10px;">
+            <JumbotronTitle Size="JumbotronTitleSize.Is4">
+                <h1 style="font-size: 42px; line-height: 48px; letter-spacing: 0.2px">
+                    @if (VectorDrivers == null)
+                    {
+                        <p> loading</p>
+                    }
+                    else
+                    {
+                        @VectorDrivers[9].Driver
+                    }
+                </h1>
+            </JumbotronTitle>
+            <Divider></Divider>
+            <div class="row">
+                <div class="column">
+                    <div class="driver-logo">
+                        <img src="/img/drivers-content/valtteri-bottas/logo.jpg" />
+                    </div>
+                    <div class="number-flag">
+                        @if (DriversNumbers == null)
+                        {
+                            <p> loading</p>
+                        }
+                        else
+                        {
+                            @DriversNumbers[9]
+                        }
+                        -
+                        @if (VectorDrivers == null)
+                        {
+                            <p> loading</p>
+                        }
+                        else
+                        {
+                            @VectorDrivers[9].Driver
+                        }
+                        <img src="/img/drivers/countries/Finland.jpg" />
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="driver-helmet">
+                        <img src="/img/teams/alfa-romeo/alfa-romeo-logo.png" />
+                        <img src="/img/drivers-content/valtteri-bottas/helmet.png" />
+                    </div>
+                    <br />
+                    <div class="team-table">
+                        <table>
+                            <tr>
+                                <th>Position standing</th>
+                                <td>
+                                    @if (VectorDrivers == null)
+                                    {
+                                        <p> loading</p>
+                                    }
+                                    else
+                                    {
+                                        @VectorDrivers[9].Pos
+                                    }
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Team</th>
+                                <td>
+                                    @if (VectorDrivers == null)
+                                    {
+                                        <p> loading</p>
+                                    }
+                                    else
+                                    {
+                                        @VectorDrivers[9].Team
+                                    }
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Grand Prix entered</th>
+                                <td>
+                                    @if (VectorDrivers == null)
+                                    {
+                                        <p> loading</p>
+                                    }
+                                    else
+                                    {
+                                        @VectorDrivers[9].GrandPrix
+                                    }
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Wins</th>
+                                <td>
+                                    @if (VectorDrivers == null)
+                                    {
+                                        <p> loading</p>
+                                    }
+                                    else
+                                    {
+                                        @VectorDrivers[9].Wins
+                                    }
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Podiums</th>
+                                <td>
+                                    @if (VectorDrivers == null)
+                                    {
+                                        <p> loading</p>
+                                    }
+                                    else
+                                    {
+                                        @VectorDrivers[9].Podiums
+                                    }
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Pole position</th>
+                                <td>
+                                    @if (VectorDrivers == null)
+                                    {
+                                        <p> loading</p>
+                                    }
+                                    else
+                                    {
+                                        @VectorDrivers[9].PolePosition
+                                    }
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Fastest lap</th>
+                                <td>
+                                    @if (VectorDrivers == null)
+                                    {
+                                        <p> loading</p>
+                                    }
+                                    else
+                                    {
+                                        @VectorDrivers[9].FastestLap
+                                    }
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Laps led</th>
+                                <td>
+                                    @if (VectorDrivers == null)
+                                    {
+                                        <p> loading</p>
+                                    }
+                                    else
+                                    {
+                                        @VectorDrivers[9].LapsLed
+                                    }
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Points</th>
+                                <td>
+                                    @if (VectorDrivers == null)
+                                    {
+                                        <p> loading</p>
+                                    }
+                                    else
+                                    {
+                                        @VectorDrivers[9].Points
+                                    }
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel">
+                <Carousel @bind-SelectedSlide="@selectedSlide" Crossfade="true" ShowControls="false" ShowIndicators="false" Interval="3000">
+                    <CarouselSlide Name="1">
+                        <img src="img/drivers-content/valtteri-bottas/img-1.jpg" />
+                    </CarouselSlide>
+                    <CarouselSlide Name="2">
+                        <img src="img/drivers-content/valtteri-bottas/img-2.jpg" />
+                    </CarouselSlide>
+                    <CarouselSlide Name="3">
+                        <img src="img/drivers-content/valtteri-bottas/img-3.jpg" />
+                    </CarouselSlide>
+                    <CarouselSlide Name="4">
+                        <img src="img/drivers-content/valtteri-bottas/img-4.jpg" />
+                    </CarouselSlide>
+                </Carousel>
+            </div>
+            <div class="team-content">
+                <h1>Biography</h1>
+                <p>
+                    Learning his craft on Finnish roads of ice and snow, he was born to be a Grand Prix racer.
+                    <br />
+                    <br />
+                    Bottas explains that if you can drive on the frozen roads of his homeland then you can drive anywhere. Then there’s the Finnish mentality –reserved, diligent and calm the fast lane of F1 doesn’t faze him.
+                    <br />
+                    <br />
+                    Making his F1 debut with Williams in 2013, Bottas soon became part of the family. Points and podiums followed with the reliable racer even amassing the most points without a win, a record he resented but that showcased his ability. The fact the Finn was such a points machine saw him suddenly promoted to the most coveted seat in F1 - Nico Rosberg’s vacant championship-winning seat at Mercedes.
+                    <br />
+                    <br />
+                    Bottas blossomed at the Silver Arrows in 2017, unleashing his pace to clock up personal pole positions and victories as well as a team championship for the famous Mercedes marque alongside Lewis Hamilton. He even tied with Hamilton and Sebastian Vettel with 13 podiums.
+                    <br />
+                    <br />
+                    For a shy guy, it brought a confidence boost and a new swagger – albeit in a very demur Finnish fashion. He would need all that confidence in 2018 – a season Bottas described as his worst in F1, as he took zero wins to Hamilton’s 11. That, though, was a reflection more of his team mate’s brilliance than of any shortcomings on his own part.
+                    <br />
+                    <br />
+                    Bottas stepped it up a level in 2019, four victories securing a convincing second in the championship behind Hamilton, but that dropped to two wins to his team mate's 11 in 2020 and then just one in 2021, prompting Mercedes to drop him after five seasons.
+                    <br />
+                    <br />
+                    In 2022 he started a new chapter in his F1 career, replacing compatriot Kimi Raikkonen to lead an all-new line-up at Alfa Romeo, and taking Chinese rookie Zhou Guanyu under his wing.
+                </p>
+                <h1>Results</h1>
+                <p>20 includes P20, DNFs, DNSs, DWs and DNPs</p>
+                <div style="width: 99%">
+                    <LineChart @ref="lineChart" TItem="WatcherEvent" Options="@lineChartOptions" />
+                </div>
+            </div>
+            <CardDeck>
+                <Card>
+                    <CardImage Source="/img/teams/alfa-romeo/img-3.jpg"></CardImage>
+                    <CardBody>
+                        <CardTitle Size="5">
+                            @if (VectorDrivers == null)
+                            {
+                                <p> loading</p>
+                            }
+                            else
+                            {
+                                @VectorDrivers[17].Driver
+                            }
+                        </CardTitle>
+                        <CardText>
+                            @if (VectorDrivers == null)
+                            {
+                                <p> loading</p>
+                            }
+                            else
+                            {
+                                @VectorDrivers[9].Driver
+                            }
+                            teammate.
+                        </CardText>
+                        <Button Margin="Margin.Is2.FromTop" Color="Color.Primary">
+                            <Link To="/Drivers/GuanyuZhou" TextColor="TextColor.White">
+                            READ MORE <Icon Name="IconName.ArrowRight" />
+                            </Link>
+                        </Button>
+                    </CardBody>
+                </Card>
+                <Card>
+                    <CardImage Source="/img/teams/alfa-romeo/alfa-romeo-logo.png" ></CardImage>
+                    <CardBody>
+                        <CardTitle Size="5">
+                            @if (VectorDrivers == null)
+                            {
+                                <p> loading</p>
+                            }
+                            else
+                            {
+                                @VectorDrivers[9].Team
+                            }
+                        </CardTitle>
+                        <CardText>
+                            @if (VectorDrivers == null)
+                            {
+                                <p> loading</p>
+                            }
+                            else
+                            {
+                                @VectorDrivers[9].Driver
+                            }
+                            team.
+                        </CardText>
+                        <Button Margin="Margin.Is2.FromTop" Color="Color.Primary">
+                            <Link To="/Teams/AlfaRomeo" TextColor="TextColor.White">
+                            READ MORE <Icon Name="IconName.ArrowRight" />
+                            </Link>
+                        </Button>
+                    </CardBody>
+                </Card>
+                <Card>
+                    <CardImage Source="/img/Changes.jpg"></CardImage>
+                    <CardBody>
+                        <CardTitle Size="5">Drivers</CardTitle>
+                        <CardText>
+                            Full drivers lineup.
+                        </CardText>
+                        <Button Margin="Margin.Is2.FromTop" Color="Color.Primary">
+                            <Link To="/Drivers" TextColor="TextColor.White">
+                            READ MORE <Icon Name="IconName.ArrowRight" />
+                            </Link>
+                        </Button>
+                    </CardBody>
+                </Card>
+            </CardDeck>
+        </Jumbotron>
+        <Footer />
+    </LayoutContent>
+</Layout>
+
+@*Theme*@
+<Blazorise.ThemeProvider Theme="@theme">
+    <Router AppAssembly="typeof(App).Assembly">
+        <Found>...</Found>
+        <NotFound>...</NotFound>
+    </Router>
+</Blazorise.ThemeProvider>
+
+@code {
+    private string selectedSlide = "1";
+
+    private Theme theme = new Theme
+    {
+        ColorOptions = new ThemeColorOptions { Primary = "#E10600" }
+    };
+
+    private Root[]? VectorDrivers;
+    private int[] DriversNumbers = { 1, 16, 11, 63, 55, 44, 4, 31, 14, 77, 3, 5, 20, 10, 18, 47, 22, 24, 23, 6 };
+
+    protected override async Task OnInitializedAsync ()
+    {
+        VectorDrivers = await Http.GetFromJsonAsync<Root[]>("sample-data/DriverStatistics.json");
+    }
+
+    public class Root
+    {
+        public int Pos { get; set; }
+        public string Driver { get; set; }
+        public string Team { get; set; }
+        public int GrandPrix { get; set; }
+        public int Wins { get; set; }
+        public int Podiums { get; set; }
+        public int PolePosition { get; set; }
+        public int FastestLap { get; set; }
+        public int LapsLed { get; set; }
+        public int Points { get; set; }
+    }
+
+    private LineChart<WatcherEvent> lineChart;
+
+    LineChartOptions lineChartOptions = new()
+        {
+            Parsing = new ChartParsing
+            {
+                XAxisKey = "sector",
+                YAxisKey = "count",
+            }
+        };
+
+    string[] Labels = { "Bahrain", "Saudi Arabia", "Australia", "Emilia Romagna", "Miami", "Spain", "Monaco", "Azerbaijan", "Canada", "Great Britain", "Austria", "France",
+                        "Hungary", "Belgium", "Netherlands", "Italy", "Singapore", "Japan", "United States", "Mexico", "Brazil", "Abu Dhabi"};
+
+
+    private List<string> backgroundColors = new() { ChartColor.FromRgba(255, 99, 132, 0.2f) };
+    private List<string> borderColors = new() { ChartColor.FromRgba(255, 99, 132, 1f) };
+
+    private bool isAlreadyInitialised;
+
+    public class WatcherEvent
+    {
+        public string Sector { get; set; }
+        public int Count { get; set; }
+    }
+
+    protected override async Task OnAfterRenderAsync (bool firstRender)
+    {
+        if (!isAlreadyInitialised)
+        {
+            isAlreadyInitialised = true;
+            await lineChart.Clear();
+            await lineChart.AddDataSet(GetLineChartDataset());
+        }
+    }
+
+    private LineChartDataset<WatcherEvent> GetLineChartDataset ()
+    {
+        return new()
+            {
+                Label = "Valtteri Bottas",
+                Data = new List<WatcherEvent>
+            {
+                new WatcherEvent { Sector = Labels[0], Count = 6 },
+                new WatcherEvent { Sector = Labels[1], Count = 20 },
+                new WatcherEvent { Sector = Labels[2], Count = 8 },
+                new WatcherEvent { Sector = Labels[3], Count = 5 },
+                new WatcherEvent { Sector = Labels[4], Count = 7 },
+                new WatcherEvent { Sector = Labels[5], Count = 6 },
+                new WatcherEvent { Sector = Labels[6], Count = 9 },
+                new WatcherEvent { Sector = Labels[7], Count = 11 },
+                new WatcherEvent { Sector = Labels[8], Count = 7 },
+                new WatcherEvent { Sector = Labels[9], Count = 20 },
+                new WatcherEvent { Sector = Labels[10], Count = 11 },
+                new WatcherEvent { Sector = Labels[11], Count = 14 },
+                new WatcherEvent { Sector = Labels[12], Count = 20 },
+                new WatcherEvent { Sector = Labels[13], Count = 20 },
+                new WatcherEvent { Sector = Labels[14], Count = 20 },
+                new WatcherEvent { Sector = Labels[15], Count = 13 },
+                new WatcherEvent { Sector = Labels[16], Count = 11 },
+                new WatcherEvent { Sector = Labels[17], Count = 15 },
+                new WatcherEvent { Sector = Labels[18], Count = 20 },
+                new WatcherEvent { Sector = Labels[19], Count = 10 },
+                new WatcherEvent { Sector = Labels[20], Count = 9 },
+                new WatcherEvent { Sector = Labels[21], Count = 15 },
+            },
+                BackgroundColor = backgroundColors[0],
+                BorderColor = borderColors[0],
+                Fill = true,
+                PointRadius = 3,
+                BorderWidth = 1,
+                PointBorderColor = Enumerable.Repeat(borderColors.First(), 6).ToList(),
+                CubicInterpolationMode = "monotone",
+            };
+    }
+}

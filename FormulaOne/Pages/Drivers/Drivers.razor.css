@@ -1,0 +1,128 @@
+﻿.h1-driver {
+  border-top: solid black 5px;
+  border-right: solid black 5px;
+  border-top-right-radius: 20px;
+  font-weight: bold;
+}
+
+.column {
+  float: left;
+  width: 32%;
+  padding: 15px;
+  border-top: solid black;
+  border-right: solid black;
+  border-top-right-radius: 20px;
+  margin: 12px;
+  color: black;
+  height: 400px;
+  transition: all 0.2s;
+}
+
+.column:hover {
+  border-top: solid #e10600;
+  border-right: solid #e10600;
+  border-top-right-radius: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row {
+  margin-bottom: 30px;
+}
+
+.part-1 {
+  height: 55px;
+  border-bottom: 1px solid #949498;
+}
+
+.rank {
+  font-size: 40px;
+  font-weight: bolder;
+  width: 20%;
+  float: left;
+}
+
+.points {
+  font-size: 40px;
+  width: 80%;
+  font-weight: 100;
+  text-align: right;
+  float: left;
+  font-weight: 300;
+}
+
+.part-2 {
+  height: 115px;
+  border-bottom: 1px solid #949498;
+}
+
+.driver-name {
+  font-size: 30px;
+  float: left;
+  width: 85%;
+}
+
+.driver-flag {
+  width: 15%;
+  float: left;
+  height: 45px;
+}
+
+.part-3 {
+  font-size: 20px;
+  color: #949498;
+}
+
+.part-4 img:first-child {
+  width: 100px;
+  height: 50px;
+}
+
+@media (max-width: 1800px) {
+  .column {
+    margin: 8px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .column {
+    margin: 7px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .column {
+    margin: 5px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .column {
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .h1-driver {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 500px) {
+  .h1-driver {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 400px) {
+  .row {
+    margin-bottom: 0px;
+  }
+  .column {
+    margin-bottom: 40px;
+  }
+}

@@ -1,0 +1,357 @@
+﻿@page "/Teams/Ferrari"
+@inject HttpClient Http
+
+<PageTitle>Ferrari</PageTitle>
+
+<Layout>
+    <LayoutHeader Fixed="true">
+        <Header />
+    </LayoutHeader>
+    <LayoutContent style="margin-top: 70px; position: absolute;">
+        <Jumbotron style="border-bottom: solid grey 5px; border-right: solid grey 5px; border-bottom-right-radius: 10px;">
+            <JumbotronTitle Size="JumbotronTitleSize.Is4">
+                <h1 style="font-size: 42px; line-height: 48px; letter-spacing: 0.2px">
+                    @if (VectorTeam == null)
+                    {
+                        <p> loading</p>
+                    }
+                    else {
+                        @VectorTeam[4].Chassis
+                    }
+                </h1>
+            </JumbotronTitle>
+            <Divider></Divider>
+            <div class="row">
+                <div class="column">
+                    <div class="team-logo">
+                        <img src="/img/teams/ferrari/ferrari-logo.jpg" />
+                    </div>
+                    <br />
+                    <div class="team-table">
+                        <table>
+                            <tr>
+                                <th>Full Team Name</th>
+                                <td>
+                                    @if (VectorTeam == null)
+                                    {
+                                        <p> loading</p>
+                                    }
+                                    else
+                                    {
+                                        @VectorTeam[4].Team
+                                    }
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Base</th>
+                                <td>	Maranello, Italy</td>
+                            </tr>
+                            <tr>
+                                <th>Team Chief</th>
+                                <td>		Mattia Binotto</td>
+                            </tr>
+                            <tr>
+                                <th>Technical Chief</th>
+                                <td>		Enrico Cardile / Enrico Gualtieri</td>
+                            </tr>
+                            <tr>
+                                <th>Chassis</th>
+                                <td>
+                                    @if (VectorTeam == null)
+                                    {
+                                        <p> loading</p>
+                                    }
+                                    else
+                                    {
+                                        @VectorTeam[4].ChassisAlias
+                                    }
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Power Unit</th>
+                                <td>
+                                    @if (VectorTeam == null)
+                                    {
+                                        <p> loading</p>
+                                    }
+                                    else
+                                    {
+                                        @VectorTeam[4].Engine
+                                    }
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>First Team Entry</th>
+                                <td>		1950</td>
+                            </tr>
+                            <tr>
+                                <th>World Championships</th>
+                                <td>16</td>
+                            </tr>
+                            <tr>
+                                <th>Highest Race Finish</th>
+                                <td>	1 (x243)</td>
+                            </tr>
+                            <tr>
+                                <th>Pole Positions</th>
+                                <td>	242</td>
+                            </tr>
+                            <tr>
+                                <th>Fastest Laps</th>
+                                <td>	258</td>
+                            </tr>
+                        </table>
+
+                    </div>
+                </div>
+                <a href="/Drivers/CharlesLeclerc" class="column">
+                    <div class="driver-img">
+                        <img src="/img/teams/ferrari/leclerc.jpg" />
+                    </div>
+                    <div class="driver-content">
+                        <p style="font-style: italic">16</p>
+                        <p>
+                            @if (VectorTeam == null)
+                            {
+                            <p> loading</p>
+                            }
+                            else
+                            {
+                                @VectorTeam[4].Driver
+                            }
+                        </p>
+                    </div>
+                </a>
+                <a href="/Drivers/CarlosSainz" class="column">
+                    <div class="driver-img">
+                        <img src="/img/teams/ferrari/sainz.jpg" />
+                    </div>
+                    <div class="driver-content">
+                        <p style="font-style: italic">55</p>
+                        <p>
+                            @if (VectorTeam == null)
+                            {
+                            <p> loading</p>
+                            }
+                            else
+                            {
+                                @VectorTeam[5].Driver
+                            }
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="carousel">
+                <Carousel @bind-SelectedSlide="@selectedSlide" Crossfade="true" ShowControls="false" ShowIndicators="false" Interval="3000">
+                    <CarouselSlide Name="1">
+                        <img src="img/teams/ferrari/img-1.jpg" />
+                    </CarouselSlide>
+                    <CarouselSlide Name="2">
+                        <img src="img/teams/ferrari/img-2.jpg" />
+                    </CarouselSlide>
+                    <CarouselSlide Name="3">
+                        <img src="img/teams/ferrari/img-3.jpg" />
+                    </CarouselSlide>
+                    <CarouselSlide Name="4">
+                        <img src="img/teams/ferrari/img-4.jpg" />
+                    </CarouselSlide>
+                </Carousel>
+            </div>
+            <div class="team-content">
+                <h1>In profile</h1>
+                <p>
+                    For many, Ferrari and Formula 1 racing have become inseparable. The only team to have competed in every season since the world championship began, the Prancing Horse has grown from the humble dream of founder Enzo Ferrari to become one of the most iconic and recognised brands in the world. Success came quickly through the likes of Alberto Ascari and John Surtees, and continued – in amongst leaner times – with Niki Lauda in the 1970s and then Michael Schumacher in the 2000s, when Ferrari claimed a then unprecedented five consecutive title doubles, securing their status as the most successful and decorated team in F1 history...
+                </p>
+                <h1>2022</h1>
+                <p>
+                    Head title race early season, with Charles Leclerc winning two of the three opening races. However, mix of driver error, reliability issues and strategy missteps ultimately consign them to distant runners-up spot behind Red Bull. Carlos Sainz scores first career win, at Silverstone.
+                </p>
+                <h1>2021</h1>
+                <p>
+                    Still no sign of a title challenge, but strong year-on-year improvement lifts them clear of McLaren for P3 overall, with more than double their 2020 points tally. New arrival Carlos Sainz outscores Charles Leclerc, the Spaniard taking four podiums to his team mate’s one.
+                </p>
+                <h1>2020</h1>
+                <p>
+                    Sink to their worst performance in four decades, failing to win a race, scoring just three podiums and falling to sixth in the standings. Sebastian Vettel is told early on that his contract will not be renewed for 2021, and it’s Charles Leclerc who secures 98 of the team’s 131 points.
+                </p>
+                <h1>2019</h1>
+                <p>
+                    The pattern of recent years continues, as they fail to win a race until August’s Belgian GP, despite being clear pre-season favourites and often having the quickest car. A tense (and at times expensive) rivalry sees newcomer Charles Leclerc out-score veteran team mate Sebastian Vettel, with two victories to the four-time champion’s one.
+                </p>
+                <div style="width: 99%">
+                    <BarChart @ref="barChart" TItem="double" Options="@options" />
+                </div>
+            </div>
+        </Jumbotron>
+        <Footer />
+    </LayoutContent>
+</Layout>
+
+@*Theme*@
+<Blazorise.ThemeProvider Theme="@theme">
+    <Router AppAssembly="typeof(App).Assembly">
+        <Found>...</Found>
+        <NotFound>...</NotFound>
+    </Router>
+</Blazorise.ThemeProvider>
+
+@code {
+    BarChart<double> barChart;
+
+    BarChartOptions options = new()
+        {
+            IndexAxis = "y",
+            Elements = new()
+            {
+                Bar = new()
+                {
+                    BorderWidth = 2,
+                }
+            },
+            Responsive = true,
+            Plugins = new()
+            {
+                Legend = new()
+                {
+                    Position = "right"
+                },
+                Title = new()
+                {
+                    Display = true,
+                    Text = "Team points"
+                }
+            }
+        };
+
+    protected override async Task OnAfterRenderAsync (bool firstRender)
+    {
+        if (firstRender)
+        {
+            await HandleRedraw();
+        }
+    }
+
+    async Task HandleRedraw ()
+    {
+        await barChart.Clear();
+
+        await barChart.AddLabelsDatasetsAndUpdate(Labels,
+            GetBarChartDataDriver1("Charles Leclerc"),
+            GetBarChartDataDriver2("Carlos Sainz"));
+    }
+
+    BarChartDataset<double> GetBarChartDataDriver1 (string label)
+    {
+        return new BarChartDataset<double>
+            {
+                Label = label,
+                Data = DriverData1(),
+                BackgroundColor = backgroundColors,
+                BorderColor = borderColors,
+            };
+    }
+    BarChartDataset<double> GetBarChartDataDriver2 (string label)
+    {
+        return new BarChartDataset<double>
+            {
+                Label = label,
+                Data = DriverData2(),
+                BackgroundColor = backgroundColors,
+                BorderColor = borderColors,
+            };
+    }
+
+    string[] Labels = { "Bahrain", "Saudi Arabia", "Australia", "Emilia Romagna", "Miami", "Spain", "Monaco", "Azerbaijan", "Canada", "Great Britain", "Austria", "France",
+                        "Hungary", "Belgium", "Netherlands", "Italy", "Singapore", "Japan", "United States", "Mexico", "Brazil", "Abu Dhabi"};
+    Random random = new Random();
+    List<string> backgroundColors = new List<string> {
+        ChartColor.FromRgba(120, 200, 50, 0.6f),
+        ChartColor.FromRgba(40, 150, 210, 0.8f),
+        ChartColor.FromRgba(220, 60, 80, 0.4f),
+        ChartColor.FromRgba(100, 180, 220, 0.7f),
+        ChartColor.FromRgba(230, 120, 50, 0.5f),
+        ChartColor.FromRgba(160, 90, 180, 0.9f),
+        ChartColor.FromRgba(80, 190, 60, 0.3f),
+        ChartColor.FromRgba(190, 30, 90, 0.8f),
+        ChartColor.FromRgba(140, 220, 40, 0.6f),
+        ChartColor.FromRgba(60, 100, 230, 0.5f),
+        ChartColor.FromRgba(170, 70, 130, 0.7f),
+        ChartColor.FromRgba(200, 140, 30, 0.4f),
+        ChartColor.FromRgba(70, 160, 210, 0.8f),
+        ChartColor.FromRgba(130, 40, 180, 0.6f),
+        ChartColor.FromRgba(240, 100, 60, 0.9f),
+        ChartColor.FromRgba(100, 200, 30, 0.3f),
+        ChartColor.FromRgba(210, 50, 100, 0.7f),
+        ChartColor.FromRgba(50, 170, 80, 0.5f),
+        ChartColor.FromRgba(220, 110, 180, 0.4f),
+        ChartColor.FromRgba(150, 80, 200, 0.8f),
+        ChartColor.FromRgba(90, 210, 70, 0.6f)
+    };
+
+    List<string> borderColors = new List<string> {
+        ChartColor.FromRgba(120, 200, 50, 1f),
+        ChartColor.FromRgba(40, 150, 210, 1f),
+        ChartColor.FromRgba(220, 60, 80, 1f),
+        ChartColor.FromRgba(100, 180, 220, 1f),
+        ChartColor.FromRgba(230, 120, 50, 1f),
+        ChartColor.FromRgba(160, 90, 180, 1f),
+        ChartColor.FromRgba(80, 190, 60, 1f),
+        ChartColor.FromRgba(190, 30, 90, 1f),
+        ChartColor.FromRgba(140, 220, 40, 1f),
+        ChartColor.FromRgba(60, 100, 230, 1f),
+        ChartColor.FromRgba(170, 70, 130, 1f),
+        ChartColor.FromRgba(200, 140, 30, 1f),
+        ChartColor.FromRgba(70, 160, 210, 1f),
+        ChartColor.FromRgba(130, 40, 180, 1f),
+        ChartColor.FromRgba(240, 100, 60, 1f),
+        ChartColor.FromRgba(100, 200, 30, 1f),
+        ChartColor.FromRgba(210, 50, 100, 1f),
+        ChartColor.FromRgba(50, 170, 80, 1f),
+        ChartColor.FromRgba(220, 110, 180, 1f),
+        ChartColor.FromRgba(150, 80, 200, 1f),
+        ChartColor.FromRgba(90, 210, 70, 1f)
+    };
+
+    List<double> DriverData1 ()
+    {
+        return new List<double>
+        {
+            26, 19, 26, 17, 18, 0, 12, 0, 10, 12, 32, 0, 8, 8, 15, 18, 18, 15, 15, 8, 15, 18
+        };
+    }
+
+    List<double> DriverData2 ()
+    {
+        return new List<double>
+        {
+            18, 15, 0, 5, 15, 12, 18, 0, 19, 25, 6, 11, 12, 15, 4, 12, 15, 0, 0, 10, 22, 12
+        };
+    }
+
+    private string selectedSlide = "1";
+
+    private Theme theme = new Theme
+    {
+        ColorOptions = new ThemeColorOptions { Primary = "#E10600" }
+    };
+
+    private Teams[]? VectorTeam;
+
+    protected override async Task OnInitializedAsync ()
+    {
+        VectorTeam = await Http.GetFromJsonAsync<Teams[]>("sample-data/Teams.json");
+    }
+
+    public class Teams
+    {
+        public string Team { get; set; }
+        public string Chassis { get; set; }
+        public string ChassisAlias { get; set; }
+        public string Engine { get; set; }
+        public int DriverNumber { get; set; }
+        public string Driver { get; set; }
+        public string Alias { get; set; }
+        public string Rounds { get; set; }
+        public string ReserveDriver { get; set; }
+    }
+}

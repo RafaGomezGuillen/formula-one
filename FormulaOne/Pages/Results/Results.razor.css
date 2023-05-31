@@ -1,0 +1,84 @@
+﻿.circuit-results {
+    width: 80%;
+    margin: auto;
+    overflow-x: scroll
+}
+
+.race-results {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10px;
+    border-top: solid black;
+    border-left: solid black;
+    border-top-left-radius: 20px;
+}
+
+.season-summary-content {
+    display: table;
+    clear: both;
+    border-top: solid #E10600 8px;
+    border-right: solid #E10600 8px;
+    border-top-right-radius: 20px;
+    width: 80%;
+    margin: auto;
+}
+
+.season-summary-img {
+    float: left;
+    width: 60%;
+    padding: 20px 20px 20px 40px;
+}
+
+.season-summary-img img {
+    width: 100%;
+    padding: 0;
+}
+
+.season-summary-p {
+    float: left;
+    width: 40%;
+    padding: 0px 40px 20px 20px;
+    margin-top: 20px;
+}
+
+.season-summary-p p {
+    font-size: 18px;
+}
+@media (max-width: 1500px) {
+    .season-summary-p h1 {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .circuit-results, .season-summary-content, .race-results {
+        width: 100%;
+    }
+
+    .season-summary-content {
+        border-top: solid #E10600 5px;
+        border-right: solid #E10600 5px;
+        border-top-right-radius: 20px;
+    }
+
+    .season-summary-img, .season-summary-p {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .season-summary-p h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .season-summary-p p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 500px) {
+    .race-results {
+        font-size: 50px;
+    }
+}

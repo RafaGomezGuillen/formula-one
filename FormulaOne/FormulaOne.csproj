@@ -1,0 +1,54 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Pages\Index.razor.css" />
+    <None Remove="Shared\Footer.razor.css" />
+    <None Remove="Shared\Header.razor.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Pages\Index.razor.css" />
+    <Content Include="Shared\Footer.razor.css" />
+    <Content Include="Shared\Header.razor.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Blazorise.Charts" Version="1.2.3" />
+    <PackageReference Include="Blazorise.Icons.Material" Version="1.2.2" />
+    <PackageReference Include="Blazorise.Material" Version="1.2.2" />
+    <PackageReference Include="HtmlAgilityPack" Version="1.11.46" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="6.0.15" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="6.0.15" PrivateAssets="all" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\img\drivers\ferrari\" />
+    <Folder Include="wwwroot\img\drivers\mercedes\" />
+    <Folder Include="wwwroot\img\drivers\alpine\" />
+    <Folder Include="wwwroot\img\drivers\aston-martin\" />
+    <Folder Include="wwwroot\img\drivers\mclaren\" />
+    <Folder Include="wwwroot\img\drivers\alfa-romeo\" />
+    <Folder Include="wwwroot\img\drivers\haas\" />
+    <Folder Include="wwwroot\img\drivers\alpha-tauri\" />
+    <Folder Include="wwwroot\img\drivers\williams\" />
+    <Folder Include="wwwroot\img\drivers\red-bull\" />
+    <Folder Include="wwwroot\img\circuits\" />
+    <Folder Include="wwwroot\img\teams\alfa-romeo\" />
+    <Folder Include="wwwroot\img\teams\alpha-tauri\" />
+    <Folder Include="wwwroot\img\teams\alpine\" />
+    <Folder Include="wwwroot\img\teams\ferrari\" />
+    <Folder Include="wwwroot\img\teams\haas\" />
+    <Folder Include="wwwroot\img\teams\mclaren\" />
+    <Folder Include="wwwroot\img\teams\williams\" />
+  </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties /></VisualStudio></ProjectExtensions>
+
+</Project>

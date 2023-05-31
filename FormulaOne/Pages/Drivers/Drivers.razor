@@ -1,0 +1,1076 @@
+﻿@page "/Drivers"
+@inject HttpClient Http
+<PageTitle>Drivers</PageTitle>
+
+<Layout>
+    <LayoutHeader Fixed="true">
+        <Header />
+    </LayoutHeader>
+    <LayoutContent style="margin-top: 55px; position: absolute; width: 100%;">
+        <Jumbotron style="border-bottom: solid grey 5px; border-right: solid grey 5px; border-bottom-right-radius: 10px;">
+           <h1 class="h1-driver">F1 Drivers 2022</h1>
+            <div class="row">
+                <a href="Drivers/MaxVerstappen" class="column">
+                    <div class="part-1">
+                        <div class="rank">
+                            @if (VectorDrivers == null)
+                            {
+                                <p> loading</p>
+                            }
+                            else
+                            {
+                                @VectorDrivers[0].Pos
+                            }
+                        </div>
+                        <div class="points">
+                            @if (VectorDrivers == null)
+                            {
+                                <p> loading</p>
+                            }
+                            else
+                            {
+                                @(VectorDrivers[0].Points + " PTS")
+                            }
+                        </div>
+                        <div class="part-2">
+                            <div class="driver-name" style="border-left: solid #3671C6 5px;">
+                                @if (VectorDrivers == null)
+                                {
+                                    <p> loading</p>
+                                }
+                                else
+                                {
+                                    @VectorDrivers[0].Driver
+                                }
+                            </div>
+                            <img src="/img/drivers/countries/Netherlands.jpg" class="driver-flag"/>
+                        </div>
+                        <div class="part-3">
+                                @if (VectorDrivers == null)
+                                {
+                                    <p> loading</p>
+                                }
+                                else
+                                {
+                                    @VectorDrivers[0].Team
+                                }
+                        </div>
+                        <div class="part-4">
+                            <img src="/img/drivers/red-bull/max-1.png" />
+                            <img src="/img/drivers/red-bull/max.png" />
+                        </div>
+                    </div>
+                </a>
+                <a href="Drivers/CharlesLeclerc" class="column">
+                    <div class="part-1">
+                        <div class="rank">
+                            @if (VectorDrivers == null)
+                            {
+                                <p> loading</p>
+                            }
+                            else
+                            {
+                                @VectorDrivers[1].Pos
+                            }
+                        </div>
+                        <div class="points">
+                            @if (VectorDrivers == null)
+                            {
+                                <p> loading</p>
+                            }
+                            else
+                            {
+                                @(VectorDrivers[1].Points + " PTS")
+                            }
+                        </div>
+                        <div class="part-2">
+                            <div class="driver-name" style="border-left: solid #F91536 5px;">
+                                @if (VectorDrivers == null)
+                                {
+                                    <p> loading</p>
+                                }
+                                else
+                                {
+                                    @VectorDrivers[1].Driver
+                                }
+                            </div>
+                            <img src="/img/drivers/countries/Monaco.jpg" class="driver-flag" />
+                        </div>
+                        <div class="part-3">
+                            @if (VectorDrivers == null)
+                            {
+                                <p> loading</p>
+                            }
+                            else
+                            {
+                                @VectorDrivers[1].Team
+                            }
+                        </div>
+                        <div class="part-4">
+                            <img src="/img/drivers/ferrari/leclerc1.png" />
+                            <img src="/img/drivers/ferrari/leclerc.png" />
+                        </div>
+                    </div>
+                </a>
+                <a href="Drivers/SergioPerez" class="column">
+                    <div class="part-1">
+                        <div class="rank">
+                            @if (VectorDrivers == null)
+                            {
+                                <p> loading</p>
+                            }
+                            else
+                            {
+                                @VectorDrivers[2].Pos
+                            }
+                        </div>
+                        <div class="points">
+                            @if (VectorDrivers == null)
+                            {
+                                <p> loading</p>
+                            }
+                            else
+                            {
+                                @(VectorDrivers[2].Points + " PTS")
+                            }
+                        </div>
+                        <div class="part-2">
+                            <div class="driver-name" style="border-left: solid #3671C6 5px;">
+                                @if (VectorDrivers == null)
+                                {
+                                    <p> loading</p>
+                                }
+                                else
+                                {
+                                    @VectorDrivers[2].Driver
+                                }
+                            </div>
+                            <img src="/img/drivers/countries/Mexico.jpg" class="driver-flag" />
+                        </div>
+                        <div class="part-3">
+                            @if (VectorDrivers == null)
+                            {
+                                <p> loading</p>
+                            }
+                            else
+                            {
+                                @VectorDrivers[2].Team
+                            }
+                        </div>
+                        <div class="part-4">
+                            <img src="/img/drivers/red-bull/checo-1.png" />
+                            <img src="/img/drivers/red-bull/checo.png" />
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="row">
+                <a href="Drivers/GeorgeRussell" class="column">
+                    <div class="part-1">
+                        <div class="rank">
+                            @if (VectorDrivers == null)
+                            {
+                                <p> loading</p>
+                            }
+                            else
+                            {
+                                @VectorDrivers[3].Pos
+                            }
+                        </div>
+                        <div class="points">
+                            @if (VectorDrivers == null)
+                            {
+                                <p> loading</p>
+                            }
+                            else
+                            {
+                                @(VectorDrivers[3].Points + " PTS")
+                            }
+                        </div>
+                        <div class="part-2">
+                            <div class="driver-name" style="border-left: solid #6CD3BF 5px;">
+                                @if (VectorDrivers == null)
+                                {
+                                    <p> loading</p>
+                                }
+                                else
+                                {
+                                    @VectorDrivers[3].Driver
+                                }
+                            </div>
+                            <img src="/img/drivers/countries/Uk.jpg" class="driver-flag" />
+                        </div>
+                        <div class="part-3">
+                            @if (VectorDrivers == null)
+                            {
+                                <p> loading</p>
+                            }
+                            else
+                            {
+                                @VectorDrivers[3].Team
+                            }
+                        </div>
+                        <div class="part-4">
+                            <img src="/img/drivers/mercedes/russell-1.png" />
+                            <img src="/img/drivers/mercedes/russell.png" />
+                        </div>
+                    </div>
+                </a>
+                <a href="Drivers/CarlosSainz" class="column">
+                    <div class="part-1">
+                        <div class="rank">
+                            @if (VectorDrivers == null)
+                            {
+                                <p> loading</p>
+                            }
+                            else
+                            {
+                                @VectorDrivers[4].Pos
+                            }
+                        </div>
+                        <div class="points">
+                            @if (VectorDrivers == null)
+                            {
+                                <p> loading</p>
+                            }
+                            else
+                            {
+                                @(VectorDrivers[4].Points + " PTS")
+                            }
+                        </div>
+                        <div class="part-2">
+                            <div class="driver-name" style="border-left: solid #F91536 5px;">
+                                @if (VectorDrivers == null)
+                                {
+                                    <p> loading</p>
+                                }
+                                else
+                                {
+                                    @VectorDrivers[4].Driver
+                                }
+                            </div>
+                            <img src="/img/drivers/countries/Spain.jpg" class="driver-flag" />
+                        </div>
+                        <div class="part-3">
+                            @if (VectorDrivers == null)
+                            {
+                                <p> loading</p>
+                            }
+                            else
+                            {
+                                @VectorDrivers[4].Team
+                            }
+                        </div>
+                        <div class="part-4">
+                            <img src="/img/drivers/ferrari/carlos1.png" />
+                            <img src="/img/drivers/ferrari/carlos.png" />
+                        </div>
+                    </div>
+                </a>
+                <a href="Drivers/LewisHamilton" class="column">
+                    <div class="part-1">
+                        <div class="rank">
+                            @if (VectorDrivers == null)
+                            {
+                                <p> loading</p>
+                            }
+                            else
+                            {
+                                @VectorDrivers[5].Pos
+                            }
+                        </div>
+                        <div class="points">
+                            @if (VectorDrivers == null)
+                            {
+                                <p> loading</p>
+                            }
+                            else
+                            {
+                                @(VectorDrivers[5].Points + " PTS")
+                            }
+                        </div>
+                        <div class="part-2">
+                            <div class="driver-name" style="border-left: solid #6CD3BF 5px;">
+                                @if (VectorDrivers == null)
+                                {
+                                    <p> loading</p>
+                                }
+                                else
+                                {
+                                    @VectorDrivers[5].Driver
+                                }
+                            </div>
+                            <img src="/img/drivers/countries/Uk.jpg" class="driver-flag" />
+                        </div>
+                        <div class="part-3">
+                            @if (VectorDrivers == null)
+                            {
+                                <p> loading</p>
+                            }
+                            else
+                            {
+                                @VectorDrivers[5].Team
+                            }
+                        </div>
+                        <div class="part-4">
+                            <img src="/img/drivers/mercedes/hamilton-1.png" />
+                            <img src="/img/drivers/mercedes/hamilton.png" />
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="row">
+                <a href="Drivers/LandoNorris" class="column">
+                    <div class="part-1">
+                        <div class="rank">
+                            @if (VectorDrivers == null)
+                            {
+                                <p> loading</p>
+                            }
+                            else
+                            {
+                                @VectorDrivers[6].Pos
+                            }
+                        </div>
+                        <div class="points">
+                            @if (VectorDrivers == null)
+                            {
+                                <p> loading</p>
+                            }
+                            else
+                            {
+                                @(VectorDrivers[6].Points + " PTS")
+                            }
+                        </div>
+                        <div class="part-2">
+                            <div class="driver-name" style="border-left: solid #F58020 5px;">
+                                @if (VectorDrivers == null)
+                                {
+                                    <p> loading</p>
+                                }
+                                else
+                                {
+                                    @VectorDrivers[6].Driver
+                                }
+                            </div>
+                            <img src="/img/drivers/countries/Uk.jpg" class="driver-flag" />
+                        </div>
+                        <div class="part-3">
+                            @if (VectorDrivers == null)
+                            {
+                                <p> loading</p>
+                            }
+                            else
+                            {
+                                @VectorDrivers[6].Team
+                            }
+                        </div>
+                        <div class="part-4">
+                            <img src="/img/drivers/mclaren/lando-1.png" />
+                            <img src="/img/drivers/mclaren/lando.png" />
+                        </div>
+                    </div>
+                </a>
+                <a href="Drivers/EstebanOcon" class="column">
+                    <div class="part-1">
+                        <div class="rank">
+                            @if (VectorDrivers == null)
+                            {
+                                <p> loading</p>
+                            }
+                            else
+                            {
+                                @VectorDrivers[7].Pos
+                            }
+                        </div>
+                        <div class="points">
+                            @if (VectorDrivers == null)
+                            {
+                                <p> loading</p>
+                            }
+                            else
+                            {
+                                @(VectorDrivers[7].Points + " PTS")
+                            }
+                        </div>
+                        <div class="part-2">
+                            <div class="driver-name" style="border-left: solid #2293D1 5px;">
+                                @if (VectorDrivers == null)
+                                {
+                                    <p> loading</p>
+                                }
+                                else
+                                {
+                                    @VectorDrivers[7].Driver
+                                }
+                            </div>
+                            <img src="/img/drivers/countries/France.jpg" class="driver-flag" />
+                        </div>
+                        <div class="part-3">
+                            @if (VectorDrivers == null)
+                            {
+                                <p> loading</p>
+                            }
+                            else
+                            {
+                                @VectorDrivers[7].Team
+                            }
+                        </div>
+                        <div class="part-4">
+                            <img src="/img/drivers/alpine/ocon-1.png" />
+                            <img src="/img/drivers/alpine/ocon.png" />
+                        </div>
+                    </div>
+                </a>
+                <a href="Drivers/FernandoAlonso" class="column">
+                    <div class="part-1">
+                        <div class="rank">
+                            @if (VectorDrivers == null)
+                            {
+                                <p> loading</p>
+                            }
+                            else
+                            {
+                                @VectorDrivers[8].Pos
+                            }
+                        </div>
+                        <div class="points">
+                            @if (VectorDrivers == null)
+                            {
+                                <p> loading</p>
+                            }
+                            else
+                            {
+                                @(VectorDrivers[8].Points + " PTS")
+                            }
+                        </div>
+                        <div class="part-2">
+                            <div class="driver-name" style="border-left: solid #2293D1 5px;">
+                                @if (VectorDrivers == null)
+                                {
+                                    <p> loading</p>
+                                }
+                                else
+                                {
+                                    @VectorDrivers[8].Driver
+                                }
+                            </div>
+                            <img src="/img/drivers/countries/Spain.jpg" class="driver-flag" />
+                        </div>
+                        <div class="part-3">
+                            @if (VectorDrivers == null)
+                            {
+                                <p> loading</p>
+                            }
+                            else
+                            {
+                                @VectorDrivers[8].Team
+                            }
+                        </div>
+                        <div class="part-4">
+                            <img src="/img/drivers/alpine/fernando-1.png" />
+                            <img src="/img/drivers/alpine/fernando.png" />
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="row">
+                <a href="Drivers/ValtteriBottas" class="column">
+                    <div class="part-1">
+                        <div class="rank">
+                            @if (VectorDrivers == null)
+                            {
+                                <p> loading</p>
+                            }
+                            else
+                            {
+                                @VectorDrivers[9].Pos
+                            }
+                        </div>
+                        <div class="points">
+                            @if (VectorDrivers == null)
+                            {
+                                <p> loading</p>
+                            }
+                            else
+                            {
+                                @(VectorDrivers[9].Points + " PTS")
+                            }
+                        </div>
+                        <div class="part-2">
+                            <div class="driver-name" style="border-left: solid #C92D4B 5px;">
+                                @if (VectorDrivers == null)
+                                {
+                                    <p> loading</p>
+                                }
+                                else
+                                {
+                                    @VectorDrivers[9].Driver
+                                }
+                            </div>
+                            <img src="/img/drivers/countries/Finland.jpg" class="driver-flag" />
+                        </div>
+                        <div class="part-3">
+                            @if (VectorDrivers == null)
+                            {
+                                <p> loading</p>
+                            }
+                            else
+                            {
+                                @VectorDrivers[9].Team
+                            }
+                        </div>
+                        <div class="part-4">
+                            <img src="/img/drivers/alfa-romeo/bottas-1.png" />
+                            <img src="/img/drivers/alfa-romeo/bottas.png" />
+                        </div>
+                    </div>
+                </a>
+                <a href="Drivers/DanielRicciardo" class="column">
+                    <div class="part-1">
+                        <div class="rank">
+                            @if (VectorDrivers == null)
+                            {
+                                <p> loading</p>
+                            }
+                            else
+                            {
+                                @VectorDrivers[10].Pos
+                            }
+                        </div>
+                        <div class="points">
+                            @if (VectorDrivers == null)
+                            {
+                                <p> loading</p>
+                            }
+                            else
+                            {
+                                @(VectorDrivers[10].Points + " PTS")
+                            }
+                        </div>
+                        <div class="part-2">
+                            <div class="driver-name" style="border-left: solid #F58020 5px;">
+                                @if (VectorDrivers == null)
+                                {
+                                    <p> loading</p>
+                                }
+                                else
+                                {
+                                    @VectorDrivers[10].Driver
+                                }
+                            </div>
+                            <img src="/img/drivers/countries/Australia.jpg" class="driver-flag" />
+                        </div>
+                        <div class="part-3">
+                            @if (VectorDrivers == null)
+                            {
+                                <p> loading</p>
+                            }
+                            else
+                            {
+                                @VectorDrivers[10].Team
+                            }
+                        </div>
+                        <div class="part-4">
+                            <img src="/img/drivers/mclaren/daniel-1.png" />
+                            <img src="/img/drivers/mclaren/daniel.png" />
+                        </div>
+                    </div>
+                </a>
+                <a href="Drivers/SebastianVettel" class="column">
+                    <div class="part-1">
+                        <div class="rank">
+                            @if (VectorDrivers == null)
+                            {
+                                <p> loading</p>
+                            }
+                            else
+                            {
+                                @VectorDrivers[11].Pos
+                            }
+                        </div>
+                        <div class="points">
+                            @if (VectorDrivers == null)
+                            {
+                                <p> loading</p>
+                            }
+                            else
+                            {
+                                @(VectorDrivers[11].Points + " PTS")
+                            }
+                        </div>
+                        <div class="part-2">
+                            <div class="driver-name" style="border-left: solid #358C75 5px;">
+                                @if (VectorDrivers == null)
+                                {
+                                    <p> loading</p>
+                                }
+                                else
+                                {
+                                    @VectorDrivers[11].Driver
+                                }
+                            </div>
+                            <img src="/img/drivers/countries/Germany.jpg" class="driver-flag" />
+                        </div>
+                        <div class="part-3">
+                            @if (VectorDrivers == null)
+                            {
+                                <p> loading</p>
+                            }
+                            else
+                            {
+                                @VectorDrivers[11].Team
+                            }
+                        </div>
+                        <div class="part-4">
+                            <img src="/img/drivers/aston-martin/vettel-1.png" />
+                            <img src="/img/drivers/aston-martin/vettel.png" />
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="row">
+                <a href="Drivers/KevinMagnussen" class="column">
+                    <div class="part-1">
+                        <div class="rank">
+                            @if (VectorDrivers == null)
+                            {
+                                <p> loading</p>
+                            }
+                            else
+                            {
+                                @VectorDrivers[12].Pos
+                            }
+                        </div>
+                        <div class="points">
+                            @if (VectorDrivers == null)
+                            {
+                                <p> loading</p>
+                            }
+                            else
+                            {
+                                @(VectorDrivers[12].Points + " PTS")
+                            }
+                        </div>
+                        <div class="part-2">
+                            <div class="driver-name" style="border-left: solid #B6BABD 5px;">
+                                @if (VectorDrivers == null)
+                                {
+                                    <p> loading</p>
+                                }
+                                else
+                                {
+                                    @VectorDrivers[12].Driver
+                                }
+                            </div>
+                            <img src="/img/drivers/countries/Denmark.jpg" class="driver-flag" />
+                        </div>
+                        <div class="part-3">
+                            @if (VectorDrivers == null)
+                            {
+                                <p> loading</p>
+                            }
+                            else
+                            {
+                                @VectorDrivers[12].Team
+                            }
+                        </div>
+                        <div class="part-4">
+                            <img src="/img/drivers/haas/kevin-1.png" />
+                            <img src="/img/drivers/haas/kevin.png" />
+                        </div>
+                    </div>
+                </a>
+                <a href="Drivers/PierreGasly" class="column">
+                    <div class="part-1">
+                        <div class="rank">
+                            @if (VectorDrivers == null)
+                            {
+                                <p> loading</p>
+                            }
+                            else
+                            {
+                                @VectorDrivers[13].Pos
+                            }
+                        </div>
+                        <div class="points">
+                            @if (VectorDrivers == null)
+                            {
+                                <p> loading</p>
+                            }
+                            else
+                            {
+                                @(VectorDrivers[13].Points + " PTS")
+                            }
+                        </div>
+                        <div class="part-2">
+                            <div class="driver-name" style="border-left: solid #5E8FAA 5px;">
+                                @if (VectorDrivers == null)
+                                {
+                                    <p> loading</p>
+                                }
+                                else
+                                {
+                                    @VectorDrivers[13].Driver
+                                }
+                            </div>
+                            <img src="/img/drivers/countries/France.jpg" class="driver-flag" />
+                        </div>
+                        <div class="part-3">
+                            @if (VectorDrivers == null)
+                            {
+                                <p> loading</p>
+                            }
+                            else
+                            {
+                                @VectorDrivers[13].Team
+                            }
+                        </div>
+                        <div class="part-4">
+                            <img src="/img/drivers/alpha-tauri/gasly-1.png" />
+                            <img src="/img/drivers/alpha-tauri/gasly.png" />
+                        </div>
+                    </div>
+                </a>
+                <a href="Drivers/LanceStroll" class="column">
+                    <div class="part-1">
+                        <div class="rank">
+                            @if (VectorDrivers == null)
+                            {
+                                <p> loading</p>
+                            }
+                            else
+                            {
+                                @VectorDrivers[14].Pos
+                            }
+                        </div>
+                        <div class="points">
+                            @if (VectorDrivers == null)
+                            {
+                                <p> loading</p>
+                            }
+                            else
+                            {
+                                @(VectorDrivers[14].Points + " PTS")
+                            }
+                        </div>
+                        <div class="part-2">
+                            <div class="driver-name" style="border-left: solid #358C75 5px;">
+                                @if (VectorDrivers == null)
+                                {
+                                    <p> loading</p>
+                                }
+                                else
+                                {
+                                    @VectorDrivers[14].Driver
+                                }
+                            </div>
+                            <img src="/img/drivers/countries/Canada.jpg" class="driver-flag" />
+                        </div>
+                        <div class="part-3">
+                            @if (VectorDrivers == null)
+                            {
+                                <p> loading</p>
+                            }
+                            else
+                            {
+                                @VectorDrivers[14].Team
+                            }
+                        </div>
+                        <div class="part-4">
+                            <img src="/img/drivers/aston-martin/lance-1.png" />
+                            <img src="/img/drivers/aston-martin/lance.png" />
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="row">
+                <a href="Drivers/MickSchumacher" class="column">
+                    <div class="part-1">
+                        <div class="rank">
+                            @if (VectorDrivers == null)
+                            {
+                                <p> loading</p>
+                            }
+                            else
+                            {
+                                @VectorDrivers[15].Pos
+                            }
+                        </div>
+                        <div class="points">
+                            @if (VectorDrivers == null)
+                            {
+                                <p> loading</p>
+                            }
+                            else
+                            {
+                                @(VectorDrivers[15].Points + " PTS")
+                            }
+                        </div>
+                        <div class="part-2">
+                            <div class="driver-name" style="border-left: solid #B6BABD 5px;">
+                                @if (VectorDrivers == null)
+                                {
+                                    <p> loading</p>
+                                }
+                                else
+                                {
+                                    @VectorDrivers[15].Driver
+                                }
+                            </div>
+                            <img src="/img/drivers/countries/Germany.jpg" class="driver-flag" />
+                        </div>
+                        <div class="part-3">
+                            @if (VectorDrivers == null)
+                            {
+                                <p> loading</p>
+                            }
+                            else
+                            {
+                                @VectorDrivers[15].Team
+                            }
+                        </div>
+                        <div class="part-4">
+                            <img src="/img/drivers/haas/myck-1.png" />
+                            <img src="/img/drivers/haas/myck.png" />
+                        </div>
+                    </div>
+                </a>
+                <a href="Drivers/YukiTsunoda" class="column">
+                    <div class="part-1">
+                        <div class="rank">
+                            @if (VectorDrivers == null)
+                            {
+                                <p> loading</p>
+                            }
+                            else
+                            {
+                                @VectorDrivers[16].Pos
+                            }
+                        </div>
+                        <div class="points">
+                            @if (VectorDrivers == null)
+                            {
+                                <p> loading</p>
+                            }
+                            else
+                            {
+                                @(VectorDrivers[16].Points + " PTS")
+                            }
+                        </div>
+                        <div class="part-2">
+                            <div class="driver-name" style="border-left: solid #5E8FAA 5px;">
+                                @if (VectorDrivers == null)
+                                {
+                                    <p> loading</p>
+                                }
+                                else
+                                {
+                                    @VectorDrivers[16].Driver
+                                }
+                            </div>
+                            <img src="/img/drivers/countries/Japan.jpg" class="driver-flag" />
+                        </div>
+                        <div class="part-3">
+                            @if (VectorDrivers == null)
+                            {
+                                <p> loading</p>
+                            }
+                            else
+                            {
+                                @VectorDrivers[16].Team
+                            }
+                        </div>
+                        <div class="part-4">
+                            <img src="/img/drivers/alpha-tauri/yuki-1.png" />
+                            <img src="/img/drivers/alpha-tauri/yuki.png" />
+                        </div>
+                    </div>
+                </a>
+                <a href="Drivers/GuanyuZhou" class="column">
+                    <div class="part-1">
+                        <div class="rank">
+                            @if (VectorDrivers == null)
+                            {
+                                <p> loading</p>
+                            }
+                            else
+                            {
+                                @VectorDrivers[17].Pos
+                            }
+                        </div>
+                        <div class="points">
+                            @if (VectorDrivers == null)
+                            {
+                                <p> loading</p>
+                            }
+                            else
+                            {
+                                @(VectorDrivers[17].Points + " PTS")
+                            }
+                        </div>
+                        <div class="part-2">
+                            <div class="driver-name" style="border-left: solid #C92D4B 5px;">
+                                @if (VectorDrivers == null)
+                                {
+                                    <p> loading</p>
+                                }
+                                else
+                                {
+                                    @VectorDrivers[17].Driver
+                                }
+                            </div>
+                            <img src="/img/drivers/countries/China.jpg" class="driver-flag" />
+                        </div>
+                        <div class="part-3">
+                            @if (VectorDrivers == null)
+                            {
+                                <p> loading</p>
+                            }
+                            else
+                            {
+                                @VectorDrivers[17].Team
+                            }
+                        </div>
+                        <div class="part-4">
+                            <img src="/img/drivers/alfa-romeo/zhou-1.png" />
+                            <img src="/img/drivers/alfa-romeo/zhou.png" />
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="row" style="margin-bottom: 0px;">
+                <a href="Drivers/AlexanderAlbon" class="column">
+                    <div class="part-1">
+                        <div class="rank">
+                            @if (VectorDrivers == null)
+                            {
+                                <p> loading</p>
+                            }
+                            else
+                            {
+                                @VectorDrivers[18].Pos
+                            }
+                        </div>
+                        <div class="points">
+                            @if (VectorDrivers == null)
+                            {
+                                <p> loading</p>
+                            }
+                            else
+                            {
+                                @(VectorDrivers[18].Points + " PTS")
+                            }
+                        </div>
+                        <div class="part-2">
+                            <div class="driver-name" style="border-left: solid #37BEDD 5px;">
+                                @if (VectorDrivers == null)
+                                {
+                                    <p> loading</p>
+                                }
+                                else
+                                {
+                                    @VectorDrivers[18].Driver
+                                }
+                            </div>
+                            <img src="/img/drivers/countries/Thailand.jpg" class="driver-flag" />
+                        </div>
+                        <div class="part-3">
+                            @if (VectorDrivers == null)
+                            {
+                                <p> loading</p>
+                            }
+                            else
+                            {
+                                @VectorDrivers[18].Team
+                            }
+                        </div>
+                        <div class="part-4">
+                            <img src="/img/drivers/williams/albon-1.png" />
+                            <img src="/img/drivers/williams/albon.png" />
+                        </div>
+                    </div>
+                </a>
+                <a href="Drivers/NicholasLatifi" class="column">
+                    <div class="part-1">
+                        <div class="rank">
+                            @if (VectorDrivers == null)
+                            {
+                                <p> loading</p>
+                            }
+                            else
+                            {
+                                @VectorDrivers[19].Pos
+                            }
+                        </div>
+                        <div class="points">
+                            @if (VectorDrivers == null)
+                            {
+                                <p> loading</p>
+                            }
+                            else
+                            {
+                                @(VectorDrivers[19].Points + " PTS")
+                            }
+                        </div>
+                        <div class="part-2">
+                            <div class="driver-name" style="border-left: solid #37BEDD 5px;">
+                                @if (VectorDrivers == null)
+                                {
+                                    <p> loading</p>
+                                }
+                                else
+                                {
+                                    @VectorDrivers[19].Driver
+                                }
+                            </div>
+                            <img src="/img/drivers/countries/Canada.jpg" class="driver-flag" />
+                        </div>
+                        <div class="part-3">
+                            @if (VectorDrivers == null)
+                            {
+                                <p> loading</p>
+                            }
+                            else
+                            {
+                                @VectorDrivers[19].Team
+                            }
+                        </div>
+                        <div class="part-4">
+                            <img src="/img/drivers/williams/latifi-1.png" />
+                            <img src="/img/drivers/williams/latifi.png" />
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </Jumbotron>
+        <Footer />
+    </LayoutContent>
+</Layout>
+
+@code {
+    private Root[]? VectorDrivers;
+
+    protected override async Task OnAfterRenderAsync (bool firstRender)
+    {
+        if (firstRender)
+        {
+            VectorDrivers = await Http.GetFromJsonAsync<Root[]>("sample-data/DriverStatistics.json");
+            StateHasChanged();
+        }
+    }
+
+    public class Root
+    {
+        public int Pos { get; set; }
+        public string Driver { get; set; }
+        public string Team { get; set; }
+        public int GrandPrix { get; set; }
+        public int Wins { get; set; }
+        public int Podiums { get; set; }
+        public int PolePosition { get; set; }
+        public int FastestLap { get; set; }
+        public int LapsLed { get; set; }
+        public int Points { get; set; }
+    }
+}

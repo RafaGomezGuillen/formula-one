@@ -1,0 +1,110 @@
+﻿.present-title {
+    width: 60%;
+    height: 500px;
+    background-image: url("img/rounds/Round9.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    border-right: solid #E10600 5px;
+    border-top: solid #E10600 5px;
+    border-top-right-radius: 10px;
+}
+
+.present-title h1 {
+    text-align: center;
+    color: white;
+    position: relative;
+    top: 80%;
+    font-weight: bolder;
+}
+
+.present-circuit {
+    width: 60%;
+    height: 400px;
+    margin: auto;
+    border-left: solid gray 5px;
+    border-bottom: solid gray 5px;
+    border-bottom-left-radius: 10px;
+}
+
+.present-circuit img {
+    width: 60%;
+    float: left;
+}
+
+.present-circuit table {
+    width: 40%;
+    float: left;
+    border-collapse: separate;
+}
+
+.present-circuit th {
+    color: gray;
+}
+
+.present-circuit td {
+    font-size: 36px;
+    line-height: 36px;
+    border-right: solid gray 1px;
+    border-bottom: solid gray 1px;
+    border-bottom-right-radius: 10px;
+}
+
+.circuit-results {
+    width: 60%;
+    margin: auto;
+}
+
+.race-results {
+    text-align: center;
+    margin: 20px;
+}
+
+@media(max-width: 1560px) {
+    .present-title, .present-circuit, .circuit-results {
+        width: 80%;
+    }
+
+    .present-title h1 {
+        font-size: 50px;
+    }
+}
+
+@media(max-width: 1200px) {
+    .present-title, .present-circuit, .circuit-results {
+        width: 100%;
+    }
+
+    .present-title h1 {
+        font-size: 30px;
+    }
+}
+
+@media(max-width: 1070px) {
+    .present-circuit {
+        border: none;
+    }
+
+    .present-circuit img, .present-circuit table {
+        width: 100%;
+    }
+}
+
+@media(max-width: 500px) {
+    .present-title {
+        height: 300px;
+    }
+
+    .present-title h1 {
+        top: 70%;
+    }
+
+    .present-circuit td {
+        font-size: 25px;
+        line-height: 25px;
+    }
+
+    .race-results {
+        font-size: 50px;
+    }
+}

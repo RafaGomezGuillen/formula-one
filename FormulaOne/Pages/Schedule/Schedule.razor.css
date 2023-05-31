@@ -1,0 +1,143 @@
+﻿.h1-driver {
+    border-top: solid black 5px;
+    border-right: solid black 5px;
+    border-top-right-radius: 20px;
+    font-weight: bold;
+}
+
+.column {
+    float: left;
+    width: 32%;
+    padding: 15px;
+    border-top: solid black;
+    border-right: solid black;
+    border-top-right-radius: 20px;
+    margin: 12px;
+    color: black;
+    height: 560px;
+    transition: all 0.2s;
+}
+
+.column:hover {
+    border-top: solid #E10600;
+    border-right: solid #E10600;
+    border-top-right-radius: 20px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row {
+    margin-bottom: 30px;
+}
+
+.schedule-1, .schedule-2, .schedule-3 {
+    border-bottom: gray solid 1px;
+}
+
+.schedule-1 label {
+    color: #e10600;
+    font-size: 30px;
+    width: 90%;
+}
+
+.schedule-1 img {
+    width: 10%;
+    border: solid black 1px;
+    position: relative;
+    bottom: 5px;
+}
+
+.schedule-2 {
+    position: relative;
+    top: 10px;
+}
+
+.schedule-2 label {
+    color: black;
+    font-size: 25px;
+    width: 30%;
+    font-weight: bolder;
+}
+
+.schedule-2 img {
+    width: 70%;
+    height: 15px;
+    position: relative;
+    bottom: 6px;
+}
+
+.schedule-3 {
+    position: relative;
+    top: 15px;
+}
+
+.schedule-3 p:first-child {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.schedule-4 {
+    position: relative;
+    top: 20px;
+    height: 380px;
+}
+
+.schedule-4 img {
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 1800px) {
+    .column {
+        margin: 8px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .column {
+        margin: 7px;
+    }
+
+    .schedule-2 label {
+        font-size: 15px;
+        position: relative;
+        bottom: 2.5px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .column {
+        margin: 5px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .column {
+        width: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+    .h1-driver {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 500px) {
+    .h1-driver {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 400px) {
+    .row {
+        margin-bottom: 0px;
+    }
+    .column {
+        margin-bottom: 40px;
+    }
+}

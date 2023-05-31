@@ -1,0 +1,168 @@
+﻿@page "/Schedule/Round11"
+@inject HttpClient Http
+
+<PageTitle> @ListSchedule[10].GrandPrix </PageTitle>
+
+<Layout>
+    <LayoutHeader Fixed="true">
+        <Header />
+    </LayoutHeader>
+    <LayoutContent style="margin-top: 55px; position: absolute; width: 100%;">
+        <Jumbotron style="border-bottom: solid grey 5px; border-right: solid grey 5px; border-bottom-right-radius: 10px;">
+            <JumbotronTitle Size="JumbotronTitleSize.Is4">
+                <h1 style="font-size: 42px; line-height: 48px; letter-spacing: 0.2px">
+                    @ListSchedule[10].GrandPrix
+                </h1>
+            </JumbotronTitle>
+            <Divider></Divider>
+            <div class="present-title">
+                <h1> @ListSchedule[10].GrandPrix </h1>
+            </div>
+            <div class="present-circuit">
+                <img src="/img/circuits/Austria_Circuit.png" />
+                @if (ListSchedule == null)
+                {
+                    <p><em>Loading...</em></p>
+                }
+                else
+                {
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Race date</th>
+                                <th>First Grand Prix</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var elem in ListSchedule)
+                            {
+                                @if(elem.Round == 11) 
+                                {
+                                    <tr>
+                                        <td>@elem.RaceDate</td>
+                                        <td>@elem.FirstGrandPrix</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Laps</th>
+                                        <th>Circuit lenght (km)</th>
+                                    </tr>
+                                    <tr>
+                                        <td>@elem.Laps</td>
+                                        <td>@elem.Lenght</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Race distance (km)</th>
+                                        <th>Lap record</th>
+                                    </tr>   
+                                    <tr>
+                                        <td>@elem.Distance</td>
+                                        <td>@elem.LapRecord</td>
+                                    </tr>
+                                }
+                            }
+                        </tbody>
+                    </table>
+                }
+            </div>
+            <h1 class="race-results">Race results</h1>
+            @if (ListStandings == null)
+            {
+                <p><em>Loading...</em></p>
+            }
+            else
+            {
+                <div class="circuit-results">
+                    <Table Striped>
+                        <TableHeader>
+                            <TableRow>
+                                <TableHeaderCell>POS</TableHeaderCell>
+                                <TableHeaderCell>NO</TableHeaderCell>
+                                <TableHeaderCell>DRIVER</TableHeaderCell>
+                                <TableHeaderCell>CAR</TableHeaderCell>
+                            </TableRow>
+                        </TableHeader>
+                        <TableBody>
+                        @foreach (var elem in ListStandings.OrderBy(p => p.AUT))
+                        {
+                            @if (elem.AUT <= 20)
+                            {
+                                <TableRow>
+                                    <TableRowCell>@elem.AUT</TableRowCell>
+                                    <TableRowCell>@elem.DriverNumber</TableRowCell>
+                                    <TableRowCell>@elem.Driver</TableRowCell>
+                                    <TableRowCell>@elem.Car</TableRowCell>
+                                </TableRow>
+                            }
+                            @if (elem.AUT == 21)
+                            {
+                                <TableRow>
+                                    <TableRowCell>DNF</TableRowCell>
+                                    <TableRowCell>@elem.DriverNumber</TableRowCell>
+                                    <TableRowCell>@elem.Driver</TableRowCell>
+                                    <TableRowCell>@elem.Car</TableRowCell>
+                                </TableRow>
+                            }
+                        }
+                        </TableBody>
+                    </Table>
+                </div>
+            }
+            @*DNF 21, DNS 22 DW 23 DNP 24*@
+        </Jumbotron>
+        <Footer />
+    </LayoutContent>
+</Layout>
+@code {
+    private List<Root>? ListStandings = new List<Root>();
+    private List<Root2>? ListSchedule = new List<Root2>();
+
+    protected override async Task OnInitializedAsync ()
+    {
+        ListStandings = await Http.GetFromJsonAsync<List<Root>>("sample-data/TeamStandings.json");
+        ListSchedule = await Http.GetFromJsonAsync<List<Root2>>("sample-data/Circuits.json");
+    }
+
+    public class Root
+    {
+        public int Pos { get; set; }
+        public int DriverNumber { get; set; }
+        public string? Driver { get; set; }
+        public string? Car { get; set; }
+        public int BHR { get; set; }
+        public int ARA { get; set; }
+        public int AUS { get; set; }
+        public int EMI { get; set; }
+        public int MIA { get; set; }
+        public int ESP { get; set; }
+        public int MON { get; set; }
+        public int AZE { get; set; }
+        public int CAN { get; set; }
+        public int GBR { get; set; }
+        public int AUT { get; set; }
+        public int FRA { get; set; }
+        public int HUN { get; set; }
+        public int BEL { get; set; }
+        public int NED { get; set; }
+        public int ITA { get; set; }
+        public int SIN { get; set; }
+        public int JPN { get; set; }
+        public int USA { get; set; }
+        public int MEX { get; set; }
+        public int SAO { get; set; }
+        public int ABU { get; set; }
+        public int Points { get; set; }
+    }
+
+    public class Root2
+    {
+        public int Round { get; set; }
+        public string? GrandPrix { get; set; }
+        public string? Circuit { get; set; }
+        public string? RaceDate { get; set; }
+        public int FirstGrandPrix { get; set; }
+        public int Laps { get; set; }
+        public double Lenght { get; set; }
+        public double Distance { get; set; }
+        public string? LapRecord { get; set; }
+    }
+}

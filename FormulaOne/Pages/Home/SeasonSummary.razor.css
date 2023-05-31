@@ -1,0 +1,61 @@
+﻿.season-summary-img {
+    float: left;
+    width: 60%;
+    padding: 20px 20px 20px 40px;
+}
+
+.season-summary-img img {
+    width: 100%;
+    padding: 0;
+    border-top: solid #e10600 5px;
+    border-right: solid #e10600 5px;
+    border-top-right-radius: 20px;
+}
+
+.season-summary-p {
+    float: left;
+    width: 40%;
+    padding: 0px 40px 20px 20px;
+    margin-top: 20px;
+    border-bottom: solid grey 5px;
+    border-right: solid grey 5px;
+    border-bottom-right-radius: 10px;
+}
+
+.season-summary-p p {
+    font-size: 18px;
+}
+
+.season-summary-content::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 1000px) {
+    .season-summary-img, .season-summary-p {
+        width: 100%;
+        padding: 30px;
+        border: none;
+    }
+
+    .season-summary-p {
+        margin: 0px;
+    }
+
+    .season-summary-p p {
+        font-size: 15px;
+        position: relative;
+        bottom: 40px;
+        border-bottom: solid grey 3px;
+        border-right: solid grey 3px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .season-summary-p h1 {
+        font-size: 40px;
+        text-align: center;
+        position: relative;
+        bottom: 40px;
+    }
+}

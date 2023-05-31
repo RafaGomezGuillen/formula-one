@@ -1,0 +1,357 @@
+﻿@page "/Teams/Alpine"
+@inject HttpClient Http
+
+<PageTitle>Alpine</PageTitle>
+
+<Layout>
+    <LayoutHeader Fixed="true">
+        <Header />
+    </LayoutHeader>
+    <LayoutContent style="margin-top: 70px; position: absolute;">
+        <Jumbotron style="border-bottom: solid grey 5px; border-right: solid grey 5px; border-bottom-right-radius: 10px;">
+            <JumbotronTitle Size="JumbotronTitleSize.Is4">
+                <h1 style="font-size: 42px; line-height: 48px; letter-spacing: 0.2px">
+                    @if (VectorTeam == null)
+                    {
+                        <p> loading</p>
+                    }
+                    else {
+                        @VectorTeam[8].Chassis
+                    }
+                </h1>
+            </JumbotronTitle>
+            <Divider></Divider>
+            <div class="row">
+                <div class="column">
+                    <div class="team-logo">
+                        <img src="/img/teams/alpine/alpine-logo.jpg" />
+                    </div>
+                    <br />
+                    <div class="team-table">
+                        <table>
+                            <tr>
+                                <th>Full Team Name</th>
+                                <td>
+                                    @if (VectorTeam == null)
+                                    {
+                                        <p> loading</p>
+                                    }
+                                    else
+                                    {
+                                        @VectorTeam[8].Team
+                                    }
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Base</th>
+                                <td>	Enstone, United Kingdom</td>
+                            </tr>
+                            <tr>
+                                <th>Team Chief</th>
+                                <td>		Otmar Szafnauer</td>
+                            </tr>
+                            <tr>
+                                <th>Technical Chief</th>
+                                <td>		Pat Fry</td>
+                            </tr>
+                            <tr>
+                                <th>Chassis</th>
+                                <td>
+                                    @if (VectorTeam == null)
+                                    {
+                                        <p> loading</p>
+                                    }
+                                    else
+                                    {
+                                        @VectorTeam[0].ChassisAlias
+                                    }
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Power Unit</th>
+                                <td>
+                                    @if (VectorTeam == null)
+                                    {
+                                        <p> loading</p>
+                                    }
+                                    else
+                                    {
+                                        @VectorTeam[8].Engine
+                                    }
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>First Team Entry</th>
+                                <td>		1986</td>
+                            </tr>
+                            <tr>
+                                <th>World Championships</th>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <th>Highest Race Finish</th>
+                                <td>	1 (x21)</td>
+                            </tr>
+                            <tr>
+                                <th>Pole Positions</th>
+                                <td>	20</td>
+                            </tr>
+                            <tr>
+                                <th>Fastest Laps</th>
+                                <td>	21</td>
+                            </tr>
+                        </table>
+
+                    </div>
+                </div>
+                <a href="/Drivers/FernandoAlonso" class="column">
+                    <div class="driver-img">
+                        <img src="/img/teams/alpine/alonso.jpg"/>
+                    </div>
+                    <div class="driver-content">
+                        <p style="font-style: italic">14</p>
+                        <p>
+                            @if (VectorTeam == null)
+                            {
+                            <p> loading</p>
+                            }
+                            else
+                            {
+                                @VectorTeam[8].Driver
+                            }
+                        </p>
+                    </div>
+                </a>
+                <a href="/Drivers/EstebanOcon" class="column">
+                    <div class="driver-img">
+                        <img src="/img/teams/alpine/ocon.jpg" />
+                    </div>
+                    <div class="driver-content">
+                        <p style="font-style: italic">31</p>
+                        <p>
+                            @if (VectorTeam == null)
+                            {
+                            <p> loading</p>
+                            }
+                            else
+                            {
+                                @VectorTeam[9].Driver
+                            }
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="carousel">
+                <Carousel @bind-SelectedSlide="@selectedSlide" Crossfade="true" ShowControls="false" ShowIndicators="false" Interval="3000">
+                    <CarouselSlide Name="1">
+                        <img src="img/teams/alpine/img-1.jpg" />
+                    </CarouselSlide>
+                    <CarouselSlide Name="2">
+                        <img src="img/teams/alpine/img-2.jpg" />
+                    </CarouselSlide>
+                    <CarouselSlide Name="3">
+                        <img src="img/teams/alpine/img-3.jpg" />
+                    </CarouselSlide>
+                    <CarouselSlide Name="4">
+                        <img src="img/teams/alpine/img-4.jpg" />
+                    </CarouselSlide>
+                </Carousel>
+            </div>
+            <div class="team-content">
+                <h1>In profile</h1>
+                <p>
+                    Alpine may be a relatively new name to Formula 1, but Renault’s famous sportscar arm has plenty of motorsport heritage. The 2021 rebrand of the team marked the next step in Renault’s F1 revival, begun in 2016 with the takeover of the then-Lotus squad. Already race winners in their new guise, regular podiums and a tilt at the title must be their next target…
+                </p>
+                <h1>2022</h1>
+                <p>
+                    No podiums, but outperform arch rivals McLaren to rise to P4 in the final standings. Fernando Alonso, frustrated by reliability woes, departs at season's end for Aston Martin, to be replaced in 2023 by Pierre Gasly, forming all-French driver line-up with Esteban Ocon.
+                </p>
+                <h1>2021</h1>
+                <p>
+                    A maiden F1 win for the Alpine name comes in Hungary courtesy of Esteban Ocon, aided by a staunch defence against a charging Lewis Hamilton from team mate Fernando Alonso, who also finishes on the podium in Qatar.
+                </p>
+                <h1>2020</h1>
+                <p>
+                    Three podium finishes – the first since Renault’s works return – signal a significant step forward ahead of the team’s Alpine rebrand, and Fernando Alonso’s comeback, for 2021.
+                </p>
+                <h1>2019</h1>
+                <p>
+                    Progress up the championship order is halted, ironically by new Renault customers McLaren, who demote them to fifth in the standings, despite Daniel Ricciardo securing their best result to date with P4 in Italy.
+                </p>
+                <div style="width: 99%">
+                    <BarChart @ref="barChart" TItem="double" Options="@options" />
+                </div>
+            </div>
+        </Jumbotron>
+        <Footer />
+    </LayoutContent>
+</Layout>
+
+@*Theme*@
+<Blazorise.ThemeProvider Theme="@theme">
+    <Router AppAssembly="typeof(App).Assembly">
+        <Found>...</Found>
+        <NotFound>...</NotFound>
+    </Router>
+</Blazorise.ThemeProvider>
+
+@code {
+    BarChart<double> barChart;
+
+    BarChartOptions options = new()
+        {
+            IndexAxis = "y",
+            Elements = new()
+            {
+                Bar = new()
+                {
+                    BorderWidth = 2,
+                }
+            },
+            Responsive = true,
+            Plugins = new()
+            {
+                Legend = new()
+                {
+                    Position = "right"
+                },
+                Title = new()
+                {
+                    Display = true,
+                    Text = "Team points"
+                }
+            }
+        };
+
+    protected override async Task OnAfterRenderAsync (bool firstRender)
+    {
+        if (firstRender)
+        {
+            await HandleRedraw();
+        }
+    }
+
+    async Task HandleRedraw ()
+    {
+        await barChart.Clear();
+
+        await barChart.AddLabelsDatasetsAndUpdate(Labels,
+            GetBarChartDataDriver1("Fernando Alonso"),
+            GetBarChartDataDriver2("Esteban Ocon"));
+    }
+
+    BarChartDataset<double> GetBarChartDataDriver1 (string label)
+    {
+        return new BarChartDataset<double>
+            {
+                Label = label,
+                Data = DriverData1(),
+                BackgroundColor = backgroundColors,
+                BorderColor = borderColors,
+            };
+    }
+    BarChartDataset<double> GetBarChartDataDriver2 (string label)
+    {
+        return new BarChartDataset<double>
+            {
+                Label = label,
+                Data = DriverData2(),
+                BackgroundColor = backgroundColors,
+                BorderColor = borderColors,
+            };
+    }
+
+    string[] Labels = { "Bahrain", "Saudi Arabia", "Australia", "Emilia Romagna", "Miami", "Spain", "Monaco", "Azerbaijan", "Canada", "Great Britain", "Austria", "France",
+                        "Hungary", "Belgium", "Netherlands", "Italy", "Singapore", "Japan", "United States", "Mexico", "Brazil", "Abu Dhabi"};
+    Random random = new Random();
+    List<string> backgroundColors = new List<string> {
+        ChartColor.FromRgba(120, 200, 50, 0.6f),
+        ChartColor.FromRgba(40, 150, 210, 0.8f),
+        ChartColor.FromRgba(220, 60, 80, 0.4f),
+        ChartColor.FromRgba(100, 180, 220, 0.7f),
+        ChartColor.FromRgba(230, 120, 50, 0.5f),
+        ChartColor.FromRgba(160, 90, 180, 0.9f),
+        ChartColor.FromRgba(80, 190, 60, 0.3f),
+        ChartColor.FromRgba(190, 30, 90, 0.8f),
+        ChartColor.FromRgba(140, 220, 40, 0.6f),
+        ChartColor.FromRgba(60, 100, 230, 0.5f),
+        ChartColor.FromRgba(170, 70, 130, 0.7f),
+        ChartColor.FromRgba(200, 140, 30, 0.4f),
+        ChartColor.FromRgba(70, 160, 210, 0.8f),
+        ChartColor.FromRgba(130, 40, 180, 0.6f),
+        ChartColor.FromRgba(240, 100, 60, 0.9f),
+        ChartColor.FromRgba(100, 200, 30, 0.3f),
+        ChartColor.FromRgba(210, 50, 100, 0.7f),
+        ChartColor.FromRgba(50, 170, 80, 0.5f),
+        ChartColor.FromRgba(220, 110, 180, 0.4f),
+        ChartColor.FromRgba(150, 80, 200, 0.8f),
+        ChartColor.FromRgba(90, 210, 70, 0.6f)
+    };
+
+    List<string> borderColors = new List<string> {
+        ChartColor.FromRgba(120, 200, 50, 1f),
+        ChartColor.FromRgba(40, 150, 210, 1f),
+        ChartColor.FromRgba(220, 60, 80, 1f),
+        ChartColor.FromRgba(100, 180, 220, 1f),
+        ChartColor.FromRgba(230, 120, 50, 1f),
+        ChartColor.FromRgba(160, 90, 180, 1f),
+        ChartColor.FromRgba(80, 190, 60, 1f),
+        ChartColor.FromRgba(190, 30, 90, 1f),
+        ChartColor.FromRgba(140, 220, 40, 1f),
+        ChartColor.FromRgba(60, 100, 230, 1f),
+        ChartColor.FromRgba(170, 70, 130, 1f),
+        ChartColor.FromRgba(200, 140, 30, 1f),
+        ChartColor.FromRgba(70, 160, 210, 1f),
+        ChartColor.FromRgba(130, 40, 180, 1f),
+        ChartColor.FromRgba(240, 100, 60, 1f),
+        ChartColor.FromRgba(100, 200, 30, 1f),
+        ChartColor.FromRgba(210, 50, 100, 1f),
+        ChartColor.FromRgba(50, 170, 80, 1f),
+        ChartColor.FromRgba(220, 110, 180, 1f),
+        ChartColor.FromRgba(150, 80, 200, 1f),
+        ChartColor.FromRgba(90, 210, 70, 1f)
+    };
+
+    List<double> DriverData1 ()
+    {
+        return new List<double>
+        {
+            2, 0, 0, 0, 0, 2, 6, 6, 2, 10, 1, 8, 4, 10, 8, 0, 0, 6, 6, 0, 10, 0
+        };
+    }
+
+    List<double> DriverData2 ()
+    {
+        return new List<double>
+        {
+            6, 8, 6, 0, 4, 6, 0, 1, 8, 0, 13, 4, 2, 6, 2, 0, 0, 12, 0, 4, 4, 6
+        };
+    }
+
+    private string selectedSlide = "1";
+
+    private Theme theme = new Theme
+    {
+        ColorOptions = new ThemeColorOptions { Primary = "#E10600" }
+    };
+
+    private Teams[]? VectorTeam;
+
+    protected override async Task OnInitializedAsync ()
+    {
+        VectorTeam = await Http.GetFromJsonAsync<Teams[]>("sample-data/Teams.json");
+    }
+
+    public class Teams
+    {
+        public string Team { get; set; }
+        public string Chassis { get; set; }
+        public string ChassisAlias { get; set; }
+        public string Engine { get; set; }
+        public int DriverNumber { get; set; }
+        public string Driver { get; set; }
+        public string Alias { get; set; }
+        public string Rounds { get; set; }
+        public string ReserveDriver { get; set; }
+    }
+}
