@@ -12,3 +12,4 @@ specifically at his [Blazor Course](https://www.youtube.com/playlist?list=PLTVK2
 - [Json To C#](https://json2csharp.com/) 
 - [Image optimizer](https://imagecompressor.com/)
 - [Way Back Machine](http://web.archive.org/)
+- [Deploy with Azure Static Web Apps](https://www.youtube.com/watch?v=zUB8kxSBmOE&list=PLr_kZfQvM56mjjCTYY5R2rTC8FmeP_3Tn&index=6&ab_channel=MeetKamalToday-CloudMastery)
