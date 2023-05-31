@@ -38,9 +38,7 @@ a, .btn-link {
     justify-content: center;
     align-items: center;
     height: 100vh;
-}
-
-.loader {
-    max-width: 100%;
-    max-height: 100%;
+    background-image: url("img/F1logoRed.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }

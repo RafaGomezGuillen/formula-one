@@ -59,3 +59,19 @@
         bottom: 40px;
     }
 }
+
+@media screen and (max-width: 500px) {
+    .season-summary-content {
+        width: 100%;
+        margin: auto;
+    }
+
+    .season-summary-img, .season-summary-p {
+        padding: 0px;
+    }
+
+    .season-summary-p {
+        position: relative;
+        top: 30px;
+    }
+}
