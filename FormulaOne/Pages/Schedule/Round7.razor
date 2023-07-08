@@ -3,115 +3,108 @@
 
 <PageTitle> @ListSchedule[6].GrandPrix </PageTitle>
 
-<Layout>
-    <LayoutHeader Fixed="true">
-        <Header />
-    </LayoutHeader>
-    <LayoutContent style="margin-top: 55px; position: absolute; width: 100%;">
-        <Jumbotron style="border-bottom: solid grey 5px; border-right: solid grey 5px; border-bottom-right-radius: 10px;">
-            <JumbotronTitle Size="JumbotronTitleSize.Is4">
-                <h1 style="font-size: 42px; line-height: 48px; letter-spacing: 0.2px">
-                    @ListSchedule[6].GrandPrix
-                </h1>
-            </JumbotronTitle>
-            <Divider></Divider>
-            <div class="present-title">
-                <h1> @ListSchedule[6].GrandPrix </h1>
-            </div>
-            <div class="present-circuit">
-                <img src="/img/circuits/Monoco_Circuit.png" />
-                @if (ListSchedule == null)
-                {
-                    <p><em>Loading...</em></p>
-                }
-                else
-                {
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Race date</th>
-                                <th>First Grand Prix</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            @foreach (var elem in ListSchedule)
-                            {
-                                @if(elem.Round == 7) 
-                                {
-                                    <tr>
-                                        <td>@elem.RaceDate</td>
-                                        <td>@elem.FirstGrandPrix</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Laps</th>
-                                        <th>Circuit lenght (km)</th>
-                                    </tr>
-                                    <tr>
-                                        <td>@elem.Laps</td>
-                                        <td>@elem.Lenght</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Race distance (km)</th>
-                                        <th>Lap record</th>
-                                    </tr>   
-                                    <tr>
-                                        <td>@elem.Distance</td>
-                                        <td>@elem.LapRecord</td>
-                                    </tr>
-                                }
-                            }
-                        </tbody>
-                    </table>
-                }
-            </div>
-            <h1 class="race-results">Race results</h1>
-            @if (ListStandings == null)
-            {
-                <p><em>Loading...</em></p>
-            }
-            else
-            {
-                <div class="circuit-results">
-                    <Table Striped>
-                        <TableHeader>
-                            <TableRow>
-                                <TableHeaderCell>POS</TableHeaderCell>
-                                <TableHeaderCell>NO</TableHeaderCell>
-                                <TableHeaderCell>DRIVER</TableHeaderCell>
-                                <TableHeaderCell>CAR</TableHeaderCell>
-                            </TableRow>
-                        </TableHeader>
-                        <TableBody>
-                        @foreach (var elem in ListStandings.OrderBy(p => p.MON))
+<Jumbotron style="border-bottom: solid grey 5px; border-right: solid grey 5px; border-bottom-right-radius: 10px;">
+    <JumbotronTitle Size="JumbotronTitleSize.Is4">
+        <h1 style="font-size: 42px; line-height: 48px; letter-spacing: 0.2px">
+            @ListSchedule[6].GrandPrix
+        </h1>
+    </JumbotronTitle>
+    <Divider></Divider>
+    <div class="present-title">
+        <h1> @ListSchedule[6].GrandPrix </h1>
+    </div>
+    <div class="present-circuit">
+        <img src="/img/circuits/Monoco_Circuit.png" />
+        @if (ListSchedule == null)
+        {
+            <p><em>Loading...</em></p>
+        }
+        else
+        {
+            <table>
+                <thead>
+                    <tr>
+                        <th>Race date</th>
+                        <th>First Grand Prix</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var elem in ListSchedule)
+                    {
+                        @if(elem.Round == 7) 
                         {
-                            @if (elem.MON != 24 && elem.MON != 21)
-                            {
-                                <TableRow>
-                                    <TableRowCell>@elem.MON</TableRowCell>
-                                    <TableRowCell>@elem.DriverNumber</TableRowCell>
-                                    <TableRowCell>@elem.Driver</TableRowCell>
-                                    <TableRowCell>@elem.Car</TableRowCell>
-                                </TableRow>
-                            }
-                            @if (elem.MON == 21)
-                            {
-                                <TableRow>
-                                    <TableRowCell>DNF</TableRowCell>
-                                    <TableRowCell>@elem.DriverNumber</TableRowCell>
-                                    <TableRowCell>@elem.Driver</TableRowCell>
-                                    <TableRowCell>@elem.Car</TableRowCell>
-                                </TableRow>
-                            }
+                            <tr>
+                                <td>@elem.RaceDate</td>
+                                <td>@elem.FirstGrandPrix</td>
+                            </tr>
+                            <tr>
+                                <th>Laps</th>
+                                <th>Circuit lenght (km)</th>
+                            </tr>
+                            <tr>
+                                <td>@elem.Laps</td>
+                                <td>@elem.Lenght</td>
+                            </tr>
+                            <tr>
+                                <th>Race distance (km)</th>
+                                <th>Lap record</th>
+                            </tr>   
+                            <tr>
+                                <td>@elem.Distance</td>
+                                <td>@elem.LapRecord</td>
+                            </tr>
                         }
-                        </TableBody>
-                    </Table>
-                </div>
-            }
-            @*DNF 21, DNS 22 DW 23 DNP 24*@
-        </Jumbotron>
-        <Footer />
-    </LayoutContent>
-</Layout>
+                    }
+                </tbody>
+            </table>
+        }
+    </div>
+    <h1 class="race-results">Race results</h1>
+    @if (ListStandings == null)
+    {
+        <p><em>Loading...</em></p>
+    }
+    else
+    {
+        <div class="circuit-results">
+            <Table Striped>
+                <TableHeader>
+                    <TableRow>
+                        <TableHeaderCell>POS</TableHeaderCell>
+                        <TableHeaderCell>NO</TableHeaderCell>
+                        <TableHeaderCell>DRIVER</TableHeaderCell>
+                        <TableHeaderCell>CAR</TableHeaderCell>
+                    </TableRow>
+                </TableHeader>
+                <TableBody>
+                @foreach (var elem in ListStandings.OrderBy(p => p.MON))
+                {
+                    @if (elem.MON != 24 && elem.MON != 21)
+                    {
+                        <TableRow>
+                            <TableRowCell>@elem.MON</TableRowCell>
+                            <TableRowCell>@elem.DriverNumber</TableRowCell>
+                            <TableRowCell>@elem.Driver</TableRowCell>
+                            <TableRowCell>@elem.Car</TableRowCell>
+                        </TableRow>
+                    }
+                    @if (elem.MON == 21)
+                    {
+                        <TableRow>
+                            <TableRowCell>DNF</TableRowCell>
+                            <TableRowCell>@elem.DriverNumber</TableRowCell>
+                            <TableRowCell>@elem.Driver</TableRowCell>
+                            <TableRowCell>@elem.Car</TableRowCell>
+                        </TableRow>
+                    }
+                }
+                </TableBody>
+            </Table>
+        </div>
+    }
+    @*DNF 21, DNS 22 DW 23 DNP 24*@
+</Jumbotron>
+
 @code {
     private List<Root>? ListStandings = new List<Root>();
     private List<Root2>? ListSchedule = new List<Root2>();

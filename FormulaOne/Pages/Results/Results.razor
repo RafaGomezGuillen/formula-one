@@ -3,203 +3,196 @@
 
 <PageTitle> Results </PageTitle>
 
-<Layout>
-    <LayoutHeader Fixed="true">
-        <Header />
-    </LayoutHeader>
-    <LayoutContent style="margin-top: 55px; position: absolute; width: 100%;">
-        <Jumbotron style="border-bottom: solid grey 5px; border-right: solid grey 5px; border-bottom-right-radius: 10px;">
-            <JumbotronTitle Size="JumbotronTitleSize.Is4">
-                <h1 style="font-size: 42px; line-height: 48px; letter-spacing: 0.2px">
-                    Results
-                </h1>
-            </JumbotronTitle>
-            <Divider></Divider>
-            <div class="season-summary-content">
-                <div class="season-summary-p">
-                    <h1>Driver Standings</h1>
-                    <p>
-                        The 2022 season saw the arrival of a new generation of cars, designed to allow for even closer racing. Ferrari initially took full advantage, with Charles Leclerc 
-                        returning the Scuderia to winning ways, but their title challenge ultimately faded in the face of a relentless Max Verstappen and Red Bull team, who secured 
-                        their first championship double since 2013. Mercedes were the only other team to win a race, but it was George Russell who took a celebrated maiden victory, 
-                        as team mate Lewis Hamilton failed to top a podium for the first time in his illustrious F1 career.
-                    </p>
-                </div>
-                <div class="season-summary-img">
-                    <img src="/img/Summary.jpg"/>
-                </div>
-            </div>
-            @if (ListStandings == null)
-            {
-                <p><em>Loading...</em></p>
-            }
-            else
-            {
-                <div class="circuit-results">
-                    <Table Striped>
-                    <TableHeader>
+<Jumbotron style="border-bottom: solid grey 5px; border-right: solid grey 5px; border-bottom-right-radius: 10px;">
+    <JumbotronTitle Size="JumbotronTitleSize.Is4">
+        <h1 style="font-size: 42px; line-height: 48px; letter-spacing: 0.2px">
+            Results
+        </h1>
+    </JumbotronTitle>
+    <Divider></Divider>
+    <div class="season-summary-content">
+        <div class="season-summary-p">
+            <h1>Driver Standings</h1>
+            <p>
+                The 2022 season saw the arrival of a new generation of cars, designed to allow for even closer racing. Ferrari initially took full advantage, with Charles Leclerc 
+                returning the Scuderia to winning ways, but their title challenge ultimately faded in the face of a relentless Max Verstappen and Red Bull team, who secured 
+                their first championship double since 2013. Mercedes were the only other team to win a race, but it was George Russell who took a celebrated maiden victory, 
+                as team mate Lewis Hamilton failed to top a podium for the first time in his illustrious F1 career.
+            </p>
+        </div>
+        <div class="season-summary-img">
+            <img src="/img/Summary.jpg"/>
+        </div>
+    </div>
+    @if (ListStandings == null)
+    {
+        <p><em>Loading...</em></p>
+    }
+    else
+    {
+        <div class="circuit-results">
+            <Table Striped>
+            <TableHeader>
+                <TableRow>
+                    <TableHeaderCell>POS</TableHeaderCell>
+                    <TableHeaderCell>NO</TableHeaderCell>
+                    <TableHeaderCell>DRIVER</TableHeaderCell>
+                    <TableHeaderCell>CAR</TableHeaderCell>
+                    <TableHeaderCell>POINTS</TableHeaderCell>
+                </TableRow>
+            </TableHeader>
+            <TableBody>
+                @foreach (var elem in ListStandings.OrderByDescending(p => p.Points))
+                {
+                    <TableRow>
+                        <TableRowCell>@elem.Pos</TableRowCell>
+                        <TableRowCell>@elem.DriverNumber</TableRowCell>
+                        <TableRowCell>@elem.Driver</TableRowCell>
+                        <TableRowCell>@elem.Car</TableRowCell>
+                        <TableRowCell>@elem.Points</TableRowCell>
+                    </TableRow>
+                }
+                </TableBody>
+            </Table>
+        </div>
+    }
+    <br />
+    <br />
+    <div class="season-summary-content">
+        <div class="season-summary-p">
+            <h1>Constructor Standings</h1>
+            <p>
+                Max Verstappen won his second consecutive World Drivers Championship driving for Red Bull Racing. 
+                Charles Leclerc finished runner-up, driving for Ferrari. Sergio Pérez was third, driving for Red Bull Racing. 
+                Red Bull Racing won their fifth World Constructors Championship.
+            </p>
+        </div>
+        <div class="season-summary-img">
+            <img src="/img/teams/red-bull/img-2.jpg"/>
+        </div>
+    </div>
+    @if (ListStandings == null)
+    {
+        <p><em>Loading...</em></p>
+    }
+    else
+    {
+        <div class="circuit-results">
+            <Table Striped>
+            <TableHeader>
+                <TableRow>
+                    <TableHeaderCell>POS</TableHeaderCell>
+                    <TableHeaderCell>TEAM</TableHeaderCell>
+                    <TableHeaderCell>POINTS</TableHeaderCell>
+                </TableRow>
+            </TableHeader>
+            <TableBody>
+                @foreach (var elem in TeamStandings.OrderByDescending(p => p.Points))
+                {
+                    <TableRow>
+                        <TableRowCell>@elem.Pos</TableRowCell>
+                        <TableRowCell>@elem.Team</TableRowCell>
+                        <TableRowCell>@elem.Points</TableRowCell>
+                    </TableRow>
+                }
+                </TableBody>
+            </Table>
+        </div>
+    }
+    <br />
+    <br />
+    <h1 class="race-results">Driver Standings Statistics</h1>
+    @if (DriverStats == null)
+    {
+        <p><em>Loading...</em></p>
+    }
+    else
+    {
+        <div class="circuit-results">
+            <Table Striped>
+            <TableHeader>
+                <TableRow>
+                    <TableHeaderCell>POS</TableHeaderCell>
+                    <TableHeaderCell>DRIVER</TableHeaderCell>
+                    <TableHeaderCell>TEAM</TableHeaderCell>
+                    <TableHeaderCell>GRAND PRIX</TableHeaderCell>
+                    <TableHeaderCell>WINS</TableHeaderCell>
+                    <TableHeaderCell>PODIUMS</TableHeaderCell>
+                    <TableHeaderCell>POLE POSITIONS</TableHeaderCell>
+                    <TableHeaderCell>FASTEST LAPS</TableHeaderCell>
+                    <TableHeaderCell>LAPS LED</TableHeaderCell>
+                    <TableHeaderCell>POINTS</TableHeaderCell>
+                </TableRow>
+            </TableHeader>
+            <TableBody>
+                @foreach (var elem in DriverStats.OrderByDescending(p => p.Points))
+                    {
                         <TableRow>
-                            <TableHeaderCell>POS</TableHeaderCell>
-                            <TableHeaderCell>NO</TableHeaderCell>
-                            <TableHeaderCell>DRIVER</TableHeaderCell>
-                            <TableHeaderCell>CAR</TableHeaderCell>
-                            <TableHeaderCell>POINTS</TableHeaderCell>
+                            <TableRowCell>@elem.Pos</TableRowCell>
+                            <TableRowCell>@elem.Driver</TableRowCell>
+                            <TableRowCell>@elem.Team</TableRowCell>
+                            <TableRowCell>@elem.GrandPrix</TableRowCell>
+                            <TableRowCell>@elem.Wins</TableRowCell>
+                            <TableRowCell>@elem.Podiums</TableRowCell>
+                            <TableRowCell>@elem.PolePosition</TableRowCell>
+                            <TableRowCell>@elem.FastestLap</TableRowCell>
+                            <TableRowCell>@elem.LapsLed</TableRowCell>
+                            <TableRowCell>@elem.Points</TableRowCell>
                         </TableRow>
-                    </TableHeader>
-                    <TableBody>
-                        @foreach (var elem in ListStandings.OrderByDescending(p => p.Points))
-                        {
-                            <TableRow>
-                                <TableRowCell>@elem.Pos</TableRowCell>
-                                <TableRowCell>@elem.DriverNumber</TableRowCell>
-                                <TableRowCell>@elem.Driver</TableRowCell>
-                                <TableRowCell>@elem.Car</TableRowCell>
-                                <TableRowCell>@elem.Points</TableRowCell>
-                            </TableRow>
-                        }
-                        </TableBody>
-                    </Table>
-                </div>
-            }
-            <br />
-            <br />
-            <div class="season-summary-content">
-                <div class="season-summary-p">
-                    <h1>Constructor Standings</h1>
-                    <p>
-                        Max Verstappen won his second consecutive World Drivers Championship driving for Red Bull Racing. 
-                        Charles Leclerc finished runner-up, driving for Ferrari. Sergio Pérez was third, driving for Red Bull Racing. 
-                        Red Bull Racing won their fifth World Constructors Championship.
-                    </p>
-                </div>
-                <div class="season-summary-img">
-                    <img src="/img/teams/red-bull/img-2.jpg"/>
-                </div>
-            </div>
-            @if (ListStandings == null)
-            {
-                <p><em>Loading...</em></p>
-            }
-            else
-            {
-                <div class="circuit-results">
-                    <Table Striped>
-                    <TableHeader>
+                    }
+                </TableBody>
+            </Table>
+        </div>
+    }
+    <br />
+    <br />
+    <h1 class="race-results">Team Standings Statistics</h1>
+    @if (ListStandings == null)
+    {
+        <p><em>Loading...</em></p>
+    }
+    else
+    {
+        <div class="circuit-results">
+            <Table Striped>
+            <TableHeader>
+                <TableRow>
+                    <TableHeaderCell>POS</TableHeaderCell>
+                    <TableHeaderCell>TEAM</TableHeaderCell>
+                    <TableHeaderCell>CHASIS</TableHeaderCell>
+                    <TableHeaderCell>ENGINE</TableHeaderCell>
+                    <TableHeaderCell>GRAND PRIX</TableHeaderCell>
+                    <TableHeaderCell>WINS</TableHeaderCell>
+                    <TableHeaderCell>PODIUMS</TableHeaderCell>
+                    <TableHeaderCell>POLE POSITIONS</TableHeaderCell>
+                    <TableHeaderCell>FASTEST LAPS</TableHeaderCell>
+                    <TableHeaderCell>LAPS LED</TableHeaderCell>
+                    <TableHeaderCell>POINTS</TableHeaderCell>
+                </TableRow>
+            </TableHeader>
+            <TableBody>
+                @foreach (var elem in TeamStandings.OrderByDescending(p => p.Points))
+                    {
                         <TableRow>
-                            <TableHeaderCell>POS</TableHeaderCell>
-                            <TableHeaderCell>TEAM</TableHeaderCell>
-                            <TableHeaderCell>POINTS</TableHeaderCell>
+                            <TableRowCell>@elem.Pos</TableRowCell>
+                            <TableRowCell>@elem.Team</TableRowCell>
+                            <TableRowCell>@elem.Chasis</TableRowCell>
+                            <TableRowCell>@elem.Engine</TableRowCell>
+                            <TableRowCell>@elem.GrandPrix</TableRowCell>
+                            <TableRowCell>@elem.Wins</TableRowCell>
+                            <TableRowCell>@elem.Podiums</TableRowCell>
+                            <TableRowCell>@elem.PolePositions</TableRowCell>
+                            <TableRowCell>@elem.FastestLaps</TableRowCell>
+                            <TableRowCell>@elem.LapsLed</TableRowCell>
+                            <TableRowCell>@elem.Points</TableRowCell>
                         </TableRow>
-                    </TableHeader>
-                    <TableBody>
-                        @foreach (var elem in TeamStandings.OrderByDescending(p => p.Points))
-                        {
-                            <TableRow>
-                                <TableRowCell>@elem.Pos</TableRowCell>
-                                <TableRowCell>@elem.Team</TableRowCell>
-                                <TableRowCell>@elem.Points</TableRowCell>
-                            </TableRow>
-                        }
-                        </TableBody>
-                    </Table>
-                </div>
-            }
-            <br />
-            <br />
-            <h1 class="race-results">Driver Standings Statistics</h1>
-            @if (DriverStats == null)
-            {
-                <p><em>Loading...</em></p>
-            }
-            else
-            {
-                <div class="circuit-results">
-                    <Table Striped>
-                    <TableHeader>
-                        <TableRow>
-                            <TableHeaderCell>POS</TableHeaderCell>
-                            <TableHeaderCell>DRIVER</TableHeaderCell>
-                            <TableHeaderCell>TEAM</TableHeaderCell>
-                            <TableHeaderCell>GRAND PRIX</TableHeaderCell>
-                            <TableHeaderCell>WINS</TableHeaderCell>
-                            <TableHeaderCell>PODIUMS</TableHeaderCell>
-                            <TableHeaderCell>POLE POSITIONS</TableHeaderCell>
-                            <TableHeaderCell>FASTEST LAPS</TableHeaderCell>
-                            <TableHeaderCell>LAPS LED</TableHeaderCell>
-                            <TableHeaderCell>POINTS</TableHeaderCell>
-                        </TableRow>
-                    </TableHeader>
-                    <TableBody>
-                        @foreach (var elem in DriverStats.OrderByDescending(p => p.Points))
-                            {
-                                <TableRow>
-                                    <TableRowCell>@elem.Pos</TableRowCell>
-                                    <TableRowCell>@elem.Driver</TableRowCell>
-                                    <TableRowCell>@elem.Team</TableRowCell>
-                                    <TableRowCell>@elem.GrandPrix</TableRowCell>
-                                    <TableRowCell>@elem.Wins</TableRowCell>
-                                    <TableRowCell>@elem.Podiums</TableRowCell>
-                                    <TableRowCell>@elem.PolePosition</TableRowCell>
-                                    <TableRowCell>@elem.FastestLap</TableRowCell>
-                                    <TableRowCell>@elem.LapsLed</TableRowCell>
-                                    <TableRowCell>@elem.Points</TableRowCell>
-                                </TableRow>
-                            }
-                        </TableBody>
-                    </Table>
-                </div>
-            }
-            <br />
-            <br />
-            <h1 class="race-results">Team Standings Statistics</h1>
-            @if (ListStandings == null)
-            {
-                <p><em>Loading...</em></p>
-            }
-            else
-            {
-                <div class="circuit-results">
-                    <Table Striped>
-                    <TableHeader>
-                        <TableRow>
-                            <TableHeaderCell>POS</TableHeaderCell>
-                            <TableHeaderCell>TEAM</TableHeaderCell>
-                            <TableHeaderCell>CHASIS</TableHeaderCell>
-                            <TableHeaderCell>ENGINE</TableHeaderCell>
-                            <TableHeaderCell>GRAND PRIX</TableHeaderCell>
-                            <TableHeaderCell>WINS</TableHeaderCell>
-                            <TableHeaderCell>PODIUMS</TableHeaderCell>
-                            <TableHeaderCell>POLE POSITIONS</TableHeaderCell>
-                            <TableHeaderCell>FASTEST LAPS</TableHeaderCell>
-                            <TableHeaderCell>LAPS LED</TableHeaderCell>
-                            <TableHeaderCell>POINTS</TableHeaderCell>
-                        </TableRow>
-                    </TableHeader>
-                    <TableBody>
-                        @foreach (var elem in TeamStandings.OrderByDescending(p => p.Points))
-                            {
-                                <TableRow>
-                                    <TableRowCell>@elem.Pos</TableRowCell>
-                                    <TableRowCell>@elem.Team</TableRowCell>
-                                    <TableRowCell>@elem.Chasis</TableRowCell>
-                                    <TableRowCell>@elem.Engine</TableRowCell>
-                                    <TableRowCell>@elem.GrandPrix</TableRowCell>
-                                    <TableRowCell>@elem.Wins</TableRowCell>
-                                    <TableRowCell>@elem.Podiums</TableRowCell>
-                                    <TableRowCell>@elem.PolePositions</TableRowCell>
-                                    <TableRowCell>@elem.FastestLaps</TableRowCell>
-                                    <TableRowCell>@elem.LapsLed</TableRowCell>
-                                    <TableRowCell>@elem.Points</TableRowCell>
-                                </TableRow>
-                            }
-                        </TableBody>
-                    </Table>
-                </div>
-            }
-        </Jumbotron>
-        <Footer />
-    </LayoutContent>
-</Layout>
+                    }
+                </TableBody>
+            </Table>
+        </div>
+    }
+</Jumbotron>
+
 @code {
     private static List<Root>? ListStandings = new List<Root>();
     private static List<Root2>? TeamStandings = new List<Root2>();

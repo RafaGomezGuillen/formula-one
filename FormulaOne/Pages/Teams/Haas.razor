@@ -3,189 +3,182 @@
 
 <PageTitle>Haas</PageTitle>
 
-<Layout>
-    <LayoutHeader Fixed="true">
-        <Header />
-    </LayoutHeader>
-    <LayoutContent style="margin-top: 70px; position: absolute;">
-        <Jumbotron style="border-bottom: solid grey 5px; border-right: solid grey 5px; border-bottom-right-radius: 10px;">
-            <JumbotronTitle Size="JumbotronTitleSize.Is4">
-                <h1 style="font-size: 42px; line-height: 48px; letter-spacing: 0.2px">
+<Jumbotron style="border-bottom: solid grey 5px; border-right: solid grey 5px; border-bottom-right-radius: 10px;">
+    <JumbotronTitle Size="JumbotronTitleSize.Is4">
+        <h1 style="font-size: 42px; line-height: 48px; letter-spacing: 0.2px">
+            @if (VectorTeam == null)
+            {
+                    <p> loading</p>
+            }
+            else
+            {
+                @VectorTeam[18].Chassis
+            }
+        </h1>
+    </JumbotronTitle>
+    <Divider></Divider>
+    <div class="row">
+        <div class="column">
+            <div class="team-logo">
+                <img src="/img/teams/haas/haas-logo.jpg" />
+            </div>
+            <br />
+            <div class="team-table">
+                <table>
+                    <tr>
+                        <th>Full Team Name</th>
+                        <td>
+                            @if (VectorTeam == null)
+                            {
+                                    <p> loading</p>
+                            }
+                            else
+                            {
+                                @VectorTeam[18].Team
+                            }
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Base</th>
+                        <td>	Kannapolis, United States</td>
+                    </tr>
+                    <tr>
+                        <th>Team Chief</th>
+                        <td>	Guenther Steiner</td>
+                    </tr>
+                    <tr>
+                        <th>Technical Chief</th>
+                        <td>		Simone Resta</td>
+                    </tr>
+                    <tr>
+                        <th>Chassis</th>
+                        <td>
+                            @if (VectorTeam == null)
+                            {
+                                    <p> loading</p>
+                            }
+                            else
+                            {
+                                @VectorTeam[18].ChassisAlias
+                            }
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Power Unit</th>
+                        <td>
+                            @if (VectorTeam == null)
+                            {
+                                    <p> loading</p>
+                            }
+                            else
+                            {
+                                @VectorTeam[18].Engine
+                            }
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>First Team Entry</th>
+                        <td>		2016</td>
+                    </tr>
+                    <tr>
+                        <th>World Championships</th>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <th>Highest Race Finish</th>
+                        <td>	4 (x1)</td>
+                    </tr>
+                    <tr>
+                        <th>Pole Positions</th>
+                        <td>	1</td>
+                    </tr>
+                    <tr>
+                        <th>Fastest Laps</th>
+                        <td>	2</td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+        <a href="Drivers/KevinMagnussen" class="column">
+            <div class="driver-img">
+                <img src="/img/teams/haas/magnussen.jpg" />
+            </div>
+            <div class="driver-content">
+                <p style="font-style: italic">20</p>
+                <p>
                     @if (VectorTeam == null)
                     {
                         <p> loading</p>
                     }
-                    else {
-                        @VectorTeam[18].Chassis
+                    else
+                    {
+                        @VectorTeam[18].Driver
                     }
-                </h1>
-            </JumbotronTitle>
-            <Divider></Divider>
-            <div class="row">
-                <div class="column">
-                    <div class="team-logo">
-                        <img src="/img/teams/haas/haas-logo.jpg" />
-                    </div>
-                    <br />
-                    <div class="team-table">
-                        <table>
-                            <tr>
-                                <th>Full Team Name</th>
-                                <td>
-                                    @if (VectorTeam == null)
-                                    {
-                                        <p> loading</p>
-                                    }
-                                    else
-                                    {
-                                        @VectorTeam[18].Team
-                                    }
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>Base</th>
-                                <td>	Kannapolis, United States</td>
-                            </tr>
-                            <tr>
-                                <th>Team Chief</th>
-                                <td>	Guenther Steiner</td>
-                            </tr>
-                            <tr>
-                                <th>Technical Chief</th>
-                                <td>		Simone Resta</td>
-                            </tr>
-                            <tr>
-                                <th>Chassis</th>
-                                <td>
-                                    @if (VectorTeam == null)
-                                    {
-                                        <p> loading</p>
-                                    }
-                                    else
-                                    {
-                                        @VectorTeam[18].ChassisAlias
-                                    }
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>Power Unit</th>
-                                <td>
-                                    @if (VectorTeam == null)
-                                    {
-                                        <p> loading</p>
-                                    }
-                                    else
-                                    {
-                                        @VectorTeam[18].Engine
-                                    }
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>First Team Entry</th>
-                                <td>		2016</td>
-                            </tr>
-                            <tr>
-                                <th>World Championships</th>
-                                <td>N/A</td>
-                            </tr>
-                            <tr>
-                                <th>Highest Race Finish</th>
-                                <td>	4 (x1)</td>
-                            </tr>
-                            <tr>
-                                <th>Pole Positions</th>
-                                <td>	1</td>
-                            </tr>
-                            <tr>
-                                <th>Fastest Laps</th>
-                                <td>	2</td>
-                            </tr>
-                        </table>
-
-                    </div>
-                </div>
-                <a href="Drivers/KevinMagnussen" class="column">
-                    <div class="driver-img">
-                        <img src="/img/teams/haas/magnussen.jpg" />
-                    </div>
-                    <div class="driver-content">
-                        <p style="font-style: italic">20</p>
-                        <p>
-                            @if (VectorTeam == null)
-                            {
-                            <p> loading</p>
-                            }
-                            else
-                            {
-                                @VectorTeam[18].Driver
-                            }
-                        </p>
-                    </div>
-                </a>
-                <a href="Drivers/MickSchumacher" class="column">
-                    <div class="driver-img">
-                        <img src="/img/teams/haas/mick.jpg" />
-                    </div>
-                    <div class="driver-content">
-                        <p style="font-style: italic">47</p>
-                        <p>
-                            @if (VectorTeam == null)
-                            {
-                            <p> loading</p>
-                            }
-                            else
-                            {
-                                @VectorTeam[19].Driver
-                            }
-                        </p>
-                    </div>
-                </a>
+                </p>
             </div>
-            <div class="carousel">
-                <Carousel @bind-SelectedSlide="@selectedSlide" Crossfade="true" ShowControls="false" ShowIndicators="false" Interval="3000">
-                    <CarouselSlide Name="1">
-                        <img src="img/teams/haas/img-1.jpg" />
-                    </CarouselSlide>
-                    <CarouselSlide Name="2">
-                        <img src="img/teams/haas/img-2.jpg" />
-                    </CarouselSlide>
-                    <CarouselSlide Name="3">
-                        <img src="img/teams/haas/img-3.jpg" />
-                    </CarouselSlide>
-                    <CarouselSlide Name="4">
-                        <img src="img/teams/haas/img-4.jpg" />
-                    </CarouselSlide>
-                </Carousel>
+        </a>
+        <a href="Drivers/MickSchumacher" class="column">
+            <div class="driver-img">
+                <img src="/img/teams/haas/mick.jpg" />
             </div>
-            <div class="team-content">
-                <h1>In profile</h1>
+            <div class="driver-content">
+                <p style="font-style: italic">47</p>
                 <p>
-                    The youngest team on the grid, Haas made their highly impressive debut in 2016, and in the process became the first all-American-led F1 squad in three decades. Founded by industrialist Gene Haas, they are based in the United States on the same Kannapolis, North Carolina facility as his championship-winning NASCAR Sprint Cup Series team, Stewart-Haas Racing. The Ferrari-powered team, led by the charismatic Guenther Steiner, also have a UK factory in Banbury…
+                    @if (VectorTeam == null)
+                    {
+                        <p> loading</p>
+                    }
+                    else
+                    {
+                        @VectorTeam[19].Driver
+                    }
                 </p>
-                <h1>2022</h1>
-                <p>
-                    Return of former driver Kevin Magnussen brings a stunning P5 result at Bahrain season-opener and a maiden pole position at a rain-hit Interlagos in November. Score a much-improved 37 points in total, lifting them to P8 in the final standings.
-                </p>
-                <h1>2021</h1>
-                <p>
-                    End the year without a point after opting to focus on 2022 car rather than in-season development of 2021 machine. Mick Schumacher dominates team mate Nikita Mazepin in all-new rookie driver line-up, with a best result of 12th place in Hungary.
-                </p>
-                <h1>2020</h1>
-                <p>
-                    Unable to halt their downward spiral, drop to P9 overall in the table, scoring just three points in the final year of the team’s Grosjean-Magnussen era. Season ends in dramatic fashion, as Romain Grosjean miraculously walks away from fiery, high-speed crash in Bahrain.
-                </p>
-                <h1>2019</h1>
-                <p>
-                    The Haas fairy tale finally hits a bump in the road, as they struggle to get a handle on their recalcitrant VF-19 machine. Fall to eighth in the table, with Romain Grosjean and Kevin Magnussen amassing a meagre 28 points between them.
-                </p>
-                <div style="width: 99%">
-                    <BarChart @ref="barChart" TItem="double" Options="@options" />
-                </div>
             </div>
-        </Jumbotron>
-        <Footer />
-    </LayoutContent>
-</Layout>
+        </a>
+    </div>
+    <div class="carousel">
+        <Carousel @bind-SelectedSlide="@selectedSlide" Crossfade="true" ShowControls="false" ShowIndicators="false" Interval="3000">
+            <CarouselSlide Name="1">
+                <img src="img/teams/haas/img-1.jpg" />
+            </CarouselSlide>
+            <CarouselSlide Name="2">
+                <img src="img/teams/haas/img-2.jpg" />
+            </CarouselSlide>
+            <CarouselSlide Name="3">
+                <img src="img/teams/haas/img-3.jpg" />
+            </CarouselSlide>
+            <CarouselSlide Name="4">
+                <img src="img/teams/haas/img-4.jpg" />
+            </CarouselSlide>
+        </Carousel>
+    </div>
+    <div class="team-content">
+        <h1>In profile</h1>
+        <p>
+            The youngest team on the grid, Haas made their highly impressive debut in 2016, and in the process became the first all-American-led F1 squad in three decades. Founded by industrialist Gene Haas, they are based in the United States on the same Kannapolis, North Carolina facility as his championship-winning NASCAR Sprint Cup Series team, Stewart-Haas Racing. The Ferrari-powered team, led by the charismatic Guenther Steiner, also have a UK factory in Banbury…
+        </p>
+        <h1>2022</h1>
+        <p>
+            Return of former driver Kevin Magnussen brings a stunning P5 result at Bahrain season-opener and a maiden pole position at a rain-hit Interlagos in November. Score a much-improved 37 points in total, lifting them to P8 in the final standings.
+        </p>
+        <h1>2021</h1>
+        <p>
+            End the year without a point after opting to focus on 2022 car rather than in-season development of 2021 machine. Mick Schumacher dominates team mate Nikita Mazepin in all-new rookie driver line-up, with a best result of 12th place in Hungary.
+        </p>
+        <h1>2020</h1>
+        <p>
+            Unable to halt their downward spiral, drop to P9 overall in the table, scoring just three points in the final year of the team’s Grosjean-Magnussen era. Season ends in dramatic fashion, as Romain Grosjean miraculously walks away from fiery, high-speed crash in Bahrain.
+        </p>
+        <h1>2019</h1>
+        <p>
+            The Haas fairy tale finally hits a bump in the road, as they struggle to get a handle on their recalcitrant VF-19 machine. Fall to eighth in the table, with Romain Grosjean and Kevin Magnussen amassing a meagre 28 points between them.
+        </p>
+        <div style="width: 99%">
+            <BarChart @ref="barChart" TItem="double" Options="@options" />
+        </div>
+    </div>
+</Jumbotron>
 
 @*Theme*@
 <Blazorise.ThemeProvider Theme="@theme">
@@ -223,7 +216,7 @@
             }
         };
 
-    protected override async Task OnAfterRenderAsync (bool firstRender)
+    protected override async Task OnAfterRenderAsync(bool firstRender)
     {
         if (firstRender)
         {
@@ -231,7 +224,7 @@
         }
     }
 
-    async Task HandleRedraw ()
+    async Task HandleRedraw()
     {
         await barChart.Clear();
 
@@ -240,7 +233,7 @@
             GetBarChartDataDriver2("Mick Schumacher"));
     }
 
-    BarChartDataset<double> GetBarChartDataDriver1 (string label)
+    BarChartDataset<double> GetBarChartDataDriver1(string label)
     {
         return new BarChartDataset<double>
             {
@@ -250,7 +243,7 @@
                 BorderColor = borderColors,
             };
     }
-    BarChartDataset<double> GetBarChartDataDriver2 (string label)
+    BarChartDataset<double> GetBarChartDataDriver2(string label)
     {
         return new BarChartDataset<double>
             {
@@ -312,7 +305,7 @@
         ChartColor.FromRgba(90, 210, 70, 1f)
     };
 
-    List<double> DriverData1 ()
+    List<double> DriverData1()
     {
         return new List<double>
         {
@@ -320,7 +313,7 @@
         };
     }
 
-    List<double> DriverData2 ()
+    List<double> DriverData2()
     {
         return new List<double>
         {
@@ -331,13 +324,13 @@
     private string selectedSlide = "1";
 
     private Theme theme = new Theme
-    {
-        ColorOptions = new ThemeColorOptions { Primary = "#E10600" }
-    };
+        {
+            ColorOptions = new ThemeColorOptions { Primary = "#E10600" }
+        };
 
     private Teams[]? VectorTeam;
 
-    protected override async Task OnInitializedAsync ()
+    protected override async Task OnInitializedAsync()
     {
         VectorTeam = await Http.GetFromJsonAsync<Teams[]>("sample-data/Teams.json");
     }

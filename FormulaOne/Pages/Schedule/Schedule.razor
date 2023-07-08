@@ -2,869 +2,862 @@
 @inject HttpClient Http
 <PageTitle>Schedule</PageTitle>
 
-<Layout>
-    <LayoutHeader Fixed="true">
-        <Header />
-    </LayoutHeader>
-    <LayoutContent style="margin-top: 55px; position: absolute; width: 100%;">
-        <Jumbotron style="border-bottom: solid grey 5px; border-right: solid grey 5px; border-bottom-right-radius: 10px;">
-           <h1 class="h1-driver">F1 Schedule 2022</h1>
-            <div class="row">
-                <a href="Schedule/Round1" class="column">
-                    <div class="schedule-1">
-                        @if (ListSchedule == null)
-                        {
-                            <p>Loading...</p>
-                        }
-                        else
-                        {
-                            <label>@("ROUND " + ListSchedule[0].Round)</label>
-                        }
-                        <img src="/img/drivers/countries/Bahrain.jpg"/>
-                    </div>
-                    <div class="schedule-2">
-                        @if (ListSchedule == null)
-                        {
-                            <p>Loading...</p>
-                        }
-                        else
-                        {
-                            <label>@(ListSchedule[0].RaceDate)</label>
-                        }
-                        <img src="/img/flag-asset.png" />
-                    </div>
-                    <div class="schedule-3">
-                        @if (ListSchedule == null)
-                        {
-                            <p>Loading...</p>
-                        }
-                        else
-                        {
-                            <p>@(ListSchedule[0].GrandPrix + " > ")</p>
-                            <p>@(ListSchedule[0].Circuit)</p>
-                        }
-                    </div>
-                    <div class="schedule-4">
-                        <img src="/img/circuits/Bahrain_Circuit.png" />
-                    </div>
-                </a>
-                <a href="Schedule/Round2" class="column">
-                    <div class="schedule-1">
-                        @if (ListSchedule == null)
-                        {
-                            <p>Loading...</p>
-                        }
-                        else
-                        {
-                            <label>@("ROUND " + ListSchedule[1].Round)</label>
-                        }
-                        <img src="/img/drivers/countries/Saudi.png"/>
-                    </div>
-                    <div class="schedule-2">
-                        @if (ListSchedule == null)
-                        {
-                            <p>Loading...</p>
-                        }
-                        else
-                        {
-                            <label>@(ListSchedule[1].RaceDate)</label>
-                        }
-                        <img src="/img/flag-asset.png" />
-                    </div>
-                    <div class="schedule-3">
-                        @if (ListSchedule == null)
-                        {
-                            <p>Loading...</p>
-                        }
-                        else
-                        {
-                            <p>@(ListSchedule[1].GrandPrix + " > ")</p>
-                            <p>@(ListSchedule[1].Circuit)</p>
-                        }
-                    </div>
-                    <div class="schedule-4">
-                        <img src="/img/circuits/Saudi_Arabia_Circuit.png" />
-                    </div>
-                </a>
-                <a href="Schedule/Round3" class="column">
-                    <div class="schedule-1">
-                        @if (ListSchedule == null)
-                        {
-                            <p>Loading...</p>
-                        }
-                        else
-                        {
-                            <label>@("ROUND " + ListSchedule[2].Round)</label>
-                        }
-                        <img src="/img/drivers/countries/Australia.jpg" />
-                    </div>
-                    <div class="schedule-2">
-                        @if (ListSchedule == null)
-                        {
-                            <p>Loading...</p>
-                        }
-                        else
-                        {
-                            <label>@(ListSchedule[2].RaceDate)</label>
-                        }
-                        <img src="/img/flag-asset.png" />
-                    </div>
-                    <div class="schedule-3">
-                        @if (ListSchedule == null)
-                        {
-                            <p>Loading...</p>
-                        }
-                        else
-                        {
-                            <p>@(ListSchedule[2].GrandPrix + " > ")</p>
-                            <p>@(ListSchedule[2].Circuit)</p>
-                        }
-                    </div>
-                    <div class="schedule-4">
-                        <img src="/img/circuits/Australia_Circuit.png" />
-                    </div>
-                </a>
+<Jumbotron style="border-bottom: solid grey 5px; border-right: solid grey 5px; border-bottom-right-radius: 10px;">
+    <h1 class="h1-driver">F1 Schedule 2022</h1>
+    <div class="row">
+        <a href="Schedule/Round1" class="column">
+            <div class="schedule-1">
+                @if (ListSchedule == null)
+                {
+                    <p>Loading...</p>
+                }
+                else
+                {
+                    <label>@("ROUND " + ListSchedule[0].Round)</label>
+                }
+                <img src="/img/drivers/countries/Bahrain.jpg"/>
             </div>
-            <div class="row">
-                <a href="Schedule/Round4" class="column">
-                    <div class="schedule-1">
-                        @if (ListSchedule == null)
-                        {
-                            <p>Loading...</p>
-                        }
-                        else
-                        {
-                            <label>@("ROUND " + ListSchedule[3].Round)</label>
-                        }
-                        <img src="/img/drivers/countries/Italy.png" />
-                    </div>
-                    <div class="schedule-2">
-                        @if (ListSchedule == null)
-                        {
-                            <p>Loading...</p>
-                        }
-                        else
-                        {
-                            <label>@(ListSchedule[3].RaceDate)</label>
-                        }
-                        <img src="/img/flag-asset.png" />
-                    </div>
-                    <div class="schedule-3">
-                        @if (ListSchedule == null)
-                        {
-                            <p>Loading...</p>
-                        }
-                        else
-                        {
-                            <p>@(ListSchedule[3].GrandPrix + " > ")</p>
-                            <p>@(ListSchedule[3].Circuit)</p>
-                        }
-                    </div>
-                    <div class="schedule-4">
-                        <img src="/img/circuits/Emilia_Romagna_Circuit.png" />
-                    </div>
-                </a>
-                <a href="Schedule/Round5" class="column">
-                    <div class="schedule-1">
-                        @if (ListSchedule == null)
-                        {
-                            <p>Loading...</p>
-                        }
-                        else
-                        {
-                            <label>@("ROUND " + ListSchedule[4].Round)</label>
-                        }
-                        <img src="/img/drivers/countries/Usa.png" />
-                    </div>
-                    <div class="schedule-2">
-                        @if (ListSchedule == null)
-                        {
-                            <p>Loading...</p>
-                        }
-                        else
-                        {
-                            <label>@(ListSchedule[4].RaceDate)</label>
-                        }
-                        <img src="/img/flag-asset.png" />
-                    </div>
-                    <div class="schedule-3">
-                        @if (ListSchedule == null)
-                        {
-                            <p>Loading...</p>
-                        }
-                        else
-                        {
-                            <p>@(ListSchedule[4].GrandPrix + " > ")</p>
-                            <p>@(ListSchedule[4].Circuit)</p>
-                        }
-                    </div>
-                    <div class="schedule-4">
-                        <img src="/img/circuits/Miami_Circuit.png" />
-                    </div>
-                </a>
-                <a href="Schedule/Round6" class="column">
-                    <div class="schedule-1">
-                        @if (ListSchedule == null)
-                        {
-                            <p>Loading...</p>
-                        }
-                        else
-                        {
-                            <label>@("ROUND " + ListSchedule[5].Round)</label>
-                        }
-                        <img src="/img/drivers/countries/Spain.jpg" />
-                    </div>
-                    <div class="schedule-2">
-                        @if (ListSchedule == null)
-                        {
-                            <p>Loading...</p>
-                        }
-                        else
-                        {
-                            <label>@(ListSchedule[5].RaceDate)</label>
-                        }
-                        <img src="/img/flag-asset.png" />
-                    </div>
-                    <div class="schedule-3">
-                        @if (ListSchedule == null)
-                        {
-                            <p>Loading...</p>
-                        }
-                        else
-                        {
-                            <p>@(ListSchedule[5].GrandPrix + " > ")</p>
-                            <p>@(ListSchedule[5].Circuit)</p>
-                        }
-                    </div>
-                    <div class="schedule-4">
-                        <img src="/img/circuits/Spain_Circuit.png" />
-                    </div>
-                </a>
+            <div class="schedule-2">
+                @if (ListSchedule == null)
+                {
+                    <p>Loading...</p>
+                }
+                else
+                {
+                    <label>@(ListSchedule[0].RaceDate)</label>
+                }
+                <img src="/img/flag-asset.png" />
             </div>
-            <div class="row">
-                <a href="Schedule/Round7" class="column">
-                    <div class="schedule-1">
-                        @if (ListSchedule == null)
-                        {
-                            <p>Loading...</p>
-                        }
-                        else
-                        {
-                            <label>@("ROUND " + ListSchedule[6].Round)</label>
-                        }
-                        <img src="/img/drivers/countries/Monaco.jpg" />
-                    </div>
-                    <div class="schedule-2">
-                        @if (ListSchedule == null)
-                        {
-                            <p>Loading...</p>
-                        }
-                        else
-                        {
-                            <label>@(ListSchedule[6].RaceDate)</label>
-                        }
-                        <img src="/img/flag-asset.png" />
-                    </div>
-                    <div class="schedule-3">
-                        @if (ListSchedule == null)
-                        {
-                            <p>Loading...</p>
-                        }
-                        else
-                        {
-                            <p>@(ListSchedule[6].GrandPrix + " > ")</p>
-                            <p>@(ListSchedule[6].Circuit)</p>
-                        }
-                    </div>
-                    <div class="schedule-4">
-                        <img src="/img/circuits/Monoco_Circuit.png" />
-                    </div>
-                </a>
-                <a href="Schedule/Round8" class="column">
-                    <div class="schedule-1">
-                        @if (ListSchedule == null)
-                        {
-                            <p>Loading...</p>
-                        }
-                        else
-                        {
-                            <label>@("ROUND " + ListSchedule[7].Round)</label>
-                        }
-                        <img src="/img/drivers/countries/Azerbaijan.png" />
-                    </div>
-                    <div class="schedule-2">
-                        @if (ListSchedule == null)
-                        {
-                            <p>Loading...</p>
-                        }
-                        else
-                        {
-                            <label>@(ListSchedule[7].RaceDate)</label>
-                        }
-                        <img src="/img/flag-asset.png" />
-                    </div>
-                    <div class="schedule-3">
-                        @if (ListSchedule == null)
-                        {
-                            <p>Loading...</p>
-                        }
-                        else
-                        {
-                            <p>@(ListSchedule[7].GrandPrix + " > ")</p>
-                            <p>@(ListSchedule[7].Circuit)</p>
-                        }
-                    </div>
-                    <div class="schedule-4">
-                        <img src="/img/circuits/Baku_Circuit.png" />
-                    </div>
-                </a>
-                <a href="Schedule/Round9" class="column">
-                    <div class="schedule-1">
-                        @if (ListSchedule == null)
-                        {
-                            <p>Loading...</p>
-                        }
-                        else
-                        {
-                            <label>@("ROUND " + ListSchedule[8].Round)</label>
-                        }
-                        <img src="/img/drivers/countries/Canada.jpg" />
-                    </div>
-                    <div class="schedule-2">
-                        @if (ListSchedule == null)
-                        {
-                            <p>Loading...</p>
-                        }
-                        else
-                        {
-                            <label>@(ListSchedule[8].RaceDate)</label>
-                        }
-                        <img src="/img/flag-asset.png" />
-                    </div>
-                    <div class="schedule-3">
-                        @if (ListSchedule == null)
-                        {
-                            <p>Loading...</p>
-                        }
-                        else
-                        {
-                            <p>@(ListSchedule[8].GrandPrix + " > ")</p>
-                            <p>@(ListSchedule[8].Circuit)</p>
-                        }
-                    </div>
-                    <div class="schedule-4">
-                        <img src="/img/circuits/Canada_Circuit.png" />
-                    </div>
-                </a>
+            <div class="schedule-3">
+                @if (ListSchedule == null)
+                {
+                    <p>Loading...</p>
+                }
+                else
+                {
+                    <p>@(ListSchedule[0].GrandPrix + " > ")</p>
+                    <p>@(ListSchedule[0].Circuit)</p>
+                }
             </div>
-            <div class="row">
-                <a href="Schedule/Round10" class="column">
-                    <div class="schedule-1">
-                        @if (ListSchedule == null)
-                        {
-                            <p>Loading...</p>
-                        }
-                        else
-                        {
-                            <label>@("ROUND " + ListSchedule[9].Round)</label>
-                        }
-                        <img src="/img/drivers/countries/Uk.jpg" />
-                    </div>
-                    <div class="schedule-2">
-                        @if (ListSchedule == null)
-                        {
-                            <p>Loading...</p>
-                        }
-                        else
-                        {
-                            <label>@(ListSchedule[9].RaceDate)</label>
-                        }
-                        <img src="/img/flag-asset.png" />
-                    </div>
-                    <div class="schedule-3">
-                        @if (ListSchedule == null)
-                        {
-                            <p>Loading...</p>
-                        }
-                        else
-                        {
-                            <p>@(ListSchedule[9].GrandPrix + " > ")</p>
-                            <p>@(ListSchedule[9].Circuit)</p>
-                        }
-                    </div>
-                    <div class="schedule-4">
-                        <img src="/img/circuits/Great_Britain_Circuit.png" />
-                    </div>
-                </a>
-                <a href="Schedule/Round11" class="column">
-                    <div class="schedule-1">
-                        @if (ListSchedule == null)
-                        {
-                            <p>Loading...</p>
-                        }
-                        else
-                        {
-                            <label>@("ROUND " + ListSchedule[10].Round)</label>
-                        }
-                        <img src="/img/drivers/countries/Austria.png" />
-                    </div>
-                    <div class="schedule-2">
-                        @if (ListSchedule == null)
-                        {
-                            <p>Loading...</p>
-                        }
-                        else
-                        {
-                            <label>@(ListSchedule[10].RaceDate)</label>
-                        }
-                        <img src="/img/flag-asset.png" />
-                    </div>
-                    <div class="schedule-3">
-                        @if (ListSchedule == null)
-                        {
-                            <p>Loading...</p>
-                        }
-                        else
-                        {
-                            <p>@(ListSchedule[10].GrandPrix + " > ")</p>
-                            <p>@(ListSchedule[10].Circuit)</p>
-                        }
-                    </div>
-                    <div class="schedule-4">
-                        <img src="/img/circuits/Austria_Circuit.png" />
-                    </div>
-                </a>
-                <a href="Schedule/Round12" class="column">
-                    <div class="schedule-1">
-                        @if (ListSchedule == null)
-                        {
-                            <p>Loading...</p>
-                        }
-                        else
-                        {
-                            <label>@("ROUND " + ListSchedule[11].Round)</label>
-                        }
-                        <img src="/img/drivers/countries/France.jpg" />
-                    </div>
-                    <div class="schedule-2">
-                        @if (ListSchedule == null)
-                        {
-                            <p>Loading...</p>
-                        }
-                        else
-                        {
-                            <label>@(ListSchedule[11].RaceDate)</label>
-                        }
-                        <img src="/img/flag-asset.png" />
-                    </div>
-                    <div class="schedule-3">
-                        @if (ListSchedule == null)
-                        {
-                            <p>Loading...</p>
-                        }
-                        else
-                        {
-                            <p>@(ListSchedule[11].GrandPrix + " > ")</p>
-                            <p>@(ListSchedule[11].Circuit)</p>
-                        }
-                    </div>
-                    <div class="schedule-4">
-                        <img src="/img/circuits/France_Circuit.png" />
-                    </div>
-                </a>
+            <div class="schedule-4">
+                <img src="/img/circuits/Bahrain_Circuit.png" />
             </div>
-            <div class="row">
-                <a href="Schedule/Round13" class="column">
-                    <div class="schedule-1">
-                        @if (ListSchedule == null)
-                        {
-                            <p>Loading...</p>
-                        }
-                        else
-                        {
-                            <label>@("ROUND " + ListSchedule[12].Round)</label>
-                        }
-                        <img src="/img/drivers/countries/Hungary.png" />
-                    </div>
-                    <div class="schedule-2">
-                        @if (ListSchedule == null)
-                        {
-                            <p>Loading...</p>
-                        }
-                        else
-                        {
-                            <label>@(ListSchedule[12].RaceDate)</label>
-                        }
-                        <img src="/img/flag-asset.png" />
-                    </div>
-                    <div class="schedule-3">
-                        @if (ListSchedule == null)
-                        {
-                            <p>Loading...</p>
-                        }
-                        else
-                        {
-                            <p>@(ListSchedule[12].GrandPrix + " > ")</p>
-                            <p>@(ListSchedule[12].Circuit)</p>
-                        }
-                    </div>
-                    <div class="schedule-4">
-                        <img src="/img/circuits/Hungary_Circuit.png" />
-                    </div>
-                </a>
-                <a href="Schedule/Round14" class="column">
-                    <div class="schedule-1">
-                        @if (ListSchedule == null)
-                        {
-                            <p>Loading...</p>
-                        }
-                        else
-                        {
-                            <label>@("ROUND " + ListSchedule[13].Round)</label>
-                        }
-                        <img src="/img/drivers/countries/Belgium.png" />
-                    </div>
-                    <div class="schedule-2">
-                        @if (ListSchedule == null)
-                        {
-                            <p>Loading...</p>
-                        }
-                        else
-                        {
-                            <label>@(ListSchedule[13].RaceDate)</label>
-                        }
-                        <img src="/img/flag-asset.png" />
-                    </div>
-                    <div class="schedule-3">
-                        @if (ListSchedule == null)
-                        {
-                            <p>Loading...</p>
-                        }
-                        else
-                        {
-                            <p>@(ListSchedule[13].GrandPrix + " > ")</p>
-                            <p>@(ListSchedule[13].Circuit)</p>
-                        }
-                    </div>
-                    <div class="schedule-4">
-                        <img src="/img/circuits/Belgium_Circuit.png" />
-                    </div>
-                </a>
-                <a href="Schedule/Round15" class="column">
-                    <div class="schedule-1">
-                        @if (ListSchedule == null)
-                        {
-                            <p>Loading...</p>
-                        }
-                        else
-                        {
-                            <label>@("ROUND " + ListSchedule[14].Round)</label>
-                        }
-                        <img src="/img/drivers/countries/Netherlands.jpg" />
-                    </div>
-                    <div class="schedule-2">
-                        @if (ListSchedule == null)
-                        {
-                            <p>Loading...</p>
-                        }
-                        else
-                        {
-                            <label>@(ListSchedule[14].RaceDate)</label>
-                        }
-                        <img src="/img/flag-asset.png" />
-                    </div>
-                    <div class="schedule-3">
-                        @if (ListSchedule == null)
-                        {
-                            <p>Loading...</p>
-                        }
-                        else
-                        {
-                            <p>@(ListSchedule[14].GrandPrix + " > ")</p>
-                            <p>@(ListSchedule[14].Circuit)</p>
-                        }
-                    </div>
-                    <div class="schedule-4">
-                        <img src="/img/circuits/Netherlands_Circuit.png" />
-                    </div>
-                </a>
+        </a>
+        <a href="Schedule/Round2" class="column">
+            <div class="schedule-1">
+                @if (ListSchedule == null)
+                {
+                    <p>Loading...</p>
+                }
+                else
+                {
+                    <label>@("ROUND " + ListSchedule[1].Round)</label>
+                }
+                <img src="/img/drivers/countries/Saudi.png"/>
             </div>
-            <div class="row">
-                <a href="Schedule/Round16" class="column">
-                    <div class="schedule-1">
-                        @if (ListSchedule == null)
-                        {
-                            <p>Loading...</p>
-                        }
-                        else
-                        {
-                            <label>@("ROUND " + ListSchedule[15].Round)</label>
-                        }
-                        <img src="/img/drivers/countries/Italy.png" />
-                    </div>
-                    <div class="schedule-2">
-                        @if (ListSchedule == null)
-                        {
-                            <p>Loading...</p>
-                        }
-                        else
-                        {
-                            <label>@(ListSchedule[15].RaceDate)</label>
-                        }
-                        <img src="/img/flag-asset.png" />
-                    </div>
-                    <div class="schedule-3">
-                        @if (ListSchedule == null)
-                        {
-                            <p>Loading...</p>
-                        }
-                        else
-                        {
-                            <p>@(ListSchedule[15].GrandPrix + " > ")</p>
-                            <p>@(ListSchedule[15].Circuit)</p>
-                        }
-                    </div>
-                    <div class="schedule-4">
-                        <img src="/img/circuits/Italy_Circuit.png" />
-                    </div>
-                </a>
-                <a href="Schedule/Round17" class="column">
-                    <div class="schedule-1">
-                        @if (ListSchedule == null)
-                        {
-                            <p>Loading...</p>
-                        }
-                        else
-                        {
-                            <label>@("ROUND " + ListSchedule[16].Round)</label>
-                        }
-                        <img src="/img/drivers/countries/Singapore.png" />
-                    </div>
-                    <div class="schedule-2">
-                        @if (ListSchedule == null)
-                        {
-                            <p>Loading...</p>
-                        }
-                        else
-                        {
-                            <label>@(ListSchedule[16].RaceDate)</label>
-                        }
-                        <img src="/img/flag-asset.png" />
-                    </div>
-                    <div class="schedule-3">
-                        @if (ListSchedule == null)
-                        {
-                            <p>Loading...</p>
-                        }
-                        else
-                        {
-                            <p>@(ListSchedule[16].GrandPrix + " > ")</p>
-                            <p>@(ListSchedule[16].Circuit)</p>
-                        }
-                    </div>
-                    <div class="schedule-4">
-                        <img src="/img/circuits/Singapore_Circuit.png" />
-                    </div>
-                </a>
-                <a href="Schedule/Round18" class="column">
-                    <div class="schedule-1">
-                        @if (ListSchedule == null)
-                        {
-                            <p>Loading...</p>
-                        }
-                        else
-                        {
-                            <label>@("ROUND " + ListSchedule[17].Round)</label>
-                        }
-                        <img src="/img/drivers/countries/Japan.jpg" />
-                    </div>
-                    <div class="schedule-2">
-                        @if (ListSchedule == null)
-                        {
-                            <p>Loading...</p>
-                        }
-                        else
-                        {
-                            <label>@(ListSchedule[17].RaceDate)</label>
-                        }
-                        <img src="/img/flag-asset.png" />
-                    </div>
-                    <div class="schedule-3">
-                        @if (ListSchedule == null)
-                        {
-                            <p>Loading...</p>
-                        }
-                        else
-                        {
-                            <p>@(ListSchedule[17].GrandPrix + " > ")</p>
-                            <p>@(ListSchedule[17].Circuit)</p>
-                        }
-                    </div>
-                    <div class="schedule-4">
-                        <img src="/img/circuits/Japan_Circuit.png" />
-                    </div>
-                </a>
+            <div class="schedule-2">
+                @if (ListSchedule == null)
+                {
+                    <p>Loading...</p>
+                }
+                else
+                {
+                    <label>@(ListSchedule[1].RaceDate)</label>
+                }
+                <img src="/img/flag-asset.png" />
             </div>
-            <div class="row">
-                <a href="Schedule/Round19" class="column">
-                    <div class="schedule-1">
-                        @if (ListSchedule == null)
-                        {
-                            <p>Loading...</p>
-                        }
-                        else
-                        {
-                            <label>@("ROUND " + ListSchedule[18].Round)</label>
-                        }
-                        <img src="/img/drivers/countries/Usa.png" />
-                    </div>
-                    <div class="schedule-2">
-                        @if (ListSchedule == null)
-                        {
-                            <p>Loading...</p>
-                        }
-                        else
-                        {
-                            <label>@(ListSchedule[18].RaceDate)</label>
-                        }
-                        <img src="/img/flag-asset.png" />
-                    </div>
-                    <div class="schedule-3">
-                        @if (ListSchedule == null)
-                        {
-                            <p>Loading...</p>
-                        }
-                        else
-                        {
-                            <p>@(ListSchedule[18].GrandPrix + " > ")</p>
-                            <p>@(ListSchedule[18].Circuit)</p>
-                        }
-                    </div>
-                    <div class="schedule-4">
-                        <img src="/img/circuits/USA_Circuit.png" />
-                    </div>
-                </a>
-                <a href="Schedule/Round20" class="column">
-                    <div class="schedule-1">
-                        @if (ListSchedule == null)
-                        {
-                            <p>Loading...</p>
-                        }
-                        else
-                        {
-                            <label>@("ROUND " + ListSchedule[19].Round)</label>
-                        }
-                        <img src="/img/drivers/countries/Mexico.jpg" />
-                    </div>
-                    <div class="schedule-2">
-                        @if (ListSchedule == null)
-                        {
-                            <p>Loading...</p>
-                        }
-                        else
-                        {
-                            <label>@(ListSchedule[19].RaceDate)</label>
-                        }
-                        <img src="/img/flag-asset.png" />
-                    </div>
-                    <div class="schedule-3">
-                        @if (ListSchedule == null)
-                        {
-                            <p>Loading...</p>
-                        }
-                        else
-                        {
-                            <p>@(ListSchedule[19].GrandPrix + " > ")</p>
-                            <p>@(ListSchedule[19].Circuit)</p>
-                        }
-                    </div>
-                    <div class="schedule-4">
-                        <img src="/img/circuits/Mexico_Circuit.png" />
-                    </div>
-                </a>
-                <a href="Schedule/Round21" class="column">
-                    <div class="schedule-1">
-                        @if (ListSchedule == null)
-                        {
-                            <p>Loading...</p>
-                        }
-                        else
-                        {
-                            <label>@("ROUND " + ListSchedule[20].Round)</label>
-                        }
-                        <img src="/img/drivers/countries/Brazil.png" />
-                    </div>
-                    <div class="schedule-2">
-                        @if (ListSchedule == null)
-                        {
-                            <p>Loading...</p>
-                        }
-                        else
-                        {
-                            <label>@(ListSchedule[20].RaceDate)</label>
-                        }
-                        <img src="/img/flag-asset.png" />
-                    </div>
-                    <div class="schedule-3">
-                        @if (ListSchedule == null)
-                        {
-                            <p>Loading...</p>
-                        }
-                        else
-                        {
-                            <p>@(ListSchedule[20].GrandPrix + " > ")</p>
-                            <p>@(ListSchedule[20].Circuit)</p>
-                        }
-                    </div>
-                    <div class="schedule-4">
-                        <img src="/img/circuits/Brazil_Circuit.png" />
-                    </div>
-                </a>
+            <div class="schedule-3">
+                @if (ListSchedule == null)
+                {
+                    <p>Loading...</p>
+                }
+                else
+                {
+                    <p>@(ListSchedule[1].GrandPrix + " > ")</p>
+                    <p>@(ListSchedule[1].Circuit)</p>
+                }
             </div>
-            <div class="row">
-                <a href="Schedule/Round22" class="column">
-                    <div class="schedule-1">
-                        @if (ListSchedule == null)
-                        {
-                            <p>Loading...</p>
-                        }
-                        else
-                        {
-                            <label>@("ROUND " + ListSchedule[21].Round)</label>
-                        }
-                        <img src="/img/drivers/countries/Abu.png" />
-                    </div>
-                    <div class="schedule-2">
-                        @if (ListSchedule == null)
-                        {
-                            <p>Loading...</p>
-                        }
-                        else
-                        {
-                            <label>@(ListSchedule[21].RaceDate)</label>
-                        }
-                        <img src="/img/flag-asset.png" />
-                    </div>
-                    <div class="schedule-3">
-                        @if (ListSchedule == null)
-                        {
-                            <p>Loading...</p>
-                        }
-                        else
-                        {
-                            <p>@(ListSchedule[21].GrandPrix + " > ")</p>
-                            <p>@(ListSchedule[21].Circuit)</p>
-                        }
-                    </div>
-                    <div class="schedule-4">
-                        <img src="/img/circuits/Abu_Dhabi_Circuit.png" />
-                    </div>
-                </a>
+            <div class="schedule-4">
+                <img src="/img/circuits/Saudi_Arabia_Circuit.png" />
             </div>
-        </Jumbotron>
-        <Footer />
-    </LayoutContent>
-</Layout>
+        </a>
+        <a href="Schedule/Round3" class="column">
+            <div class="schedule-1">
+                @if (ListSchedule == null)
+                {
+                    <p>Loading...</p>
+                }
+                else
+                {
+                    <label>@("ROUND " + ListSchedule[2].Round)</label>
+                }
+                <img src="/img/drivers/countries/Australia.jpg" />
+            </div>
+            <div class="schedule-2">
+                @if (ListSchedule == null)
+                {
+                    <p>Loading...</p>
+                }
+                else
+                {
+                    <label>@(ListSchedule[2].RaceDate)</label>
+                }
+                <img src="/img/flag-asset.png" />
+            </div>
+            <div class="schedule-3">
+                @if (ListSchedule == null)
+                {
+                    <p>Loading...</p>
+                }
+                else
+                {
+                    <p>@(ListSchedule[2].GrandPrix + " > ")</p>
+                    <p>@(ListSchedule[2].Circuit)</p>
+                }
+            </div>
+            <div class="schedule-4">
+                <img src="/img/circuits/Australia_Circuit.png" />
+            </div>
+        </a>
+    </div>
+    <div class="row">
+        <a href="Schedule/Round4" class="column">
+            <div class="schedule-1">
+                @if (ListSchedule == null)
+                {
+                    <p>Loading...</p>
+                }
+                else
+                {
+                    <label>@("ROUND " + ListSchedule[3].Round)</label>
+                }
+                <img src="/img/drivers/countries/Italy.png" />
+            </div>
+            <div class="schedule-2">
+                @if (ListSchedule == null)
+                {
+                    <p>Loading...</p>
+                }
+                else
+                {
+                    <label>@(ListSchedule[3].RaceDate)</label>
+                }
+                <img src="/img/flag-asset.png" />
+            </div>
+            <div class="schedule-3">
+                @if (ListSchedule == null)
+                {
+                    <p>Loading...</p>
+                }
+                else
+                {
+                    <p>@(ListSchedule[3].GrandPrix + " > ")</p>
+                    <p>@(ListSchedule[3].Circuit)</p>
+                }
+            </div>
+            <div class="schedule-4">
+                <img src="/img/circuits/Emilia_Romagna_Circuit.png" />
+            </div>
+        </a>
+        <a href="Schedule/Round5" class="column">
+            <div class="schedule-1">
+                @if (ListSchedule == null)
+                {
+                    <p>Loading...</p>
+                }
+                else
+                {
+                    <label>@("ROUND " + ListSchedule[4].Round)</label>
+                }
+                <img src="/img/drivers/countries/Usa.png" />
+            </div>
+            <div class="schedule-2">
+                @if (ListSchedule == null)
+                {
+                    <p>Loading...</p>
+                }
+                else
+                {
+                    <label>@(ListSchedule[4].RaceDate)</label>
+                }
+                <img src="/img/flag-asset.png" />
+            </div>
+            <div class="schedule-3">
+                @if (ListSchedule == null)
+                {
+                    <p>Loading...</p>
+                }
+                else
+                {
+                    <p>@(ListSchedule[4].GrandPrix + " > ")</p>
+                    <p>@(ListSchedule[4].Circuit)</p>
+                }
+            </div>
+            <div class="schedule-4">
+                <img src="/img/circuits/Miami_Circuit.png" />
+            </div>
+        </a>
+        <a href="Schedule/Round6" class="column">
+            <div class="schedule-1">
+                @if (ListSchedule == null)
+                {
+                    <p>Loading...</p>
+                }
+                else
+                {
+                    <label>@("ROUND " + ListSchedule[5].Round)</label>
+                }
+                <img src="/img/drivers/countries/Spain.jpg" />
+            </div>
+            <div class="schedule-2">
+                @if (ListSchedule == null)
+                {
+                    <p>Loading...</p>
+                }
+                else
+                {
+                    <label>@(ListSchedule[5].RaceDate)</label>
+                }
+                <img src="/img/flag-asset.png" />
+            </div>
+            <div class="schedule-3">
+                @if (ListSchedule == null)
+                {
+                    <p>Loading...</p>
+                }
+                else
+                {
+                    <p>@(ListSchedule[5].GrandPrix + " > ")</p>
+                    <p>@(ListSchedule[5].Circuit)</p>
+                }
+            </div>
+            <div class="schedule-4">
+                <img src="/img/circuits/Spain_Circuit.png" />
+            </div>
+        </a>
+    </div>
+    <div class="row">
+        <a href="Schedule/Round7" class="column">
+            <div class="schedule-1">
+                @if (ListSchedule == null)
+                {
+                    <p>Loading...</p>
+                }
+                else
+                {
+                    <label>@("ROUND " + ListSchedule[6].Round)</label>
+                }
+                <img src="/img/drivers/countries/Monaco.jpg" />
+            </div>
+            <div class="schedule-2">
+                @if (ListSchedule == null)
+                {
+                    <p>Loading...</p>
+                }
+                else
+                {
+                    <label>@(ListSchedule[6].RaceDate)</label>
+                }
+                <img src="/img/flag-asset.png" />
+            </div>
+            <div class="schedule-3">
+                @if (ListSchedule == null)
+                {
+                    <p>Loading...</p>
+                }
+                else
+                {
+                    <p>@(ListSchedule[6].GrandPrix + " > ")</p>
+                    <p>@(ListSchedule[6].Circuit)</p>
+                }
+            </div>
+            <div class="schedule-4">
+                <img src="/img/circuits/Monoco_Circuit.png" />
+            </div>
+        </a>
+        <a href="Schedule/Round8" class="column">
+            <div class="schedule-1">
+                @if (ListSchedule == null)
+                {
+                    <p>Loading...</p>
+                }
+                else
+                {
+                    <label>@("ROUND " + ListSchedule[7].Round)</label>
+                }
+                <img src="/img/drivers/countries/Azerbaijan.png" />
+            </div>
+            <div class="schedule-2">
+                @if (ListSchedule == null)
+                {
+                    <p>Loading...</p>
+                }
+                else
+                {
+                    <label>@(ListSchedule[7].RaceDate)</label>
+                }
+                <img src="/img/flag-asset.png" />
+            </div>
+            <div class="schedule-3">
+                @if (ListSchedule == null)
+                {
+                    <p>Loading...</p>
+                }
+                else
+                {
+                    <p>@(ListSchedule[7].GrandPrix + " > ")</p>
+                    <p>@(ListSchedule[7].Circuit)</p>
+                }
+            </div>
+            <div class="schedule-4">
+                <img src="/img/circuits/Baku_Circuit.png" />
+            </div>
+        </a>
+        <a href="Schedule/Round9" class="column">
+            <div class="schedule-1">
+                @if (ListSchedule == null)
+                {
+                    <p>Loading...</p>
+                }
+                else
+                {
+                    <label>@("ROUND " + ListSchedule[8].Round)</label>
+                }
+                <img src="/img/drivers/countries/Canada.jpg" />
+            </div>
+            <div class="schedule-2">
+                @if (ListSchedule == null)
+                {
+                    <p>Loading...</p>
+                }
+                else
+                {
+                    <label>@(ListSchedule[8].RaceDate)</label>
+                }
+                <img src="/img/flag-asset.png" />
+            </div>
+            <div class="schedule-3">
+                @if (ListSchedule == null)
+                {
+                    <p>Loading...</p>
+                }
+                else
+                {
+                    <p>@(ListSchedule[8].GrandPrix + " > ")</p>
+                    <p>@(ListSchedule[8].Circuit)</p>
+                }
+            </div>
+            <div class="schedule-4">
+                <img src="/img/circuits/Canada_Circuit.png" />
+            </div>
+        </a>
+    </div>
+    <div class="row">
+        <a href="Schedule/Round10" class="column">
+            <div class="schedule-1">
+                @if (ListSchedule == null)
+                {
+                    <p>Loading...</p>
+                }
+                else
+                {
+                    <label>@("ROUND " + ListSchedule[9].Round)</label>
+                }
+                <img src="/img/drivers/countries/Uk.jpg" />
+            </div>
+            <div class="schedule-2">
+                @if (ListSchedule == null)
+                {
+                    <p>Loading...</p>
+                }
+                else
+                {
+                    <label>@(ListSchedule[9].RaceDate)</label>
+                }
+                <img src="/img/flag-asset.png" />
+            </div>
+            <div class="schedule-3">
+                @if (ListSchedule == null)
+                {
+                    <p>Loading...</p>
+                }
+                else
+                {
+                    <p>@(ListSchedule[9].GrandPrix + " > ")</p>
+                    <p>@(ListSchedule[9].Circuit)</p>
+                }
+            </div>
+            <div class="schedule-4">
+                <img src="/img/circuits/Great_Britain_Circuit.png" />
+            </div>
+        </a>
+        <a href="Schedule/Round11" class="column">
+            <div class="schedule-1">
+                @if (ListSchedule == null)
+                {
+                    <p>Loading...</p>
+                }
+                else
+                {
+                    <label>@("ROUND " + ListSchedule[10].Round)</label>
+                }
+                <img src="/img/drivers/countries/Austria.png" />
+            </div>
+            <div class="schedule-2">
+                @if (ListSchedule == null)
+                {
+                    <p>Loading...</p>
+                }
+                else
+                {
+                    <label>@(ListSchedule[10].RaceDate)</label>
+                }
+                <img src="/img/flag-asset.png" />
+            </div>
+            <div class="schedule-3">
+                @if (ListSchedule == null)
+                {
+                    <p>Loading...</p>
+                }
+                else
+                {
+                    <p>@(ListSchedule[10].GrandPrix + " > ")</p>
+                    <p>@(ListSchedule[10].Circuit)</p>
+                }
+            </div>
+            <div class="schedule-4">
+                <img src="/img/circuits/Austria_Circuit.png" />
+            </div>
+        </a>
+        <a href="Schedule/Round12" class="column">
+            <div class="schedule-1">
+                @if (ListSchedule == null)
+                {
+                    <p>Loading...</p>
+                }
+                else
+                {
+                    <label>@("ROUND " + ListSchedule[11].Round)</label>
+                }
+                <img src="/img/drivers/countries/France.jpg" />
+            </div>
+            <div class="schedule-2">
+                @if (ListSchedule == null)
+                {
+                    <p>Loading...</p>
+                }
+                else
+                {
+                    <label>@(ListSchedule[11].RaceDate)</label>
+                }
+                <img src="/img/flag-asset.png" />
+            </div>
+            <div class="schedule-3">
+                @if (ListSchedule == null)
+                {
+                    <p>Loading...</p>
+                }
+                else
+                {
+                    <p>@(ListSchedule[11].GrandPrix + " > ")</p>
+                    <p>@(ListSchedule[11].Circuit)</p>
+                }
+            </div>
+            <div class="schedule-4">
+                <img src="/img/circuits/France_Circuit.png" />
+            </div>
+        </a>
+    </div>
+    <div class="row">
+        <a href="Schedule/Round13" class="column">
+            <div class="schedule-1">
+                @if (ListSchedule == null)
+                {
+                    <p>Loading...</p>
+                }
+                else
+                {
+                    <label>@("ROUND " + ListSchedule[12].Round)</label>
+                }
+                <img src="/img/drivers/countries/Hungary.png" />
+            </div>
+            <div class="schedule-2">
+                @if (ListSchedule == null)
+                {
+                    <p>Loading...</p>
+                }
+                else
+                {
+                    <label>@(ListSchedule[12].RaceDate)</label>
+                }
+                <img src="/img/flag-asset.png" />
+            </div>
+            <div class="schedule-3">
+                @if (ListSchedule == null)
+                {
+                    <p>Loading...</p>
+                }
+                else
+                {
+                    <p>@(ListSchedule[12].GrandPrix + " > ")</p>
+                    <p>@(ListSchedule[12].Circuit)</p>
+                }
+            </div>
+            <div class="schedule-4">
+                <img src="/img/circuits/Hungary_Circuit.png" />
+            </div>
+        </a>
+        <a href="Schedule/Round14" class="column">
+            <div class="schedule-1">
+                @if (ListSchedule == null)
+                {
+                    <p>Loading...</p>
+                }
+                else
+                {
+                    <label>@("ROUND " + ListSchedule[13].Round)</label>
+                }
+                <img src="/img/drivers/countries/Belgium.png" />
+            </div>
+            <div class="schedule-2">
+                @if (ListSchedule == null)
+                {
+                    <p>Loading...</p>
+                }
+                else
+                {
+                    <label>@(ListSchedule[13].RaceDate)</label>
+                }
+                <img src="/img/flag-asset.png" />
+            </div>
+            <div class="schedule-3">
+                @if (ListSchedule == null)
+                {
+                    <p>Loading...</p>
+                }
+                else
+                {
+                    <p>@(ListSchedule[13].GrandPrix + " > ")</p>
+                    <p>@(ListSchedule[13].Circuit)</p>
+                }
+            </div>
+            <div class="schedule-4">
+                <img src="/img/circuits/Belgium_Circuit.png" />
+            </div>
+        </a>
+        <a href="Schedule/Round15" class="column">
+            <div class="schedule-1">
+                @if (ListSchedule == null)
+                {
+                    <p>Loading...</p>
+                }
+                else
+                {
+                    <label>@("ROUND " + ListSchedule[14].Round)</label>
+                }
+                <img src="/img/drivers/countries/Netherlands.jpg" />
+            </div>
+            <div class="schedule-2">
+                @if (ListSchedule == null)
+                {
+                    <p>Loading...</p>
+                }
+                else
+                {
+                    <label>@(ListSchedule[14].RaceDate)</label>
+                }
+                <img src="/img/flag-asset.png" />
+            </div>
+            <div class="schedule-3">
+                @if (ListSchedule == null)
+                {
+                    <p>Loading...</p>
+                }
+                else
+                {
+                    <p>@(ListSchedule[14].GrandPrix + " > ")</p>
+                    <p>@(ListSchedule[14].Circuit)</p>
+                }
+            </div>
+            <div class="schedule-4">
+                <img src="/img/circuits/Netherlands_Circuit.png" />
+            </div>
+        </a>
+    </div>
+    <div class="row">
+        <a href="Schedule/Round16" class="column">
+            <div class="schedule-1">
+                @if (ListSchedule == null)
+                {
+                    <p>Loading...</p>
+                }
+                else
+                {
+                    <label>@("ROUND " + ListSchedule[15].Round)</label>
+                }
+                <img src="/img/drivers/countries/Italy.png" />
+            </div>
+            <div class="schedule-2">
+                @if (ListSchedule == null)
+                {
+                    <p>Loading...</p>
+                }
+                else
+                {
+                    <label>@(ListSchedule[15].RaceDate)</label>
+                }
+                <img src="/img/flag-asset.png" />
+            </div>
+            <div class="schedule-3">
+                @if (ListSchedule == null)
+                {
+                    <p>Loading...</p>
+                }
+                else
+                {
+                    <p>@(ListSchedule[15].GrandPrix + " > ")</p>
+                    <p>@(ListSchedule[15].Circuit)</p>
+                }
+            </div>
+            <div class="schedule-4">
+                <img src="/img/circuits/Italy_Circuit.png" />
+            </div>
+        </a>
+        <a href="Schedule/Round17" class="column">
+            <div class="schedule-1">
+                @if (ListSchedule == null)
+                {
+                    <p>Loading...</p>
+                }
+                else
+                {
+                    <label>@("ROUND " + ListSchedule[16].Round)</label>
+                }
+                <img src="/img/drivers/countries/Singapore.png" />
+            </div>
+            <div class="schedule-2">
+                @if (ListSchedule == null)
+                {
+                    <p>Loading...</p>
+                }
+                else
+                {
+                    <label>@(ListSchedule[16].RaceDate)</label>
+                }
+                <img src="/img/flag-asset.png" />
+            </div>
+            <div class="schedule-3">
+                @if (ListSchedule == null)
+                {
+                    <p>Loading...</p>
+                }
+                else
+                {
+                    <p>@(ListSchedule[16].GrandPrix + " > ")</p>
+                    <p>@(ListSchedule[16].Circuit)</p>
+                }
+            </div>
+            <div class="schedule-4">
+                <img src="/img/circuits/Singapore_Circuit.png" />
+            </div>
+        </a>
+        <a href="Schedule/Round18" class="column">
+            <div class="schedule-1">
+                @if (ListSchedule == null)
+                {
+                    <p>Loading...</p>
+                }
+                else
+                {
+                    <label>@("ROUND " + ListSchedule[17].Round)</label>
+                }
+                <img src="/img/drivers/countries/Japan.jpg" />
+            </div>
+            <div class="schedule-2">
+                @if (ListSchedule == null)
+                {
+                    <p>Loading...</p>
+                }
+                else
+                {
+                    <label>@(ListSchedule[17].RaceDate)</label>
+                }
+                <img src="/img/flag-asset.png" />
+            </div>
+            <div class="schedule-3">
+                @if (ListSchedule == null)
+                {
+                    <p>Loading...</p>
+                }
+                else
+                {
+                    <p>@(ListSchedule[17].GrandPrix + " > ")</p>
+                    <p>@(ListSchedule[17].Circuit)</p>
+                }
+            </div>
+            <div class="schedule-4">
+                <img src="/img/circuits/Japan_Circuit.png" />
+            </div>
+        </a>
+    </div>
+    <div class="row">
+        <a href="Schedule/Round19" class="column">
+            <div class="schedule-1">
+                @if (ListSchedule == null)
+                {
+                    <p>Loading...</p>
+                }
+                else
+                {
+                    <label>@("ROUND " + ListSchedule[18].Round)</label>
+                }
+                <img src="/img/drivers/countries/Usa.png" />
+            </div>
+            <div class="schedule-2">
+                @if (ListSchedule == null)
+                {
+                    <p>Loading...</p>
+                }
+                else
+                {
+                    <label>@(ListSchedule[18].RaceDate)</label>
+                }
+                <img src="/img/flag-asset.png" />
+            </div>
+            <div class="schedule-3">
+                @if (ListSchedule == null)
+                {
+                    <p>Loading...</p>
+                }
+                else
+                {
+                    <p>@(ListSchedule[18].GrandPrix + " > ")</p>
+                    <p>@(ListSchedule[18].Circuit)</p>
+                }
+            </div>
+            <div class="schedule-4">
+                <img src="/img/circuits/USA_Circuit.png" />
+            </div>
+        </a>
+        <a href="Schedule/Round20" class="column">
+            <div class="schedule-1">
+                @if (ListSchedule == null)
+                {
+                    <p>Loading...</p>
+                }
+                else
+                {
+                    <label>@("ROUND " + ListSchedule[19].Round)</label>
+                }
+                <img src="/img/drivers/countries/Mexico.jpg" />
+            </div>
+            <div class="schedule-2">
+                @if (ListSchedule == null)
+                {
+                    <p>Loading...</p>
+                }
+                else
+                {
+                    <label>@(ListSchedule[19].RaceDate)</label>
+                }
+                <img src="/img/flag-asset.png" />
+            </div>
+            <div class="schedule-3">
+                @if (ListSchedule == null)
+                {
+                    <p>Loading...</p>
+                }
+                else
+                {
+                    <p>@(ListSchedule[19].GrandPrix + " > ")</p>
+                    <p>@(ListSchedule[19].Circuit)</p>
+                }
+            </div>
+            <div class="schedule-4">
+                <img src="/img/circuits/Mexico_Circuit.png" />
+            </div>
+        </a>
+        <a href="Schedule/Round21" class="column">
+            <div class="schedule-1">
+                @if (ListSchedule == null)
+                {
+                    <p>Loading...</p>
+                }
+                else
+                {
+                    <label>@("ROUND " + ListSchedule[20].Round)</label>
+                }
+                <img src="/img/drivers/countries/Brazil.png" />
+            </div>
+            <div class="schedule-2">
+                @if (ListSchedule == null)
+                {
+                    <p>Loading...</p>
+                }
+                else
+                {
+                    <label>@(ListSchedule[20].RaceDate)</label>
+                }
+                <img src="/img/flag-asset.png" />
+            </div>
+            <div class="schedule-3">
+                @if (ListSchedule == null)
+                {
+                    <p>Loading...</p>
+                }
+                else
+                {
+                    <p>@(ListSchedule[20].GrandPrix + " > ")</p>
+                    <p>@(ListSchedule[20].Circuit)</p>
+                }
+            </div>
+            <div class="schedule-4">
+                <img src="/img/circuits/Brazil_Circuit.png" />
+            </div>
+        </a>
+    </div>
+    <div class="row">
+        <a href="Schedule/Round22" class="column">
+            <div class="schedule-1">
+                @if (ListSchedule == null)
+                {
+                    <p>Loading...</p>
+                }
+                else
+                {
+                    <label>@("ROUND " + ListSchedule[21].Round)</label>
+                }
+                <img src="/img/drivers/countries/Abu.png" />
+            </div>
+            <div class="schedule-2">
+                @if (ListSchedule == null)
+                {
+                    <p>Loading...</p>
+                }
+                else
+                {
+                    <label>@(ListSchedule[21].RaceDate)</label>
+                }
+                <img src="/img/flag-asset.png" />
+            </div>
+            <div class="schedule-3">
+                @if (ListSchedule == null)
+                {
+                    <p>Loading...</p>
+                }
+                else
+                {
+                    <p>@(ListSchedule[21].GrandPrix + " > ")</p>
+                    <p>@(ListSchedule[21].Circuit)</p>
+                }
+            </div>
+            <div class="schedule-4">
+                <img src="/img/circuits/Abu_Dhabi_Circuit.png" />
+            </div>
+        </a>
+    </div>
+</Jumbotron>
+>
 
 @code {
     private List<Root>? ListSchedule = new List<Root>();

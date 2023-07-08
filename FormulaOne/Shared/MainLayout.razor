@@ -1,2 +1,11 @@
 ﻿@inherits LayoutComponentBase
-@Body
+
+<Layout> 
+    <LayoutHeader Fixed="true">
+        <Header />
+    </LayoutHeader>
+    <LayoutContent style="margin-top: 55px; position: absolute; width: 100%;"> 
+        @Body
+        <Footer />
+    </LayoutContent>
+</Layout>

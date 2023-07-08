@@ -3,189 +3,182 @@
 
 <PageTitle>Aston Martin</PageTitle>
 
-<Layout>
-    <LayoutHeader Fixed="true">
-        <Header />
-    </LayoutHeader>
-    <LayoutContent style="margin-top: 70px; position: absolute;">
-        <Jumbotron style="border-bottom: solid grey 5px; border-right: solid grey 5px; border-bottom-right-radius: 10px;">
-            <JumbotronTitle Size="JumbotronTitleSize.Is4">
-                <h1 style="font-size: 42px; line-height: 48px; letter-spacing: 0.2px">
+<Jumbotron style="border-bottom: solid grey 5px; border-right: solid grey 5px; border-bottom-right-radius: 10px;">
+    <JumbotronTitle Size="JumbotronTitleSize.Is4">
+        <h1 style="font-size: 42px; line-height: 48px; letter-spacing: 0.2px">
+            @if (VectorTeam == null)
+            {
+                    <p> loading</p>
+            }
+            else
+            {
+                @VectorTeam[12].Chassis
+            }
+        </h1>
+    </JumbotronTitle>
+    <Divider></Divider>
+    <div class="row">
+        <div class="column">
+            <div class="team-logo">
+                <img src="/img/teams/aston-martin/aston-martin-logo.jpg" />
+            </div>
+            <br />
+            <div class="team-table">
+                <table>
+                    <tr>
+                        <th>Full Team Name</th>
+                        <td>
+                            @if (VectorTeam == null)
+                            {
+                                    <p> loading</p>
+                            }
+                            else
+                            {
+                                @VectorTeam[12].Team
+                            }
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Base</th>
+                        <td>	Silverstone, United Kingdom</td>
+                    </tr>
+                    <tr>
+                        <th>Team Chief</th>
+                        <td>		Mike Krack</td>
+                    </tr>
+                    <tr>
+                        <th>Technical Chief</th>
+                        <td>		Andrew Green</td>
+                    </tr>
+                    <tr>
+                        <th>Chassis</th>
+                        <td>
+                            @if (VectorTeam == null)
+                            {
+                                    <p> loading</p>
+                            }
+                            else
+                            {
+                                @VectorTeam[12].ChassisAlias
+                            }
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Power Unit</th>
+                        <td>
+                            @if (VectorTeam == null)
+                            {
+                                    <p> loading</p>
+                            }
+                            else
+                            {
+                                @VectorTeam[12].Engine
+                            }
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>First Team Entry</th>
+                        <td>		2018</td>
+                    </tr>
+                    <tr>
+                        <th>World Championships</th>
+                        <td>	N/A</td>
+                    </tr>
+                    <tr>
+                        <th>Highest Race Finish</th>
+                        <td>	1 (x1)</td>
+                    </tr>
+                    <tr>
+                        <th>Pole Positions</th>
+                        <td>	1</td>
+                    </tr>
+                    <tr>
+                        <th>Fastest Laps</th>
+                        <td>		N/A</td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+        <a href="/Drivers/SebastianVettel" class="column">
+            <div class="driver-img">
+                <img src="/img/teams/aston-martin/vettel.jpg" />
+            </div>
+            <div class="driver-content">
+                <p style="font-style: italic">5</p>
+                <p>
                     @if (VectorTeam == null)
                     {
                         <p> loading</p>
                     }
-                    else {
-                        @VectorTeam[12].Chassis
+                    else
+                    {
+                        @VectorTeam[12].Driver
                     }
-                </h1>
-            </JumbotronTitle>
-            <Divider></Divider>
-            <div class="row">
-                <div class="column">
-                    <div class="team-logo">
-                        <img src="/img/teams/aston-martin/aston-martin-logo.jpg" />
-                    </div>
-                    <br />
-                    <div class="team-table">
-                        <table>
-                            <tr>
-                                <th>Full Team Name</th>
-                                <td>
-                                    @if (VectorTeam == null)
-                                    {
-                                        <p> loading</p>
-                                    }
-                                    else
-                                    {
-                                        @VectorTeam[12].Team
-                                    }
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>Base</th>
-                                <td>	Silverstone, United Kingdom</td>
-                            </tr>
-                            <tr>
-                                <th>Team Chief</th>
-                                <td>		Mike Krack</td>
-                            </tr>
-                            <tr>
-                                <th>Technical Chief</th>
-                                <td>		Andrew Green</td>
-                            </tr>
-                            <tr>
-                                <th>Chassis</th>
-                                <td>
-                                    @if (VectorTeam == null)
-                                    {
-                                        <p> loading</p>
-                                    }
-                                    else
-                                    {
-                                        @VectorTeam[12].ChassisAlias
-                                    }
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>Power Unit</th>
-                                <td>
-                                    @if (VectorTeam == null)
-                                    {
-                                        <p> loading</p>
-                                    }
-                                    else
-                                    {
-                                        @VectorTeam[12].Engine
-                                    }
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>First Team Entry</th>
-                                <td>		2018</td>
-                            </tr>
-                            <tr>
-                                <th>World Championships</th>
-                                <td>	N/A</td>
-                            </tr>
-                            <tr>
-                                <th>Highest Race Finish</th>
-                                <td>	1 (x1)</td>
-                            </tr>
-                            <tr>
-                                <th>Pole Positions</th>
-                                <td>	1</td>
-                            </tr>
-                            <tr>
-                                <th>Fastest Laps</th>
-                                <td>		N/A</td>
-                            </tr>
-                        </table>
-
-                    </div>
-                </div>
-                <a href="/Drivers/SebastianVettel" class="column">
-                    <div class="driver-img">
-                        <img src="/img/teams/aston-martin/vettel.jpg" />
-                    </div>
-                    <div class="driver-content">
-                        <p style="font-style: italic">5</p>
-                        <p>
-                            @if (VectorTeam == null)
-                            {
-                            <p> loading</p>
-                            }
-                            else
-                            {
-                                @VectorTeam[12].Driver
-                            }
-                        </p>
-                    </div>
-                </a>
-                <a href="/Drivers/LanceStroll" class="column">
-                    <div class="driver-img">
-                        <img src="/img/teams/aston-martin/stroll.jpg" />
-                    </div>
-                    <div class="driver-content">
-                        <p style="font-style: italic">18</p>
-                        <p>
-                            @if (VectorTeam == null)
-                            {
-                            <p> loading</p>
-                            }
-                            else
-                            {
-                                @VectorTeam[13].Driver
-                            }
-                        </p>
-                    </div>
-                </a>
+                </p>
             </div>
-            <div class="carousel">
-                <Carousel @bind-SelectedSlide="@selectedSlide" Crossfade="true" ShowControls="false" ShowIndicators="false" Interval="3000">
-                    <CarouselSlide Name="1">
-                        <img src="img/teams/aston-martin/img-1.jpg" />
-                    </CarouselSlide>
-                    <CarouselSlide Name="2">
-                        <img src="img/teams/aston-martin/img-2.jpg" />
-                    </CarouselSlide>
-                    <CarouselSlide Name="3">
-                        <img src="img/teams/aston-martin/img-3.jpg" />
-                    </CarouselSlide>
-                    <CarouselSlide Name="4">
-                        <img src="img/teams/aston-martin/img-4.jpg" />
-                    </CarouselSlide>
-                </Carousel>
+        </a>
+        <a href="/Drivers/LanceStroll" class="column">
+            <div class="driver-img">
+                <img src="/img/teams/aston-martin/stroll.jpg" />
             </div>
-            <div class="team-content">
-                <h1>In profile</h1>
+            <div class="driver-content">
+                <p style="font-style: italic">18</p>
                 <p>
-                    Aston Martin’s original Formula 1 foray – over half a century ago – lasted just five races. This time, though, it’s serious. This F1 squad are no strangers to success, having won in their original guise of Jordan and most recently as Racing Point in 2020. Renowned for their ability to punch above their weight, and now with a four-time champion leading their driver line-up, Aston Martin are very much a team to watch…
+                    @if (VectorTeam == null)
+                    {
+                        <p> loading</p>
+                    }
+                    else
+                    {
+                        @VectorTeam[13].Driver
+                    }
                 </p>
-                <h1>2022</h1>
-                <p>
-                    Low-key season sees team retain seventh in the standings, with P6 their best race finish – for Sebastian Vettel in Azerbaijan and Japan, and Lance Stroll in Singapore. Vettel announces his F1 retirement, with fellow champion Fernando Alonso swiftly signed as his 2023 replacement.
-                </p>
-                <h1>2021</h1>
-                <p>
-                    Fail to keep pace with midfield rivals and drop to P7 in the standings, scoring less than half their 2020 points tally. Highlights are Sebastian Vettel’s podium in Azerbaijan plus fifth places at Spa and Monaco. Low point is his disqualification from P2 in Hungary for a fuel infringement.
-                </p>
-                <h1>2020</h1>
-                <p>
-                    With the team firmly back on their feet, the Racing Point name scores a first race win en route to fourth in the standings courtesy of Sergio Perez, who is replaced by Sebastian Vettel for 2021 and the squad’s transformation to Aston Martin.
-                </p>
-                <h1>2019</h1>
-                <p>
-                    The hangover from 2018’s turmoil takes its toll, and the team's recovery is a slow one, despite some gutsy drives from the ever-reliable Sergio Perez, who scores 52 of their 73 points, ensuring they retain seventh in the constructors' table.
-                </p>
-                <div style="width: 99%">
-                    <BarChart @ref="barChart" TItem="double" Options="@options" />
-                </div>
             </div>
-        </Jumbotron>
-        <Footer />
-    </LayoutContent>
-</Layout>
+        </a>
+    </div>
+    <div class="carousel">
+        <Carousel @bind-SelectedSlide="@selectedSlide" Crossfade="true" ShowControls="false" ShowIndicators="false" Interval="3000">
+            <CarouselSlide Name="1">
+                <img src="img/teams/aston-martin/img-1.jpg" />
+            </CarouselSlide>
+            <CarouselSlide Name="2">
+                <img src="img/teams/aston-martin/img-2.jpg" />
+            </CarouselSlide>
+            <CarouselSlide Name="3">
+                <img src="img/teams/aston-martin/img-3.jpg" />
+            </CarouselSlide>
+            <CarouselSlide Name="4">
+                <img src="img/teams/aston-martin/img-4.jpg" />
+            </CarouselSlide>
+        </Carousel>
+    </div>
+    <div class="team-content">
+        <h1>In profile</h1>
+        <p>
+            Aston Martin’s original Formula 1 foray – over half a century ago – lasted just five races. This time, though, it’s serious. This F1 squad are no strangers to success, having won in their original guise of Jordan and most recently as Racing Point in 2020. Renowned for their ability to punch above their weight, and now with a four-time champion leading their driver line-up, Aston Martin are very much a team to watch…
+        </p>
+        <h1>2022</h1>
+        <p>
+            Low-key season sees team retain seventh in the standings, with P6 their best race finish – for Sebastian Vettel in Azerbaijan and Japan, and Lance Stroll in Singapore. Vettel announces his F1 retirement, with fellow champion Fernando Alonso swiftly signed as his 2023 replacement.
+        </p>
+        <h1>2021</h1>
+        <p>
+            Fail to keep pace with midfield rivals and drop to P7 in the standings, scoring less than half their 2020 points tally. Highlights are Sebastian Vettel’s podium in Azerbaijan plus fifth places at Spa and Monaco. Low point is his disqualification from P2 in Hungary for a fuel infringement.
+        </p>
+        <h1>2020</h1>
+        <p>
+            With the team firmly back on their feet, the Racing Point name scores a first race win en route to fourth in the standings courtesy of Sergio Perez, who is replaced by Sebastian Vettel for 2021 and the squad’s transformation to Aston Martin.
+        </p>
+        <h1>2019</h1>
+        <p>
+            The hangover from 2018’s turmoil takes its toll, and the team's recovery is a slow one, despite some gutsy drives from the ever-reliable Sergio Perez, who scores 52 of their 73 points, ensuring they retain seventh in the constructors' table.
+        </p>
+        <div style="width: 99%">
+            <BarChart @ref="barChart" TItem="double" Options="@options" />
+        </div>
+    </div>
+</Jumbotron>
 
 @*Theme*@
 <Blazorise.ThemeProvider Theme="@theme">
@@ -223,7 +216,7 @@
             }
         };
 
-    protected override async Task OnAfterRenderAsync (bool firstRender)
+    protected override async Task OnAfterRenderAsync(bool firstRender)
     {
         if (firstRender)
         {
@@ -231,7 +224,7 @@
         }
     }
 
-    async Task HandleRedraw ()
+    async Task HandleRedraw()
     {
         await barChart.Clear();
 
@@ -240,7 +233,7 @@
             GetBarChartDataDriver2("Lance Stroll"));
     }
 
-    BarChartDataset<double> GetBarChartDataDriver1 (string label)
+    BarChartDataset<double> GetBarChartDataDriver1(string label)
     {
         return new BarChartDataset<double>
             {
@@ -250,7 +243,7 @@
                 BorderColor = borderColors,
             };
     }
-    BarChartDataset<double> GetBarChartDataDriver2 (string label)
+    BarChartDataset<double> GetBarChartDataDriver2(string label)
     {
         return new BarChartDataset<double>
             {
@@ -312,7 +305,7 @@
         ChartColor.FromRgba(90, 210, 70, 1f)
     };
 
-    List<double> DriverData1 ()
+    List<double> DriverData1()
     {
         return new List<double>
         {
@@ -321,7 +314,7 @@
     }
 
 
-    List<double> DriverData2 ()
+    List<double> DriverData2()
     {
         return new List<double>
         {
@@ -332,13 +325,13 @@
     private string selectedSlide = "1";
 
     private Theme theme = new Theme
-    {
-        ColorOptions = new ThemeColorOptions { Primary = "#E10600" }
-    };
+        {
+            ColorOptions = new ThemeColorOptions { Primary = "#E10600" }
+        };
 
     private Teams[]? VectorTeam;
 
-    protected override async Task OnInitializedAsync ()
+    protected override async Task OnInitializedAsync()
     {
         VectorTeam = await Http.GetFromJsonAsync<Teams[]>("sample-data/Teams.json");
     }
