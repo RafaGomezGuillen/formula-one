@@ -38,7 +38,4 @@ a, .btn-link {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url("img/F1logoRed.png");
-    background-repeat: no-repeat;
-    background-size: cover;
 }
