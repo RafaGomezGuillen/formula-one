@@ -1,0 +1,42 @@
+.landing-container {
+  padding: 5px 10px 10px 10px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 0px;
+
+  .card {
+    margin-bottom: 10px;
+
+    a {
+      background-color: #e10600;
+      color: white;
+    }
+
+    &:hover {
+      border-bottom: solid #e10600 5px;
+      border-right: solid #e10600 5px;
+      border-bottom-right-radius: 20px;
+    }
+  }
+
+  section:nth-child(1) {
+    padding: 5px;
+    border-top: solid #e10600 5px;
+    border-right: solid #e10600 5px;
+    border-top-right-radius: 20px;
+
+    @media screen and (max-width: 1000px) {
+      border: none;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+  }
+}
