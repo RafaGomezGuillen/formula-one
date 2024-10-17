@@ -8,7 +8,14 @@ export const Jumbotron = ({ title, description }) => {
         marginBottom: "20px",
       }}
     >
-      <h1 className="display-3">{title}</h1>
+      <h1
+        className="display-3"
+        style={{
+          width: "100%",
+        }}
+      >
+        {title}
+      </h1>
       <p
         style={{
           fontSize: "1.25rem",

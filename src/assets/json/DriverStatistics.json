@@ -9,7 +9,9 @@
     "PolePosition": 7,
     "FastestLap": 5,
     "LapsLed": 498,
-    "Points": 454
+    "Points": 454,
+    "Image": "/img/drivers/red-bull/max.png",
+    "Country": "/img/countries/Netherlands.jpg"
   },
   {
     "Pos": 2,
@@ -21,11 +23,13 @@
     "PolePosition": 9,
     "FastestLap": 3,
     "LapsLed": 310,
-    "Points": 308
+    "Points": 308,
+    "Image": "/img/drivers/ferrari/leclerc.png",
+    "Country": "/img/countries/Monaco.jpg"
   },
   {
     "Pos": 3,
-    "Driver": "Sergio Pérez",
+    "Driver": "Sergio Perez",
     "Team": "Red Bull",
     "GrandPrix": 22,
     "Wins": 2,
@@ -33,7 +37,9 @@
     "PolePosition": 1,
     "FastestLap": 3,
     "LapsLed": 147,
-    "Points": 305
+    "Points": 305,
+    "Image": "/img/drivers/red-bull/checo.png",
+    "Country": "/img/countries/Mexico.jpg"
   },
   {
     "Pos": 4,
@@ -45,7 +51,9 @@
     "PolePosition": 1,
     "FastestLap": 4,
     "LapsLed": 28,
-    "Points": 275
+    "Points": 275,
+    "Image": "/img/drivers/mercedes/russell.png",
+    "Country": "/img/countries/Uk.jpg"
   },
   {
     "Pos": 5,
@@ -57,7 +65,9 @@
     "PolePosition": 3,
     "FastestLap": 2,
     "LapsLed": 72,
-    "Points": 246
+    "Points": 246,
+    "Image": "/img/drivers/ferrari/carlos.png",
+    "Country": "/img/countries/Spain.jpg"
   },
   {
     "Pos": 6,
@@ -69,7 +79,9 @@
     "PolePosition": 0,
     "FastestLap": 2,
     "LapsLed": 36,
-    "Points": 240
+    "Points": 240,
+    "Image": "/img/drivers/mercedes/hamilton.png",
+    "Country": "/img/countries/Uk.jpg"
   },
   {
     "Pos": 7,
@@ -81,7 +93,9 @@
     "PolePosition": 0,
     "FastestLap": 2,
     "LapsLed": 0,
-    "Points": 122
+    "Points": 122,
+    "Image": "/img/drivers/mclaren/lando.png",
+    "Country": "/img/countries/Uk.jpg"
   },
   {
     "Pos": 8,
@@ -93,7 +107,9 @@
     "PolePosition": 0,
     "FastestLap": 0,
     "LapsLed": 0,
-    "Points": 92
+    "Points": 92,
+    "Image": "/img/drivers/alpine/ocon.png",
+    "Country": "/img/countries/France.jpg"
   },
   {
     "Pos": 9,
@@ -105,7 +121,9 @@
     "PolePosition": 0,
     "FastestLap": 0,
     "LapsLed": 1,
-    "Points": 81
+    "Points": 81,
+    "Image": "/img/drivers/alpine/fernando.png",
+    "Country": "/img/countries/Spain.jpg"
   },
   {
     "Pos": 10,
@@ -117,7 +135,9 @@
     "PolePosition": 0,
     "FastestLap": 0,
     "LapsLed": 0,
-    "Points": 49
+    "Points": 49,
+    "Image": "/img/drivers/alfa-romeo/bottas.png",
+    "Country": "/img/countries/Finland.jpg"
   },
   {
     "Pos": 11,
@@ -129,7 +149,9 @@
     "PolePosition": 0,
     "FastestLap": 0,
     "LapsLed": 0,
-    "Points": 37
+    "Points": 37,
+    "Image": "/img/drivers/mclaren/daniel.png",
+    "Country": "/img/countries/Australia.jpg"
   },
   {
     "Pos": 12,
@@ -141,7 +163,9 @@
     "PolePosition": 0,
     "FastestLap": 0,
     "LapsLed": 2,
-    "Points": 37
+    "Points": 37,
+    "Image": "/img/drivers/aston-martin/vettel.png",
+    "Country": "/img/countries/Germany.jpg"
   },
   {
     "Pos": 13,
@@ -153,7 +177,9 @@
     "PolePosition": 1,
     "FastestLap": 0,
     "LapsLed": 0,
-    "Points": 25
+    "Points": 25,
+    "Image": "/img/drivers/haas/kevin.png",
+    "Country": "/img/countries/Denmark.jpg"
   },
   {
     "Pos": 14,
@@ -165,7 +191,9 @@
     "PolePosition": 0,
     "FastestLap": 0,
     "LapsLed": 0,
-    "Points": 23
+    "Points": 23,
+    "Image": "/img/drivers/alpha-tauri/gasly.png",
+    "Country": "/img/countries/France.jpg"
   },
   {
     "Pos": 15,
@@ -177,7 +205,9 @@
     "PolePosition": 0,
     "FastestLap": 0,
     "LapsLed": 0,
-    "Points": 18
+    "Points": 18,
+    "Image": "/img/drivers/aston-martin/lance.png",
+    "Country": "/img/countries/Canada.jpg"
   },
   {
     "Pos": 16,
@@ -189,7 +219,9 @@
     "PolePosition": 0,
     "FastestLap": 0,
     "LapsLed": 0,
-    "Points": 12
+    "Points": 12,
+    "Image": "/img/drivers/haas/myck.png",
+    "Country": "/img/countries/Germany.jpg"
   },
   {
     "Pos": 17,
@@ -201,7 +233,9 @@
     "PolePosition": 0,
     "FastestLap": 0,
     "LapsLed": 0,
-    "Points": 12
+    "Points": 12,
+    "Image": "/img/drivers/alpha-tauri/yuki.png",
+    "Country": "/img/countries/Japan.jpg"
   },
   {
     "Pos": 18,
@@ -213,7 +247,9 @@
     "PolePosition": 0,
     "FastestLap": 1,
     "LapsLed": 0,
-    "Points": 6
+    "Points": 6,
+    "Image": "/img/drivers/alfa-romeo/zhou.png",
+    "Country": "/img/countries/China.jpg"
   },
   {
     "Pos": 19,
@@ -225,7 +261,9 @@
     "PolePosition": 0,
     "FastestLap": 0,
     "LapsLed": 0,
-    "Points": 4
+    "Points": 4,
+    "Image": "/img/drivers/williams/albon.png",
+    "Country": "/img/countries/Thailand.jpg"
   },
   {
     "Pos": 20,
@@ -237,6 +275,8 @@
     "PolePosition": 0,
     "FastestLap": 0,
     "LapsLed": 0,
-    "Points": 2
+    "Points": 2,
+    "Image": "/img/drivers/williams/latifi.png",
+    "Country": "/img/countries/Canada.jpg"
   }
 ]

@@ -20,9 +20,12 @@ import { SeasonChanges } from "./pages/home/SeasonChanges/SeasonChanges";
 import { SeasonIntroduction } from "./pages/home/SeasonIntroduction/SeasonIntroduction";
 import { SeasonSummary } from "./pages/home/SeasonSummary/SeasonSummary";
 
+// Import driver pages 
+import { LandingDrivers } from "./pages/Drivers/LandingDrivers/LandingDrivers";
+
 function App() {
   return (
-    <>
+    <BrowserRouter>
       <NavigationBar />
       <main
         style={{
@@ -30,20 +33,30 @@ function App() {
           padding: "15px",
         }}
       >
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Landing />} />
+        <Routes>
+          <Route path="/" element={<Landing />} />
 
-            {/* Import home pages */}
-            <Route path="/home/SeasonSummary" element={<SeasonSummary />} />
-            <Route path="/home/SeasonIntroduction" element={<SeasonIntroduction />} />
-            <Route path="/home/SeasonChanges" element={<SeasonChanges />} />
-            <Route path="/home/RegulationChanges" element={<RegulationChanges />} />
-          </Routes>
-        </BrowserRouter>
+          {/* Import home pages */}
+          <Route path="/home/SeasonSummary" element={<SeasonSummary />} />
+          <Route
+            path="/home/SeasonIntroduction"
+            element={<SeasonIntroduction />}
+          />
+          <Route path="/home/SeasonChanges" element={<SeasonChanges />} />
+          <Route
+            path="/home/RegulationChanges"
+            element={<RegulationChanges />}
+          />
+
+          {/* Import driver pages */}
+          <Route
+            path="/Drivers"
+            element={<LandingDrivers />}
+          />
+        </Routes>
       </main>
       <Footer />
-    </>
+    </BrowserRouter>
   );
 }
 

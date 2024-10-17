@@ -1,0 +1,22 @@
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+
+  .carousel {
+    width: 700px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-top-right-radius: 20px;
+      border-top: solid #e10600 5px;
+      border-right: solid #e10600 5px;
+    }
+
+    @media screen and (max-width: 800px) {
+      width: auto;
+    }
+  }
+}

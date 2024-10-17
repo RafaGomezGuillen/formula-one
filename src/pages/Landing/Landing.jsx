@@ -27,7 +27,7 @@ export const Landing = () => {
               had been planned for 2021, but were delayed until 2022 due to the
               COVID-19 pandemic.
             </Card.Text>
-            <Link to="/home/SeasonChanges" title="Go to Season introduction" className="btn">
+            <Link to="/home/SeasonIntroduction" title="Go to Season introduction" className="btn">
               READ MORE
             </Link>
           </Card.Body>
@@ -94,7 +94,7 @@ export const Landing = () => {
           <Card.Body>
             <Card.Title>About</Card.Title>
             <Card.Text>
-              TODO RAFAAAAAA
+              Anim esse consequat dolore voluptate deserunt. Reprehenderit esse ullamco voluptate elit. Labore excepteur nulla veniam deserunt enim irure dolore nostrud aliqua labore nisi aliqua incididunt veniam.
             </Card.Text>
             <a
               src="https://github.com/RafaGomezGuillen/formula-one"

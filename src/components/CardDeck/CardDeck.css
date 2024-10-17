@@ -1,0 +1,10 @@
+.card-deck-link {
+  background-color: #e10600;
+  color: white;
+
+  &:hover {
+    background-color: #e10600;
+    color: white;
+    text-decoration: underline;
+  }
+}

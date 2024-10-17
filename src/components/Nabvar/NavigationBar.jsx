@@ -12,16 +12,46 @@ import F1Logo from "../../assets/img/F1Logo.svg";
 
 export const NavigationBar = () => {
   const carData = [
-    "Red Bull",
-    "Mercedes",
-    "Ferrari",
-    "McLaren",
-    "Alpine",
-    "Aston Martin",
-    "Alfa Romeo",
-    "Haas",
-    "Williams",
-    "AlphaTauri",
+    {
+      title: "Red Bull",
+      link: "RedBull",
+    },
+    {
+      title: "Mercedes",
+      link: "Mercedes",
+    },
+    {
+      title: "Ferrari",
+      link: "Mercedes",
+    },
+    {
+      title: "McLaren",
+      link: "McLaren",
+    },
+    {
+      title: "Alpine",
+      link: "Alpine",
+    },
+    {
+      title: "Aston Martin",
+      link: "AstonMartin",
+    },
+    {
+      title: "Alfa Romeo",
+      link: "AlfaRomeo",
+    },
+    {
+      title: "Haas",
+      link: "Haas",
+    },
+    {
+      title: "Williams",
+      link: "Williams",
+    },
+    {
+      title: "AlphaTauri",
+      link: "AlphaTauri",
+    }
   ];
 
   return (
@@ -43,18 +73,24 @@ export const NavigationBar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav>
-            <Nav.Link href="/" title="Go to home page">Home</Nav.Link>
-            <Nav.Link href="#link" title="Go to schedule page">Schedule</Nav.Link>
+            <Nav.Link href="/Drivers" title="Go to drivers page">
+              Drivers
+            </Nav.Link>
+            <Nav.Link href="/Schedule" title="Go to schedule page">
+              Schedule
+            </Nav.Link>
             <NavDropdown title="Teams" id="basic-nav-dropdown">
               <div className="team-container">
                 {carData.map((car, index) => (
-                  <NavDropdown.Item key={index} href={`/teams/${car}`}>
-                    {car}
+                  <NavDropdown.Item key={index} href={`/teams/${car.link}`}>
+                    {car.title}
                   </NavDropdown.Item>
                 ))}
               </div>
             </NavDropdown>
-            <Nav.Link href="#link" title="Go to results page">Results</Nav.Link>
+            <Nav.Link href="/Results" title="Go to results page">
+              Results
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

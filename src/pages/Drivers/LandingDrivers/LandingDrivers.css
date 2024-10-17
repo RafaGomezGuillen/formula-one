@@ -1,0 +1,33 @@
+.drivers-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 10px;
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .driver-card {
+    border-top: 2.5px solid black;
+    border-right: 2.5px solid black;
+    border-top-right-radius: 20px;
+
+    &:hover {
+      border-top: 2.5px solid #F00300;
+    border-right: 2.5px solid #F00300;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+  }
+
+  @media screen and (max-width: 600px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+}
