@@ -19,8 +19,9 @@ import { RegulationChanges } from "./pages/home/RegulationChanges/RegulationChan
 import { SeasonChanges } from "./pages/home/SeasonChanges/SeasonChanges";
 import { SeasonIntroduction } from "./pages/home/SeasonIntroduction/SeasonIntroduction";
 import { SeasonSummary } from "./pages/home/SeasonSummary/SeasonSummary";
+import { Results } from "./pages/Results/Results";
 
-// Import driver pages 
+// Import driver pages
 import { LandingDrivers } from "./pages/Drivers/LandingDrivers/LandingDrivers";
 
 // Import schedule pages
@@ -50,18 +51,13 @@ function App() {
             path="/home/RegulationChanges"
             element={<RegulationChanges />}
           />
+          <Route path="/Results" element={<Results />} />
 
           {/* Import driver pages */}
-          <Route
-            path="/Drivers"
-            element={<LandingDrivers />}
-          />
+          <Route path="/Drivers" element={<LandingDrivers />} />
 
           {/* Import schedule pages */}
-          <Route
-            path="/Schedule"
-            element={<LandingSchedule />}
-          />
+          <Route path="/Schedule" element={<LandingSchedule />} />
         </Routes>
       </main>
       <Footer />

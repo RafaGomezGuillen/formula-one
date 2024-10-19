@@ -1,0 +1,21 @@
+.results-summary-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 10px;
+  border-top: 5px solid #e10600;
+  border-right: 5px solid #e10600;
+  border-top-right-radius: 20px;
+
+  div {
+    width: 50%;
+  }
+
+  @media screen and (max-width: 1000px) {
+    flex-direction: column;
+
+    div {
+      width: 100%;
+    }
+  }
+}
