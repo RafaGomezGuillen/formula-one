@@ -5,6 +5,7 @@ import "./App.css";
 
 // Import JSON
 import drivers from "./assets/json/DriverStatistics.json";
+import driversStats from "./assets/json/DriverStandings.json";
 
 // Import libraries
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -32,6 +33,17 @@ import { Driver } from "./pages/Drivers/Driver/Driver";
 import { LandingSchedule } from "./pages/Schedule/LandingSchedule/LandingSchedule";
 
 function App() {
+  const combinedDrivers = drivers.map((driver) => {
+    const standings = driversStats.find(
+      (standing) => standing.DriverNumber === driver.DriverNumber
+    );
+
+    return {
+      ...driver,
+      ...standings,
+    };
+  });
+
   return (
     <BrowserRouter>
       <NavigationBar />
@@ -59,7 +71,7 @@ function App() {
 
           {/* Import driver pages */}
           <Route path="/Drivers" element={<LandingDrivers />} />
-          {drivers.map((driver) => (
+          {combinedDrivers.map((driver) => (
             <Route
               key={driver.Pos}
               path={`/Driver/${driver.Pos}`}

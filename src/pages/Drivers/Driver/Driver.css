@@ -1,0 +1,27 @@
+.driver-stats-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 4fr 1fr;
+  grid-column-gap: 5px;
+  border-top: solid 5px #e10600;
+  border-right: solid 5px #e10600;
+  border-top-right-radius: 20px;
+  padding-top: 10px;
+  padding-right: 10px;
+
+  div:nth-child(2) > img {
+    border-top-right-radius: 10px;
+
+    @media screen and (max-width: 1050px) {
+      border-top-right-radius: 0px;
+    }
+  }
+
+  @media screen and (max-width: 1050px) {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
+}

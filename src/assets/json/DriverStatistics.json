@@ -11,7 +11,14 @@
     "LapsLed": 498,
     "Points": 454,
     "Image": "/img/drivers/red-bull/max.png",
-    "Country": "/img/countries/Netherlands.jpg"
+    "Country": "/img/countries/Netherlands.jpg",
+    "Logo": "/img/drivers-content/max-verstappen/logo.jpg",
+    "Helmet": "/img/drivers-content/max-verstappen/helmet.png",
+    "Image1": "/img/drivers-content/max-verstappen/img-1.jpg",
+    "Image2": "/img/drivers-content/max-verstappen/img-2.jpg",
+    "Image3": "/img/drivers-content/max-verstappen/img-3.jpg",
+    "Image4": "/img/drivers-content/max-verstappen/img-4.jpg",
+    "DriverNumber": 1
   },
   {
     "Pos": 2,
@@ -25,7 +32,14 @@
     "LapsLed": 310,
     "Points": 308,
     "Image": "/img/drivers/ferrari/leclerc.png",
-    "Country": "/img/countries/Monaco.jpg"
+    "Country": "/img/countries/Monaco.jpg",
+    "Logo": "/img/drivers-content/charles-leclerc/logo.jpg",
+    "Helmet": "/img/drivers-content/charles-leclerc/helmet.png",
+    "Image1": "/img/drivers-content/charles-leclerc/img-1.jpg",
+    "Image2": "/img/drivers-content/charles-leclerc/img-2.jpg",
+    "Image3": "/img/drivers-content/charles-leclerc/img-3.jpg",
+    "Image4": "/img/drivers-content/charles-leclerc/img-4.jpg",
+    "DriverNumber": 16
   },
   {
     "Pos": 3,
@@ -39,7 +53,14 @@
     "LapsLed": 147,
     "Points": 305,
     "Image": "/img/drivers/red-bull/checo.png",
-    "Country": "/img/countries/Mexico.jpg"
+    "Country": "/img/countries/Mexico.jpg",
+    "Logo": "/img/drivers-content/sergio-perez/logo.jpg",
+    "Helmet": "/img/drivers-content/sergio-perez/helmet.png",
+    "Image1": "/img/drivers-content/sergio-perez/img-1.jpg",
+    "Image2": "/img/drivers-content/sergio-perez/img-2.jpg",
+    "Image3": "/img/drivers-content/sergio-perez/img-3.jpg",
+    "Image4": "/img/drivers-content/sergio-perez/img-4.jpg",
+    "DriverNumber": 11
   },
   {
     "Pos": 4,
@@ -53,7 +74,14 @@
     "LapsLed": 28,
     "Points": 275,
     "Image": "/img/drivers/mercedes/russell.png",
-    "Country": "/img/countries/Uk.jpg"
+    "Country": "/img/countries/Uk.jpg",
+    "Logo": "/img/drivers-content/george-russell/logo.jpg",
+    "Helmet": "/img/drivers-content/george-russell/helmet.png",
+    "Image1": "/img/drivers-content/george-russell/img-1.jpg",
+    "Image2": "/img/drivers-content/george-russell/img-2.jpg",
+    "Image3": "/img/drivers-content/george-russell/img-3.jpg",
+    "Image4": "/img/drivers-content/george-russell/img-4.jpg",
+    "DriverNumber": 63
   },
   {
     "Pos": 5,
@@ -67,7 +95,14 @@
     "LapsLed": 72,
     "Points": 246,
     "Image": "/img/drivers/ferrari/carlos.png",
-    "Country": "/img/countries/Spain.jpg"
+    "Country": "/img/countries/Spain.jpg",
+    "Logo": "/img/drivers-content/carlos-sainz/logo.jpg",
+    "Helmet": "/img/drivers-content/carlos-sainz/helmet.png",
+    "Image1": "/img/drivers-content/carlos-sainz/img-1.jpg",
+    "Image2": "/img/drivers-content/carlos-sainz/img-2.jpg",
+    "Image3": "/img/drivers-content/carlos-sainz/img-3.jpg",
+    "Image4": "/img/drivers-content/carlos-sainz/img-4.jpg",
+    "DriverNumber": 55
   },
   {
     "Pos": 6,
@@ -81,7 +116,14 @@
     "LapsLed": 36,
     "Points": 240,
     "Image": "/img/drivers/mercedes/hamilton.png",
-    "Country": "/img/countries/Uk.jpg"
+    "Country": "/img/countries/Uk.jpg",
+    "Logo": "/img/drivers-content/lewis-hamilton/logo.jpg",
+    "Helmet": "/img/drivers-content/lewis-hamilton/helmet.png",
+    "Image1": "/img/drivers-content/lewis-hamilton/img-1.jpg",
+    "Image2": "/img/drivers-content/lewis-hamilton/img-2.jpg",
+    "Image3": "/img/drivers-content/lewis-hamilton/img-3.jpg",
+    "Image4": "/img/drivers-content/lewis-hamilton/img-4.jpg",
+    "DriverNumber": 44
   },
   {
     "Pos": 7,
@@ -95,7 +137,14 @@
     "LapsLed": 0,
     "Points": 122,
     "Image": "/img/drivers/mclaren/lando.png",
-    "Country": "/img/countries/Uk.jpg"
+    "Country": "/img/countries/Uk.jpg",
+    "Logo": "/img/drivers-content/lando-norris/logo.jpg",
+    "Helmet": "/img/drivers-content/lando-norris/helmet.png",
+    "Image1": "/img/drivers-content/lando-norris/img-1.jpg",
+    "Image2": "/img/drivers-content/lando-norris/img-2.jpg",
+    "Image3": "/img/drivers-content/lando-norris/img-3.jpg",
+    "Image4": "/img/drivers-content/lando-norris/img-4.jpg",
+    "DriverNumber": 4
   },
   {
     "Pos": 8,
@@ -109,7 +158,14 @@
     "LapsLed": 0,
     "Points": 92,
     "Image": "/img/drivers/alpine/ocon.png",
-    "Country": "/img/countries/France.jpg"
+    "Country": "/img/countries/France.jpg",
+    "Logo": "/img/drivers-content/esteban-ocon/logo.jpg",
+    "Helmet": "/img/drivers-content/esteban-ocon/helmet.png",
+    "Image1": "/img/drivers-content/esteban-ocon/img-1.jpg",
+    "Image2": "/img/drivers-content/esteban-ocon/img-2.jpg",
+    "Image3": "/img/drivers-content/esteban-ocon/img-3.jpg",
+    "Image4": "/img/drivers-content/esteban-ocon/img-4.jpg",
+    "DriverNumber": 31
   },
   {
     "Pos": 9,
@@ -123,7 +179,14 @@
     "LapsLed": 1,
     "Points": 81,
     "Image": "/img/drivers/alpine/fernando.png",
-    "Country": "/img/countries/Spain.jpg"
+    "Country": "/img/countries/Spain.jpg",
+    "Logo": "/img/drivers-content/fernando-alonso/logo.jpg",
+    "Helmet": "/img/drivers-content/fernando-alonso/helmet.png",
+    "Image1": "/img/drivers-content/fernando-alonso/img-1.jpg",
+    "Image2": "/img/drivers-content/fernando-alonso/img-2.jpg",
+    "Image3": "/img/drivers-content/fernando-alonso/img-3.jpg",
+    "Image4": "/img/drivers-content/fernando-alonso/img-4.jpg",
+    "DriverNumber": 14
   },
   {
     "Pos": 10,
@@ -137,7 +200,14 @@
     "LapsLed": 0,
     "Points": 49,
     "Image": "/img/drivers/alfa-romeo/bottas.png",
-    "Country": "/img/countries/Finland.jpg"
+    "Country": "/img/countries/Finland.jpg",
+    "Logo": "/img/drivers-content/valtteri-bottas/logo.jpg",
+    "Helmet": "/img/drivers-content/valtteri-bottas/helmet.png",
+    "Image1": "/img/drivers-content/valtteri-bottas/img-1.jpg",
+    "Image2": "/img/drivers-content/valtteri-bottas/img-2.jpg",
+    "Image3": "/img/drivers-content/valtteri-bottas/img-3.jpg",
+    "Image4": "/img/drivers-content/valtteri-bottas/img-4.jpg",
+    "DriverNumber": 77
   },
   {
     "Pos": 11,
@@ -151,7 +221,14 @@
     "LapsLed": 0,
     "Points": 37,
     "Image": "/img/drivers/mclaren/daniel.png",
-    "Country": "/img/countries/Australia.jpg"
+    "Country": "/img/countries/Australia.jpg",
+    "Logo": "/img/drivers-content/daniel-ricciardo/logo.jpg",
+    "Helmet": "/img/drivers-content/daniel-ricciardo/helmet.png",
+    "Image1": "/img/drivers-content/daniel-ricciardo/img-1.jpg",
+    "Image2": "/img/drivers-content/daniel-ricciardo/img-2.jpg",
+    "Image3": "/img/drivers-content/daniel-ricciardo/img-3.jpg",
+    "Image4": "/img/drivers-content/daniel-ricciardo/img-4.jpg",
+    "DriverNumber": 3
   },
   {
     "Pos": 12,
@@ -165,7 +242,14 @@
     "LapsLed": 2,
     "Points": 37,
     "Image": "/img/drivers/aston-martin/vettel.png",
-    "Country": "/img/countries/Germany.jpg"
+    "Country": "/img/countries/Germany.jpg",
+    "Logo": "/img/drivers-content/sebastian-vettel/logo.jpg",
+    "Helmet": "/img/drivers-content/sebastian-vettel/helmet.png",
+    "Image1": "/img/drivers-content/sebastian-vettel/img-1.jpg",
+    "Image2": "/img/drivers-content/sebastian-vettel/img-2.jpg",
+    "Image3": "/img/drivers-content/sebastian-vettel/img-3.jpg",
+    "Image4": "/img/drivers-content/sebastian-vettel/img-4.jpg",
+    "DriverNumber": 5
   },
   {
     "Pos": 13,
@@ -179,7 +263,14 @@
     "LapsLed": 0,
     "Points": 25,
     "Image": "/img/drivers/haas/kevin.png",
-    "Country": "/img/countries/Denmark.jpg"
+    "Country": "/img/countries/Denmark.jpg",
+    "Logo": "/img/drivers-content/kevin-magnussen/logo.jpg",
+    "Helmet": "/img/drivers-content/kevin-magnussen/helmet.png",
+    "Image1": "/img/drivers-content/kevin-magnussen/img-1.jpg",
+    "Image2": "/img/drivers-content/kevin-magnussen/img-2.jpg",
+    "Image3": "/img/drivers-content/kevin-magnussen/img-3.jpg",
+    "Image4": "/img/drivers-content/kevin-magnussen/img-4.jpg",
+    "DriverNumber": 20
   },
   {
     "Pos": 14,
@@ -193,7 +284,14 @@
     "LapsLed": 0,
     "Points": 23,
     "Image": "/img/drivers/alpha-tauri/gasly.png",
-    "Country": "/img/countries/France.jpg"
+    "Country": "/img/countries/France.jpg",
+    "Logo": "/img/drivers-content/pierre-gasly/logo.jpg",
+    "Helmet": "/img/drivers-content/pierre-gasly/helmet.png",
+    "Image1": "/img/drivers-content/pierre-gasly/img-1.jpg",
+    "Image2": "/img/drivers-content/pierre-gasly/img-2.jpg",
+    "Image3": "/img/drivers-content/pierre-gasly/img-3.jpg",
+    "Image4": "/img/drivers-content/pierre-gasly/img-4.jpg",
+    "DriverNumber": 10
   },
   {
     "Pos": 15,
@@ -207,7 +305,14 @@
     "LapsLed": 0,
     "Points": 18,
     "Image": "/img/drivers/aston-martin/lance.png",
-    "Country": "/img/countries/Canada.jpg"
+    "Country": "/img/countries/Canada.jpg",
+    "Logo": "/img/drivers-content/lance-stroll/logo.jpg",
+    "Helmet": "/img/drivers-content/lance-stroll/helmet.png",
+    "Image1": "/img/drivers-content/lance-stroll/img-1.jpg",
+    "Image2": "/img/drivers-content/lance-stroll/img-2.jpg",
+    "Image3": "/img/drivers-content/lance-stroll/img-3.jpg",
+    "Image4": "/img/drivers-content/lance-stroll/img-4.jpg",
+    "DriverNumber": 18
   },
   {
     "Pos": 16,
@@ -221,7 +326,14 @@
     "LapsLed": 0,
     "Points": 12,
     "Image": "/img/drivers/haas/myck.png",
-    "Country": "/img/countries/Germany.jpg"
+    "Country": "/img/countries/Germany.jpg",
+    "Logo": "/img/drivers-content/mick-schumacher/logo.jpg",
+    "Helmet": "/img/drivers-content/mick-schumacher/helmet.png",
+    "Image1": "/img/drivers-content/mick-schumacher/img-1.jpg",
+    "Image2": "/img/drivers-content/mick-schumacher/img-2.jpg",
+    "Image3": "/img/drivers-content/mick-schumacher/img-3.jpg",
+    "Image4": "/img/drivers-content/mick-schumacher/img-4.jpg",
+    "DriverNumber": 47
   },
   {
     "Pos": 17,
@@ -235,7 +347,14 @@
     "LapsLed": 0,
     "Points": 12,
     "Image": "/img/drivers/alpha-tauri/yuki.png",
-    "Country": "/img/countries/Japan.jpg"
+    "Country": "/img/countries/Japan.jpg",
+    "Logo": "/img/drivers-content/yuki-tsunoda/logo.jpg",
+    "Helmet": "/img/drivers-content/yuki-tsunoda/helmet.png",
+    "Image1": "/img/drivers-content/yuki-tsunoda/img-1.jpg",
+    "Image2": "/img/drivers-content/yuki-tsunoda/img-2.jpg",
+    "Image3": "/img/drivers-content/yuki-tsunoda/img-3.jpg",
+    "Image4": "/img/drivers-content/yuki-tsunoda/img-4.jpg",
+    "DriverNumber": 22
   },
   {
     "Pos": 18,
@@ -249,7 +368,14 @@
     "LapsLed": 0,
     "Points": 6,
     "Image": "/img/drivers/alfa-romeo/zhou.png",
-    "Country": "/img/countries/China.jpg"
+    "Country": "/img/countries/China.jpg",
+    "Logo": "/img/drivers-content/guanyu-zhou/logo.jpg",
+    "Helmet": "/img/drivers-content/guanyu-zhou/helmet.png",
+    "Image1": "/img/drivers-content/guanyu-zhou/img-1.jpg",
+    "Image2": "/img/drivers-content/guanyu-zhou/img-2.jpg",
+    "Image3": "/img/drivers-content/guanyu-zhou/img-3.jpg",
+    "Image4": "/img/drivers-content/guanyu-zhou/img-4.jpg",
+    "DriverNumber": 24
   },
   {
     "Pos": 19,
@@ -263,7 +389,14 @@
     "LapsLed": 0,
     "Points": 4,
     "Image": "/img/drivers/williams/albon.png",
-    "Country": "/img/countries/Thailand.jpg"
+    "Country": "/img/countries/Thailand.jpg",
+    "Logo": "/img/drivers-content/alexander-albon/logo.jpg",
+    "Helmet": "/img/drivers-content/alexander-albon/helmet.png",
+    "Image1": "/img/drivers-content/alexander-albon/img-1.jpg",
+    "Image2": "/img/drivers-content/alexander-albon/img-2.jpg",
+    "Image3": "/img/drivers-content/alexander-albon/img-3.jpg",
+    "Image4": "/img/drivers-content/alexander-albon/img-4.jpg",
+    "DriverNumber": 23
   },
   {
     "Pos": 20,
@@ -277,6 +410,13 @@
     "LapsLed": 0,
     "Points": 2,
     "Image": "/img/drivers/williams/latifi.png",
-    "Country": "/img/countries/Canada.jpg"
+    "Country": "/img/countries/Canada.jpg",
+    "Logo": "/img/drivers-content/nicholas-latifi/logo.jpg",
+    "Helmet": "/img/drivers-content/nicholas-latifi/helmet.png",
+    "Image1": "/img/drivers-content/nicholas-latifi/img-1.jpg",
+    "Image2": "/img/drivers-content/nicholas-latifi/img-2.jpg",
+    "Image3": "/img/drivers-content/nicholas-latifi/img-3.jpg",
+    "Image4": "/img/drivers-content/nicholas-latifi/img-4.jpg",
+    "DriverNumber": 6
   }
 ]
