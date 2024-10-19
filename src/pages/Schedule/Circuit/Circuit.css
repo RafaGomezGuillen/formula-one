@@ -1,7 +1,7 @@
-.driver-stats-container {
+.circuit-stats-container {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-template-rows: 4fr 2fr;
+  grid-template-rows: 4fr 1fr;
   grid-column-gap: 5px;
   border-top: solid 5px #e10600;
   border-right: solid 5px #e10600;
@@ -17,13 +17,13 @@
     }
   }
 
-  .driver-info {
+  .circuit-info {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr;
     margin-top: 20px;
 
-    .driver-info-imgs {
+    .circuit-info-imgs {
       display: flex;
       align-items: right;
       

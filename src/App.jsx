@@ -6,6 +6,7 @@ import "./App.css";
 // Import JSON
 import drivers from "./assets/json/DriverStatistics.json";
 import driversStats from "./assets/json/DriverStandings.json";
+import circuits from "./assets/json/Circuits.json";
 
 // Import libraries
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -31,6 +32,7 @@ import { Driver } from "./pages/Drivers/Driver/Driver";
 
 // Import schedule pages
 import { LandingSchedule } from "./pages/Schedule/LandingSchedule/LandingSchedule";
+import { Circuit } from "./pages/Schedule/Circuit/Circuit";
 
 function App() {
   const combinedDrivers = drivers.map((driver) => {
@@ -81,6 +83,13 @@ function App() {
 
           {/* Import schedule / circuits pages */}
           <Route path="/Schedule" element={<LandingSchedule />} />
+          {circuits.map((circuit) => (
+            <Route
+              key={circuit.Round}
+              path={`/Schedule/${circuit.Round}`}
+              element={<Circuit circuit={circuit} />}
+            />
+          ))}
         </Routes>
       </main>
       <Footer />

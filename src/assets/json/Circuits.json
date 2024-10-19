@@ -10,7 +10,8 @@
     "Distance": 308.238,
     "LapRecord": "1:31.447",
     "Image": "/img/circuits/Bahrain_Circuit.png",
-    "Country": "/img/countries/Bahrain.jpg"
+    "Country": "/img/countries/Bahrain.jpg",
+    "ImageTrack": "/img/rounds/Round1.jpg"
   },
   {
     "Round": 2,
@@ -23,7 +24,8 @@
     "Distance": 308.45,
     "LapRecord": "1:30.734",
     "Image": "/img/circuits/Saudi_Arabia_Circuit.png",
-    "Country": "/img/countries/Saudi.png"
+    "Country": "/img/countries/Saudi.png",
+    "ImageTrack": "/img/rounds/Round2.jpg"
   },
   {
     "Round": 3,
@@ -36,7 +38,8 @@
     "Distance": 306.124,
     "LapRecord": "1:20.235",
     "Image": "/img/circuits/Australia_Circuit.png",
-    "Country": "/img/countries/Australia.jpg"
+    "Country": "/img/countries/Australia.jpg",
+    "ImageTrack": "/img/rounds/Round3.jpg"
   },
   {
     "Round": 4,
@@ -49,7 +52,8 @@
     "Distance": 309.049,
     "LapRecord": "1:15.484",
     "Image": "/img/circuits/Emilia_Romagna_Circuit.png",
-    "Country": "/img/countries/Italy.png"
+    "Country": "/img/countries/Italy.png",
+    "ImageTrack": "/img/rounds/Round4.jpg"
   },
   {
     "Round": 5,
@@ -62,7 +66,8 @@
     "Distance": 308.326,
     "LapRecord": "1:31.361",
     "Image": "/img/circuits/Miami_Circuit.png",
-    "Country": "/img/countries/Usa.png"
+    "Country": "/img/countries/Usa.png",
+    "ImageTrack": "/img/rounds/Round5.jpg"
   },
   {
     "Round": 6,
@@ -75,7 +80,8 @@
     "Distance": 308.424,
     "LapRecord": "1:18.149",
     "Image": "/img/circuits/Spain_Circuit.png",
-    "Country": "/img/countries/Spain.jpg"
+    "Country": "/img/countries/Spain.jpg",
+    "ImageTrack": "/img/rounds/Round6.jpg"
   },
   {
     "Round": 7,
@@ -88,7 +94,8 @@
     "Distance": 260.286,
     "LapRecord": "1:12.909",
     "Image": "/img/circuits/Monaco_Circuit.png",
-    "Country": "/img/countries/Monaco.jpg"
+    "Country": "/img/countries/Monaco.jpg",
+    "ImageTrack": "/img/rounds/Round7.jpg"
   },
   {
     "Round": 8,
@@ -101,7 +108,8 @@
     "Distance": 306.049,
     "LapRecord": "1:43.009",
     "Image": "/img/circuits/Baku_Circuit.png",
-    "Country": "/img/countries/Azerbaijan.png"
+    "Country": "/img/countries/Azerbaijan.png",
+    "ImageTrack": "/img/rounds/Round8.jpg"
   },
   {
     "Round": 9,
@@ -114,7 +122,8 @@
     "Distance": 305.27,
     "LapRecord": "1:13.078",
     "Image": "/img/circuits/Canada_Circuit.png",
-    "Country": "/img/countries/Canada.jpg"
+    "Country": "/img/countries/Canada.jpg",
+    "ImageTrack": "/img/rounds/Round9.jpg"
   },
   {
     "Round": 10,
@@ -127,7 +136,8 @@
     "Distance": 306.198,
     "LapRecord": "1:27.097",
     "Image": "/img/circuits/Great_Britain_Circuit.png",
-    "Country": "/img/countries/Uk.jpg"
+    "Country": "/img/countries/Uk.jpg",
+    "ImageTrack": "/img/rounds/Round10.jpg"
   },
   {
     "Round": 11,
@@ -140,7 +150,8 @@
     "Distance": 306.452,
     "LapRecord": "1:05.619",
     "Image": "/img/circuits/Austria_Circuit.png",
-    "Country": "/img/countries/Austria.png"
+    "Country": "/img/countries/Austria.png",
+    "ImageTrack": "/img/rounds/Round11.jpg"
   },
   {
     "Round": 12,
@@ -153,7 +164,8 @@
     "Distance": 309.69,
     "LapRecord": "1:.32.740",
     "Image": "/img/circuits/France_Circuit.png",
-    "Country": "/img/countries/France.jpg"
+    "Country": "/img/countries/France.jpg",
+    "ImageTrack": "/img/rounds/Round21.jpg"
   },
   {
     "Round": 13,
@@ -166,7 +178,8 @@
     "Distance": 306.63,
     "LapRecord": "1:16.627",
     "Image": "/img/circuits/Hungary_Circuit.png",
-    "Country": "/img/countries/Hungary.png"
+    "Country": "/img/countries/Hungary.png",
+    "ImageTrack": "/img/rounds/Round12.jpg"
   },
   {
     "Round": 14,
@@ -179,7 +192,8 @@
     "Distance": 308.052,
     "LapRecord": "1:46.286",
     "Image": "/img/circuits/Belgium_Circuit.png",
-    "Country": "/img/countries/Belgium.png"
+    "Country": "/img/countries/Belgium.png",
+    "ImageTrack": "/img/rounds/Round13.jpg"
   },
   {
     "Round": 15,
@@ -192,7 +206,8 @@
     "Distance": 306.587,
     "LapRecord": "1:11.097",
     "Image": "/img/circuits/Netherlands_Circuit.png",
-    "Country": "/img/countries/Netherlands.jpg"
+    "Country": "/img/countries/Netherlands.jpg",
+    "ImageTrack": "/img/rounds/Round14.jpg"
   },
   {
     "Round": 16,
@@ -205,7 +220,8 @@
     "Distance": 306.72,
     "LapRecord": "1:21.046",
     "Image": "/img/circuits/Italy_Circuit.png",
-    "Country": "/img/countries/Italy.png"
+    "Country": "/img/countries/Italy.png",
+    "ImageTrack": "/img/rounds/Round15.jpg"
   },
   {
     "Round": 17,
@@ -218,7 +234,8 @@
     "Distance": 308.706,
     "LapRecord": "1:41.905",
     "Image": "/img/circuits/Singapore_Circuit.png",
-    "Country": "/img/countries/Singapore.png"
+    "Country": "/img/countries/Singapore.png",
+    "ImageTrack": "/img/rounds/Round16.jpg"
   },
   {
     "Round": 18,
@@ -231,7 +248,8 @@
     "Distance": 307.471,
     "LapRecord": "1:30.983",
     "Image": "/img/circuits/Japan_Circuit.png",
-    "Country": "/img/countries/Japan.jpg"
+    "Country": "/img/countries/Japan.jpg",
+    "ImageTrack": "/img/rounds/Round17.jpg"
   },
   {
     "Round": 19,
@@ -244,7 +262,8 @@
     "Distance": 308.405,
     "LapRecord": "1:36.169",
     "Image": "/img/circuits/USA_Circuit.png",
-    "Country": "/img/countries/Usa.png"
+    "Country": "/img/countries/Usa.png",
+    "ImageTrack": "/img/rounds/Round18.jpg"
   },
   {
     "Round": 20,
@@ -257,7 +276,8 @@
     "Distance": 305.354,
     "LapRecord": "1:17.774",
     "Image": "/img/circuits/Mexico_Circuit.png",
-    "Country": "/img/countries/Mexico.jpg"
+    "Country": "/img/countries/Mexico.jpg",
+    "ImageTrack": "/img/rounds/Round19.jpg"
   },
   {
     "Round": 21,
@@ -270,7 +290,8 @@
     "Distance": 305.879,
     "LapRecord": "1:10.540",
     "Image": "/img/circuits/Brazil_Circuit.png",
-    "Country": "/img/countries/Brazil.png"
+    "Country": "/img/countries/Brazil.png",
+    "ImageTrack": "/img/rounds/Round20.jpg"
   },
   {
     "Round": 22,
@@ -283,6 +304,7 @@
     "Distance": 306.4183,
     "LapRecord": "1:26.103",
     "Image": "/img/circuits/Abu_Dhabi_Circuit.png",
-    "Country": "/img/countries/Abu.png"
+    "Country": "/img/countries/Abu.png",
+    "ImageTrack": "/img/rounds/Round22.jpg"
   }
 ]

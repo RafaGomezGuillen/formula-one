@@ -68,11 +68,6 @@ export const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/Teams/RedBull" title="Go to Red Bull Team page">
-                  Red Bull Team
-                </Link>
-              </li>
-              <li>
                 <Link to="/Results" title="Go to Results page">
                   Results
                 </Link>

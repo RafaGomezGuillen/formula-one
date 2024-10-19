@@ -35,21 +35,14 @@ export const Driver = ({ driver }) => {
           />
         </div>
 
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "1fr 1fr",
-            gridTemplateRows: "1fr",
-            marginTop: "20px",
-          }}
-        >
+        <div className="driver-info">
           <div
             style={{
               fontSize: "32px",
               fontWeight: "500",
             }}
           >{`${driver.Pos} - ${driver.Driver}`}</div>
-          <div style={{ display: "flex", justifyContent: "right" }}>
+          <div className="driver-info-imgs">
             <img
               src={driver.Helmet}
               alt={`Helmet of ${driver.Driver}`}
@@ -69,43 +62,41 @@ export const Driver = ({ driver }) => {
           </div>
         </div>
 
-        <div>
-          <Table
-            striped
-            bordered
-            responsive
-            style={{
-              marginTop: "20px",
-            }}
-          >
-            <thead>
-              <tr>
-                <th>Position standing</th>
-                <th>Team</th>
-                <th>Grand Prix entered</th>
-                <th>Wins</th>
-                <th>Podiums</th>
-                <th>Pole position</th>
-                <th>Fastest lap</th>
-                <th>Laps led</th>
-                <th>Points</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>{driver.Pos}</td>
-                <td>{driver.Team}</td>
-                <td>{driver.GrandPrix}</td>
-                <td>{driver.Wins}</td>
-                <td>{driver.Podiums}</td>
-                <td>{driver.PolePosition}</td>
-                <td>{driver.FastestLap}</td>
-                <td>{driver.LapsLed}</td>
-                <td>{driver.Points}</td>
-              </tr>
-            </tbody>
-          </Table>
-        </div>
+        <Table
+          striped
+          bordered
+          responsive
+          style={{
+            marginTop: "20px",
+          }}
+        >
+          <thead>
+            <tr>
+              <th>Position standing</th>
+              <th>Team</th>
+              <th>Grand Prix entered</th>
+              <th>Wins</th>
+              <th>Podiums</th>
+              <th>Pole position</th>
+              <th>Fastest lap</th>
+              <th>Laps led</th>
+              <th>Points</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>{driver.Pos}</td>
+              <td>{driver.Team}</td>
+              <td>{driver.GrandPrix}</td>
+              <td>{driver.Wins}</td>
+              <td>{driver.Podiums}</td>
+              <td>{driver.PolePosition}</td>
+              <td>{driver.FastestLap}</td>
+              <td>{driver.LapsLed}</td>
+              <td>{driver.Points}</td>
+            </tr>
+          </tbody>
+        </Table>
       </div>
 
       <FormulaCarousel images={[driver.Image2, driver.Image3, driver.Image4]} />
