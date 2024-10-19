@@ -3,6 +3,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // Import CSS
 import "./App.css";
 
+// Import JSON
+import drivers from "./assets/json/DriverStatistics.json";
+
 // Import libraries
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
@@ -23,6 +26,7 @@ import { Results } from "./pages/Results/Results";
 
 // Import driver pages
 import { LandingDrivers } from "./pages/Drivers/LandingDrivers/LandingDrivers";
+import { Driver } from "./pages/Drivers/Driver/Driver";
 
 // Import schedule pages
 import { LandingSchedule } from "./pages/Schedule/LandingSchedule/LandingSchedule";
@@ -55,8 +59,15 @@ function App() {
 
           {/* Import driver pages */}
           <Route path="/Drivers" element={<LandingDrivers />} />
+          {drivers.map((driver) => (
+            <Route
+              key={driver.Pos}
+              path={`/Driver/${driver.Pos}`}
+              element={<Driver driver={driver} />}
+            />
+          ))}
 
-          {/* Import schedule pages */}
+          {/* Import schedule / circuits pages */}
           <Route path="/Schedule" element={<LandingSchedule />} />
         </Routes>
       </main>
