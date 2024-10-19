@@ -1,4 +1,4 @@
-.drivers-container {
+.schedule-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(7, 1fr);
@@ -10,7 +10,7 @@
     color: black;
   }
 
-  .driver-card {
+  .schedule-card {
     border-top: 2.5px solid black;
     border-right: 2.5px solid black;
     border-top-right-radius: 20px;

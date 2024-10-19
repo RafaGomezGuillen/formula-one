@@ -23,6 +23,9 @@ import { SeasonSummary } from "./pages/home/SeasonSummary/SeasonSummary";
 // Import driver pages 
 import { LandingDrivers } from "./pages/Drivers/LandingDrivers/LandingDrivers";
 
+// Import schedule pages
+import { LandingSchedule } from "./pages/Schedule/LandingSchedule/LandingSchedule";
+
 function App() {
   return (
     <BrowserRouter>
@@ -52,6 +55,12 @@ function App() {
           <Route
             path="/Drivers"
             element={<LandingDrivers />}
+          />
+
+          {/* Import schedule pages */}
+          <Route
+            path="/Schedule"
+            element={<LandingSchedule />}
           />
         </Routes>
       </main>

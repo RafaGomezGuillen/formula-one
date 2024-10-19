@@ -8,7 +8,9 @@
     "Laps": 57,
     "Lenght": 5.412,
     "Distance": 308.238,
-    "LapRecord": "1:31.447"
+    "LapRecord": "1:31.447",
+    "Image": "/img/circuits/Bahrain_Circuit.png",
+    "Country": "/img/countries/Bahrain.jpg"
   },
   {
     "Round": 2,
@@ -19,7 +21,9 @@
     "Laps": 50,
     "Lenght": 6.174,
     "Distance": 308.45,
-    "LapRecord": "1:30.734"
+    "LapRecord": "1:30.734",
+    "Image": "/img/circuits/Saudi_Arabia_Circuit.png",
+    "Country": "/img/countries/Saudi.png"
   },
   {
     "Round": 3,
@@ -30,7 +34,9 @@
     "Laps": 58,
     "Lenght": 5.278,
     "Distance": 306.124,
-    "LapRecord": "1:20.235"
+    "LapRecord": "1:20.235",
+    "Image": "/img/circuits/Australia_Circuit.png",
+    "Country": "/img/countries/Australia.jpg"
   },
   {
     "Round": 4,
@@ -41,7 +47,9 @@
     "Laps": 63,
     "Lenght": 4.909,
     "Distance": 309.049,
-    "LapRecord": "1:15.484"
+    "LapRecord": "1:15.484",
+    "Image": "/img/circuits/Emilia_Romagna_Circuit.png",
+    "Country": "/img/countries/Italy.png"
   },
   {
     "Round": 5,
@@ -52,7 +60,9 @@
     "Laps": 57,
     "Lenght": 5.412,
     "Distance": 308.326,
-    "LapRecord": "1:31.361"
+    "LapRecord": "1:31.361",
+    "Image": "/img/circuits/Miami_Circuit.png",
+    "Country": "/img/countries/Usa.png"
   },
   {
     "Round": 6,
@@ -63,7 +73,9 @@
     "Laps": 66,
     "Lenght": 4.675,
     "Distance": 308.424,
-    "LapRecord": "1:18.149"
+    "LapRecord": "1:18.149",
+    "Image": "/img/circuits/Spain_Circuit.png",
+    "Country": "/img/countries/Spain.jpg"
   },
   {
     "Round": 7,
@@ -74,7 +86,9 @@
     "Laps": 78,
     "Lenght": 3.337,
     "Distance": 260.286,
-    "LapRecord": "1:12.909"
+    "LapRecord": "1:12.909",
+    "Image": "/img/circuits/Monaco_Circuit.png",
+    "Country": "/img/countries/Monaco.jpg"
   },
   {
     "Round": 8,
@@ -85,7 +99,9 @@
     "Laps": 51,
     "Lenght": 6.003,
     "Distance": 306.049,
-    "LapRecord": "1:43.009"
+    "LapRecord": "1:43.009",
+    "Image": "/img/circuits/Baku_Circuit.png",
+    "Country": "/img/countries/Azerbaijan.png"
   },
   {
     "Round": 9,
@@ -96,7 +112,9 @@
     "Laps": 70,
     "Lenght": 4.361,
     "Distance": 305.27,
-    "LapRecord": "1:13.078"
+    "LapRecord": "1:13.078",
+    "Image": "/img/circuits/Canada_Circuit.png",
+    "Country": "/img/countries/Canada.jpg"
   },
   {
     "Round": 10,
@@ -107,7 +125,9 @@
     "Laps": 52,
     "Lenght": 5.891,
     "Distance": 306.198,
-    "LapRecord": "1:27.097"
+    "LapRecord": "1:27.097",
+    "Image": "/img/circuits/Great_Britain_Circuit.png",
+    "Country": "/img/countries/Uk.jpg"
   },
   {
     "Round": 11,
@@ -118,7 +138,9 @@
     "Laps": 71,
     "Lenght": 6.318,
     "Distance": 306.452,
-    "LapRecord": "1:05.619"
+    "LapRecord": "1:05.619",
+    "Image": "/img/circuits/Austria_Circuit.png",
+    "Country": "/img/countries/Austria.png"
   },
   {
     "Round": 12,
@@ -129,7 +151,9 @@
     "Laps": 503,
     "Lenght": 5.842,
     "Distance": 309.69,
-    "LapRecord": "1:.32.740"
+    "LapRecord": "1:.32.740",
+    "Image": "/img/circuits/France_Circuit.png",
+    "Country": "/img/countries/France.jpg"
   },
   {
     "Round": 13,
@@ -140,7 +164,9 @@
     "Laps": 70,
     "Lenght": 4.381,
     "Distance": 306.63,
-    "LapRecord": "1:16.627"
+    "LapRecord": "1:16.627",
+    "Image": "/img/circuits/Hungary_Circuit.png",
+    "Country": "/img/countries/Hungary.png"
   },
   {
     "Round": 14,
@@ -151,7 +177,9 @@
     "Laps": 44,
     "Lenght": 7.004,
     "Distance": 308.052,
-    "LapRecord": "1:46.286"
+    "LapRecord": "1:46.286",
+    "Image": "/img/circuits/Belgium_Circuit.png",
+    "Country": "/img/countries/Belgium.png"
   },
   {
     "Round": 15,
@@ -162,7 +190,9 @@
     "Laps": 72,
     "Lenght": 4.259,
     "Distance": 306.587,
-    "LapRecord": "1:11.097"
+    "LapRecord": "1:11.097",
+    "Image": "/img/circuits/Netherlands_Circuit.png",
+    "Country": "/img/countries/Netherlands.jpg"
   },
   {
     "Round": 16,
@@ -173,7 +203,9 @@
     "Laps": 53,
     "Lenght": 5.793,
     "Distance": 306.72,
-    "LapRecord": "1:21.046"
+    "LapRecord": "1:21.046",
+    "Image": "/img/circuits/Italy_Circuit.png",
+    "Country": "/img/countries/Italy.png"
   },
   {
     "Round": 17,
@@ -184,7 +216,9 @@
     "Laps": 61,
     "Lenght": 5.063,
     "Distance": 308.706,
-    "LapRecord": "1:41.905"
+    "LapRecord": "1:41.905",
+    "Image": "/img/circuits/Singapore_Circuit.png",
+    "Country": "/img/countries/Singapore.png"
   },
   {
     "Round": 18,
@@ -195,7 +229,9 @@
     "Laps": 53,
     "Lenght": 5.807,
     "Distance": 307.471,
-    "LapRecord": "1:30.983"
+    "LapRecord": "1:30.983",
+    "Image": "/img/circuits/Japan_Circuit.png",
+    "Country": "/img/countries/Japan.jpg"
   },
   {
     "Round": 19,
@@ -206,7 +242,9 @@
     "Laps": 56,
     "Lenght": 5.513,
     "Distance": 308.405,
-    "LapRecord": "1:36.169"
+    "LapRecord": "1:36.169",
+    "Image": "/img/circuits/USA_Circuit.png",
+    "Country": "/img/countries/Usa.png"
   },
   {
     "Round": 20,
@@ -217,7 +255,9 @@
     "Laps": 71,
     "Lenght": 4.304,
     "Distance": 305.354,
-    "LapRecord": "1:17.774"
+    "LapRecord": "1:17.774",
+    "Image": "/img/circuits/Mexico_Circuit.png",
+    "Country": "/img/countries/Mexico.jpg"
   },
   {
     "Round": 21,
@@ -228,7 +268,9 @@
     "Laps": 71,
     "Lenght": 4.309,
     "Distance": 305.879,
-    "LapRecord": "1:10.540"
+    "LapRecord": "1:10.540",
+    "Image": "/img/circuits/Brazil_Circuit.png",
+    "Country": "/img/countries/Brazil.png"
   },
   {
     "Round": 22,
@@ -239,6 +281,8 @@
     "Laps": 58,
     "Lenght": 5.281,
     "Distance": 306.4183,
-    "LapRecord": "1:26.103"
+    "LapRecord": "1:26.103",
+    "Image": "/img/circuits/Abu_Dhabi_Circuit.png",
+    "Country": "/img/countries/Abu.png"
   }
 ]
