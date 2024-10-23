@@ -17,7 +17,7 @@ export const Footer = () => {
             <ul>
               <li>
                 <Link
-                  to="/formula-one/Home/RegulationChanges"
+                  to="/formula-one/home/RegulationChanges"
                   title="Go to Regulation Changes page"
                 >
                   Regulation Changes
@@ -25,20 +25,20 @@ export const Footer = () => {
               </li>
               <li>
                 <Link
-                  to="/formula-one/Home/SeasonChanges"
+                  to="/formula-one/home/SeasonChanges"
                   title="Go to Season Changes page"
                 >
                   Season Changes
                 </Link>
               </li>
               <li>
-                <Link to="/formula-one/Home/SeasonIntroduction" title="Go to page">
+                <Link to="/formula-one/home/SeasonIntroduction" title="Go to page">
                   Season Introduction
                 </Link>
               </li>
               <li>
                 <Link
-                  to="/formula-one/Home/SeasonSummary"
+                  to="/formula-one/home/SeasonSummary"
                   title="Go to Season Summary page"
                 >
                   Season Summary
@@ -58,17 +58,17 @@ export const Footer = () => {
             <h4>Pages</h4>
             <ul>
               <li>
-                <Link to="/formula-one/Drivers" title="Go to Drivers page">
+                <Link to="/formula-one/drivers" title="Go to Drivers page">
                   Drivers
                 </Link>
               </li>
               <li>
-                <Link to="/formula-one/Schedule" title="Go to Schedule page">
+                <Link to="/formula-one/schedule" title="Go to Schedule page">
                   Schedule
                 </Link>
               </li>
               <li>
-                <Link to="/formula-one/Results" title="Go to Results page">
+                <Link to="/formula-one/results" title="Go to Results page">
                   Results
                 </Link>
               </li>

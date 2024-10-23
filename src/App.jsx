@@ -73,34 +73,24 @@ function App() {
             path="/formula-one/home/RegulationChanges"
             element={<RegulationChanges />}
           />
-          <Route path="/formula-one/Results" element={<Results />} />
+          <Route path="/formula-one/results" element={<Results />} />
 
           {/* Import driver pages */}
-          <Route path="/formula-one/Drivers" element={<LandingDrivers />} />
+          <Route path="/formula-one/drivers" element={<LandingDrivers />} />
           {combinedDrivers.map((driver) => (
             <Route
               key={driver.Pos}
-              path={`/formula-one/Driver/${driver.Pos}`}
+              path={`/formula-one/driver/${driver.Pos}`}
               element={<Driver driver={driver} />}
             />
           ))}
 
           {/* Import schedule / circuits pages */}
-          <Route path="/formula-one/Schedule" element={<LandingSchedule />} />
+          <Route path="/formula-one/schedule" element={<LandingSchedule />} />
           {circuits.map((circuit) => (
             <Route
               key={circuit.Round}
-              path={`/formula-one/Schedule/${circuit.Round}`}
-              element={<Circuit circuit={circuit} />}
-            />
-          ))}
-
-          {/* Import schedule / circuits pages */}
-          <Route path="/formula-one/Schedule" element={<LandingSchedule />} />
-          {circuits.map((circuit) => (
-            <Route
-              key={circuit.Round}
-              path={`/formula-one/Schedule/${circuit.Round}`}
+              path={`/formula-one/schedule/${circuit.Round}`}
               element={<Circuit circuit={circuit} />}
             />
           ))}
@@ -109,7 +99,7 @@ function App() {
           {teams.map((team) => (
             <Route
               key={team.Pos}
-              path={`/formula-one/Team/${team.Pos}`}
+              path={`/formula-one/team/${team.Pos}`}
               element={<Team team={team} />}
             />
           ))}

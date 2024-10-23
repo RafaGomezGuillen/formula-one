@@ -62,21 +62,21 @@ export const RegulationChanges = () => {
       title: "Season introduction",
       description:
         "The 2022 Formula One Championship was a motor racing competition for Formula One cars, which was the 73rd edition of the Formula One World Championship. The championship saw the introduction of significant changes to the sport’s technical regulations, which had been planned for 2021, but were delayed until 2022 due to the COVID-19 pandemic.",
-      link: "/formula-one/Home/SeasonIntroduction",
+      link: "/formula-one/home/SeasonIntroduction",
     },
     {
       image: image8,
       title: "Season summary",
       description:
         "Max Verstappen won his second consecutive World Drivers Championship driving for Red Bull Racing. Charles Leclerc finished runner-up, driving for Ferrari. Sergio Pérez was third, driving for Red Bull Racing. Red Bull Racing won their fifth World Constructors Championship.",
-      link: "/formula-one/Home/SeasonSummary",
+      link: "/formula-one/home/SeasonSummary",
     },
     {
       image: image9,
       title: "Team, driver and mid-season changes",
       description:
         "Honda initially stated that they would not supply power units beyond 2021. Kimi Räikkönen retired following the conclusion of the 2021 championship. Ahead of the Bahrain Grand Prix, Sebastian Vettel tested positive for coronavirus...",
-      link: "/formula-one/Home/SeasonChanges",
+      link: "/formula-one/home/SeasonChanges",
     },
   ];
 
