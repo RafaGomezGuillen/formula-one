@@ -58,17 +58,17 @@ export const Footer = () => {
             <h4>Pages</h4>
             <ul>
               <li>
-                <Link to="/drivers" title="Go to Drivers page">
+                <Link to="/Drivers" title="Go to Drivers page">
                   Drivers
                 </Link>
               </li>
               <li>
-                <Link to="/schedule" title="Go to Schedule page">
+                <Link to="/Schedule" title="Go to Schedule page">
                   Schedule
                 </Link>
               </li>
               <li>
-                <Link to="/results" title="Go to Results page">
+                <Link to="/Results" title="Go to Results page">
                   Results
                 </Link>
               </li>

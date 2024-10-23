@@ -33,22 +33,22 @@ export const NavigationBar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav>
-            <Nav.Link href="/#/drivers" title="Go to drivers page">
+            <Nav.Link href="/#/Drivers" title="Go to drivers page">
               Drivers
             </Nav.Link>
-            <Nav.Link href="/#/schedule" title="Go to schedule page">
+            <Nav.Link href="/#/Schedule" title="Go to schedule page">
               Schedule
             </Nav.Link>
             <NavDropdown title="Teams" id="basic-nav-dropdown">
               <div className="team-container">
                 {teams.map((team) => (
-                  <NavDropdown.Item key={team.Pos} href={`#/team/${team.Pos}`}>
+                  <NavDropdown.Item key={team.Pos} href={`#/Team/${team.Pos}`}>
                     {team.Team}
                   </NavDropdown.Item>
                 ))}
               </div>
             </NavDropdown>
-            <Nav.Link href="/#/results" title="Go to results page">
+            <Nav.Link href="/#/Results" title="Go to results page">
               Results
             </Nav.Link>
           </Nav>

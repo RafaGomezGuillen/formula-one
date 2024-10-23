@@ -18,7 +18,7 @@ export const LandingSchedule = () => {
 
       <div className="schedule-container">
         {Circuits.map((circuit) => (
-          <Link key={circuit.Round} to={`/schedule/${circuit.Round}`}>
+          <Link key={circuit.Round} to={`/Schedule/${circuit.Round}`}>
             <div className="schedule-card">
               <div
                 style={{

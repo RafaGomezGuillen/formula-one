@@ -17,7 +17,7 @@ export const LandingDrivers = () => {
         {Drivers.map((driver) => (
           <Link
             key={driver.Pos}
-            to={`/driver/${driver.Pos}`}
+            to={`/Driver/${driver.Pos}`}
           >
             <div className="driver-card">
               <div

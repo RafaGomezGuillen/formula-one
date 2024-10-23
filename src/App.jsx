@@ -73,24 +73,24 @@ function App() {
             path="/home/RegulationChanges"
             element={<RegulationChanges />}
           />
-          <Route path="/results" element={<Results />} />
+          <Route path="/Results" element={<Results />} />
 
           {/* Import driver pages */}
-          <Route path="/drivers" element={<LandingDrivers />} />
+          <Route path="/Drivers" element={<LandingDrivers />} />
           {combinedDrivers.map((driver) => (
             <Route
               key={driver.Pos}
-              path={`/driver/${driver.Pos}`}
+              path={`/Driver/${driver.Pos}`}
               element={<Driver driver={driver} />}
             />
           ))}
 
           {/* Import schedule / circuits pages */}
-          <Route path="/schedule" element={<LandingSchedule />} />
+          <Route path="/Schedule" element={<LandingSchedule />} />
           {circuits.map((circuit) => (
             <Route
               key={circuit.Round}
-              path={`/schedule/${circuit.Round}`}
+              path={`/Schedule/${circuit.Round}`}
               element={<Circuit circuit={circuit} />}
             />
           ))}
@@ -99,7 +99,7 @@ function App() {
           {teams.map((team) => (
             <Route
               key={team.Pos}
-              path={`/team/${team.Pos}`}
+              path={`/Team/${team.Pos}`}
               element={<Team team={team} />}
             />
           ))}
