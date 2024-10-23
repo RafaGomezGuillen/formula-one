@@ -60,47 +60,47 @@ function App() {
         }}
       >
         <Routes>
-          <Route path="/" element={<Landing />} />
+          <Route path="/formula-one/" element={<Landing />} />
 
           {/* Import home pages */}
-          <Route path="/home/SeasonSummary" element={<SeasonSummary />} />
+          <Route path="/formula-one/home/SeasonSummary" element={<SeasonSummary />} />
           <Route
-            path="/home/SeasonIntroduction"
+            path="/formula-one/home/SeasonIntroduction"
             element={<SeasonIntroduction />}
           />
-          <Route path="/home/SeasonChanges" element={<SeasonChanges />} />
+          <Route path="/formula-one/home/SeasonChanges" element={<SeasonChanges />} />
           <Route
-            path="/home/RegulationChanges"
+            path="/formula-one/home/RegulationChanges"
             element={<RegulationChanges />}
           />
-          <Route path="/Results" element={<Results />} />
+          <Route path="/formula-one/Results" element={<Results />} />
 
           {/* Import driver pages */}
-          <Route path="/Drivers" element={<LandingDrivers />} />
+          <Route path="/formula-one/Drivers" element={<LandingDrivers />} />
           {combinedDrivers.map((driver) => (
             <Route
               key={driver.Pos}
-              path={`/Driver/${driver.Pos}`}
+              path={`/formula-one/Driver/${driver.Pos}`}
               element={<Driver driver={driver} />}
             />
           ))}
 
           {/* Import schedule / circuits pages */}
-          <Route path="/Schedule" element={<LandingSchedule />} />
+          <Route path="/formula-one/Schedule" element={<LandingSchedule />} />
           {circuits.map((circuit) => (
             <Route
               key={circuit.Round}
-              path={`/Schedule/${circuit.Round}`}
+              path={`/formula-one/Schedule/${circuit.Round}`}
               element={<Circuit circuit={circuit} />}
             />
           ))}
 
           {/* Import schedule / circuits pages */}
-          <Route path="/Schedule" element={<LandingSchedule />} />
+          <Route path="/formula-one/Schedule" element={<LandingSchedule />} />
           {circuits.map((circuit) => (
             <Route
               key={circuit.Round}
-              path={`/Schedule/${circuit.Round}`}
+              path={`/formula-one/Schedule/${circuit.Round}`}
               element={<Circuit circuit={circuit} />}
             />
           ))}
@@ -109,7 +109,7 @@ function App() {
           {teams.map((team) => (
             <Route
               key={team.Pos}
-              path={`/Team/${team.Pos}`}
+              path={`/formula-one/Team/${team.Pos}`}
               element={<Team team={team} />}
             />
           ))}

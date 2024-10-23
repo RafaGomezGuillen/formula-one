@@ -17,7 +17,7 @@ export const Footer = () => {
             <ul>
               <li>
                 <Link
-                  to="/Home/RegulationChanges"
+                  to="/formula-one/Home/RegulationChanges"
                   title="Go to Regulation Changes page"
                 >
                   Regulation Changes
@@ -25,20 +25,20 @@ export const Footer = () => {
               </li>
               <li>
                 <Link
-                  to="/Home/SeasonChanges"
+                  to="/formula-one/Home/SeasonChanges"
                   title="Go to Season Changes page"
                 >
                   Season Changes
                 </Link>
               </li>
               <li>
-                <Link to="/Home/SeasonIntroduction" title="Go to page">
+                <Link to="/formula-one/Home/SeasonIntroduction" title="Go to page">
                   Season Introduction
                 </Link>
               </li>
               <li>
                 <Link
-                  to="/Home/SeasonSummary"
+                  to="/formula-one/Home/SeasonSummary"
                   title="Go to Season Summary page"
                 >
                   Season Summary
@@ -46,7 +46,7 @@ export const Footer = () => {
               </li>
               <li>
                 <Link
-                  to="https://github.com/RafaGomezGuillen/formula-one"
+                  to="/formula-onehttps://github.com/RafaGomezGuillen/formula-one"
                   title="GitHub repo page"
                 >
                   About
@@ -58,17 +58,17 @@ export const Footer = () => {
             <h4>Pages</h4>
             <ul>
               <li>
-                <Link to="/Drivers" title="Go to Drivers page">
+                <Link to="/formula-one/Drivers" title="Go to Drivers page">
                   Drivers
                 </Link>
               </li>
               <li>
-                <Link to="/Schedule" title="Go to Schedule page">
+                <Link to="/formula-one/Schedule" title="Go to Schedule page">
                   Schedule
                 </Link>
               </li>
               <li>
-                <Link to="/Results" title="Go to Results page">
+                <Link to="/formula-one/Results" title="Go to Results page">
                   Results
                 </Link>
               </li>
@@ -135,7 +135,7 @@ export const Footer = () => {
         </div>
         <div className="footer-row">
           <div className="footer-col" style={{ marginTop: "20px" }}>
-            <Link to="/" title="Go to home page">
+            <Link to="/formula-one/" title="Go to home page">
               <img
                 src={F1Logo}
                 alt="Formula One logo"

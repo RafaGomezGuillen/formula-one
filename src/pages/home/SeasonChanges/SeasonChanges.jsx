@@ -42,21 +42,21 @@ export const SeasonChanges = () => {
       title: "Season summary",
       description:
         "Max Verstappen won his second consecutive World Drivers Championship driving for Red Bull Racing. Charles Leclerc finished runner-up, driving for Ferrari. Sergio Pérez was third, driving for Red Bull Racing. Red Bull Racing won their fifth World Constructors Championship.",
-      link: "/Home/SeasonSummary",
+      link: "/formula-one/Home/SeasonSummary",
     },
     {
       image: image7,
       title: "Regulation changes",
       description:
         "The 2022 F1 season will see the introduction of a new generation of cars, designed to improve the quality of racing and allow closer battles on track. In addition to the technical changes, the 2022 season will also see some changes in the sporting regulations, such as a frozen power unit development, a sliding scale of aerodynamic testing based on the constructors’ standings, and a return to a two-part pre-season test..",
-      link: "/Home/RegulationChanges",
+      link: "/formula-one/Home/RegulationChanges",
     },
     {
       image: image8,
       title: "Season introduction",
       description:
         "The 2022 Formula One Championship was a motor racing competition for Formula One cars, which was the 73rd edition of the Formula One World Championship. The championship saw the introduction of significant changes to the sports technical regulations, which had been planned for 2021, but were delayed until 2022 due to the COVID-19 pandemic.",
-      link: "/Home/SeasonIntroduction",
+      link: "/formula-one/Home/SeasonIntroduction",
     },
   ];
 

@@ -22,7 +22,7 @@ export const NavigationBar = () => {
       fixed="top"
     >
       <Container>
-        <Navbar.Brand href="/" title="Go to home page">
+        <Navbar.Brand href="/formula-one/" title="Go to home page">
           <img
             src={F1Logo}
             style={{ width: "110px", marginRight: "10px" }}
@@ -33,22 +33,22 @@ export const NavigationBar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav>
-            <Nav.Link href="/Drivers" title="Go to drivers page">
+            <Nav.Link href="/formula-one/Drivers" title="Go to drivers page">
               Drivers
             </Nav.Link>
-            <Nav.Link href="/Schedule" title="Go to schedule page">
+            <Nav.Link href="/formula-one/Schedule" title="Go to schedule page">
               Schedule
             </Nav.Link>
             <NavDropdown title="Teams" id="basic-nav-dropdown">
               <div className="team-container">
                 {teams.map((team) => (
-                  <NavDropdown.Item key={team.Pos} href={`/Team/${team.Pos}`}>
+                  <NavDropdown.Item key={team.Pos} href={`/formula-one/Team/${team.Pos}`}>
                     {team.Team}
                   </NavDropdown.Item>
                 ))}
               </div>
             </NavDropdown>
-            <Nav.Link href="/Results" title="Go to results page">
+            <Nav.Link href="/formula-one/Results" title="Go to results page">
               Results
             </Nav.Link>
           </Nav>

@@ -18,19 +18,19 @@
     "FirstTeamEntry": 1997,
     "WorldChampionships": 5,
     "HighestRaceFinish": "1 (x92)",
-    "logo": "/img/teams/red-bull/logo.jpg",
-    "Image1": "/img/teams/red-bull/img-1.jpg",
-    "Image2": "/img/teams/red-bull/img-2.jpg",
-    "Image3": "/img/teams/red-bull/img-3.jpg",
-    "Image4": "/img/teams/red-bull/img-4.jpg",
+    "logo": "/formula-one/img/teams/red-bull/logo.jpg",
+    "Image1": "/formula-one/img/teams/red-bull/img-1.jpg",
+    "Image2": "/formula-one/img/teams/red-bull/img-2.jpg",
+    "Image3": "/formula-one/img/teams/red-bull/img-3.jpg",
+    "Image4": "/formula-one/img/teams/red-bull/img-4.jpg",
     "Drivers": [
       {
-        "Image": "/img/teams/red-bull/max.jpg",
+        "Image": "/formula-one/img/teams/red-bull/max.jpg",
         "ID": 1,
         "Driver": "Max Verstappen"
       },
       {
-        "Image": "/img/teams/red-bull/sergio.jpg",
+        "Image": "/formula-one/img/teams/red-bull/sergio.jpg",
         "ID": 3,
         "Driver": "Sergio Perez"
       }
@@ -55,19 +55,19 @@
     "FirstTeamEntry": 1950,
     "WorldChampionships": 16,
     "HighestRaceFinish": "1 (x243)",
-    "logo": "/img/teams/ferrari/logo.jpg",
-    "Image1": "/img/teams/ferrari/img-1.jpg",
-    "Image2": "/img/teams/ferrari/img-2.jpg",
-    "Image3": "/img/teams/ferrari/img-3.jpg",
-    "Image4": "/img/teams/ferrari/img-4.jpg",
+    "logo": "/formula-one/img/teams/ferrari/logo.jpg",
+    "Image1": "/formula-one/img/teams/ferrari/img-1.jpg",
+    "Image2": "/formula-one/img/teams/ferrari/img-2.jpg",
+    "Image3": "/formula-one/img/teams/ferrari/img-3.jpg",
+    "Image4": "/formula-one/img/teams/ferrari/img-4.jpg",
     "Drivers": [
       {
-        "Image": "/img/teams/ferrari/leclerc.jpg",
+        "Image": "/formula-one/img/teams/ferrari/leclerc.jpg",
         "ID": 2,
         "Driver": "Charles Leclerc"
       },
       {
-        "Image": "/img/teams/ferrari/sainz.jpg",
+        "Image": "/formula-one/img/teams/ferrari/sainz.jpg",
         "ID": 5,
         "Driver": "Carlos Sainz"
       }
@@ -92,19 +92,19 @@
     "FirstTeamEntry": 1970,
     "WorldChampionships": 8,
     "HighestRaceFinish": "1 (x116)",
-    "logo": "/img/teams/mercedes/logo.jpg",
-    "Image1": "/img/teams/mercedes/img-1.jpg",
-    "Image2": "/img/teams/mercedes/img-2.jpg",
-    "Image3": "/img/teams/mercedes/img-3.jpg",
-    "Image4": "/img/teams/mercedes/img-4.jpg",
+    "logo": "/formula-one/img/teams/mercedes/logo.jpg",
+    "Image1": "/formula-one/img/teams/mercedes/img-1.jpg",
+    "Image2": "/formula-one/img/teams/mercedes/img-2.jpg",
+    "Image3": "/formula-one/img/teams/mercedes/img-3.jpg",
+    "Image4": "/formula-one/img/teams/mercedes/img-4.jpg",
     "Drivers": [
       {
-        "Image": "/img/teams/mercerdes/hamilton.jpg",
+        "Image": "/formula-one/img/teams/mercerdes/hamilton.jpg",
         "ID": 6,
         "Driver": "Lewis Hamilton"
       },
       {
-        "Image": "/img/teams/mercerdes/russell.jpg",
+        "Image": "/formula-one/img/teams/mercerdes/russell.jpg",
         "ID": 4,
         "Driver": "George Russell"
       }
@@ -129,19 +129,19 @@
     "FirstTeamEntry": 1986,
     "WorldChampionships": 2,
     "HighestRaceFinish": "1st",
-    "logo": "/img/teams/alpine/logo.jpg",
-    "Image1": "/img/teams/alpine/img-1.jpg",
-    "Image2": "/img/teams/alpine/img-2.jpg",
-    "Image3": "/img/teams/alpine/img-3.jpg",
-    "Image4": "/img/teams/alpine/img-4.jpg",
+    "logo": "/formula-one/img/teams/alpine/logo.jpg",
+    "Image1": "/formula-one/img/teams/alpine/img-1.jpg",
+    "Image2": "/formula-one/img/teams/alpine/img-2.jpg",
+    "Image3": "/formula-one/img/teams/alpine/img-3.jpg",
+    "Image4": "/formula-one/img/teams/alpine/img-4.jpg",
     "Drivers": [
       {
-        "Image": "/img/teams/alpine/alonso.jpg",
+        "Image": "/formula-one/img/teams/alpine/alonso.jpg",
         "ID": 9,
         "Driver": "Fernando Alonso"
       },
       {
-        "Image": "/img/teams/alpine/ocon.jpg",
+        "Image": "/formula-one/img/teams/alpine/ocon.jpg",
         "ID": 8,
         "Driver": "Estaban Ocon"
       }
@@ -166,19 +166,19 @@
     "FirstTeamEntry": 1966,
     "WorldChampionships": 8,
     "HighestRaceFinish": "1 (x183)",
-    "logo": "/img/teams/mclaren/logo.jpg",
-    "Image1": "/img/teams/mclaren/img-1.jpg",
-    "Image2": "/img/teams/mclaren/img-2.jpg",
-    "Image3": "/img/teams/mclaren/img-3.jpg",
-    "Image4": "/img/teams/mclaren/img-4.jpg",
+    "logo": "/formula-one/img/teams/mclaren/logo.jpg",
+    "Image1": "/formula-one/img/teams/mclaren/img-1.jpg",
+    "Image2": "/formula-one/img/teams/mclaren/img-2.jpg",
+    "Image3": "/formula-one/img/teams/mclaren/img-3.jpg",
+    "Image4": "/formula-one/img/teams/mclaren/img-4.jpg",
     "Drivers": [
       {
-        "Image": "/img/teams/mclaren/lando.jpg",
+        "Image": "/formula-one/img/teams/mclaren/lando.jpg",
         "ID": 7,
         "Driver": "Lando Norris"
       },
       {
-        "Image": "/img/teams/mclaren/daniel.jpg",
+        "Image": "/formula-one/img/teams/mclaren/daniel.jpg",
         "ID": 11,
         "Driver": "Daniel Ricciardo"
       }
@@ -203,19 +203,19 @@
     "FirstTeamEntry": 1993,
     "WorldChampionships": 0,
     "HighestRaceFinish": "1 (x1)",
-    "logo": "/img/teams/alfa-romeo/logo.jpg",
-    "Image1": "/img/teams/alfa-romeo/img-1.jpg",
-    "Image2": "/img/teams/alfa-romeo/img-2.jpg",
-    "Image3": "/img/teams/alfa-romeo/img-3.jpg",
-    "Image4": "/img/teams/alfa-romeo/img-4.jpg",
+    "logo": "/formula-one/img/teams/alfa-romeo/logo.jpg",
+    "Image1": "/formula-one/img/teams/alfa-romeo/img-1.jpg",
+    "Image2": "/formula-one/img/teams/alfa-romeo/img-2.jpg",
+    "Image3": "/formula-one/img/teams/alfa-romeo/img-3.jpg",
+    "Image4": "/formula-one/img/teams/alfa-romeo/img-4.jpg",
     "Drivers": [
       {
-        "Image": "/img/teams/alfa-romeo/bottas.jpg",
+        "Image": "/formula-one/img/teams/alfa-romeo/bottas.jpg",
         "ID": 10,
         "Driver": "Valeterri Bottas"
       },
       {
-        "Image": "/img/teams/alfa-romeo/zhou.jpg",
+        "Image": "/formula-one/img/teams/alfa-romeo/zhou.jpg",
         "ID": 18,
         "Driver": "Guanyu Zhou"
       }
@@ -240,19 +240,19 @@
     "FirstTeamEntry": 2018,
     "WorldChampionships": 0,
     "HighestRaceFinish": "1 (x1)",
-    "logo": "/img/teams/aston-martin/logo.jpg",
-    "Image1": "/img/teams/aston-martin/img-1.jpg",
-    "Image2": "/img/teams/aston-martin/img-2.jpg",
-    "Image3": "/img/teams/aston-martin/img-3.jpg",
-    "Image4": "/img/teams/aston-martin/img-4.jpg",
+    "logo": "/formula-one/img/teams/aston-martin/logo.jpg",
+    "Image1": "/formula-one/img/teams/aston-martin/img-1.jpg",
+    "Image2": "/formula-one/img/teams/aston-martin/img-2.jpg",
+    "Image3": "/formula-one/img/teams/aston-martin/img-3.jpg",
+    "Image4": "/formula-one/img/teams/aston-martin/img-4.jpg",
     "Drivers": [
       {
-        "Image": "/img/teams/aston-martin/vettel.jpg",
+        "Image": "/formula-one/img/teams/aston-martin/vettel.jpg",
         "ID": 12,
         "Driver": "Sebastian Vettel"
       },
       {
-        "Image": "/img/teams/aston-martin/stroll.jpg",
+        "Image": "/formula-one/img/teams/aston-martin/stroll.jpg",
         "ID": 15,
         "Driver": "Lance Stroll"
       }
@@ -277,19 +277,19 @@
     "FirstTeamEntry": 2016,
     "WorldChampionships": 0,
     "HighestRaceFinish": "4 (x1)",
-    "logo": "/img/teams/hass/logo.jpg",
-    "Image1": "/img/teams/hass/img-1.jpg",
-    "Image2": "/img/teams/hass/img-2.jpg",
-    "Image3": "/img/teams/hass/img-3.jpg",
-    "Image4": "/img/teams/hass/img-4.jpg",
+    "logo": "/formula-one/img/teams/hass/logo.jpg",
+    "Image1": "/formula-one/img/teams/hass/img-1.jpg",
+    "Image2": "/formula-one/img/teams/hass/img-2.jpg",
+    "Image3": "/formula-one/img/teams/hass/img-3.jpg",
+    "Image4": "/formula-one/img/teams/hass/img-4.jpg",
     "Drivers": [
       {
-        "Image": "/img/teams/haas/mick.jpg",
+        "Image": "/formula-one/img/teams/haas/mick.jpg",
         "ID": 16,
         "Driver": "Mick Schumacher"
       },
       {
-        "Image": "/img/teams/haas/magnussen.jpg",
+        "Image": "/formula-one/img/teams/haas/magnussen.jpg",
         "ID": 13,
         "Driver": "Kevin Magnussen"
       }
@@ -314,19 +314,19 @@
     "FirstTeamEntry": 1985,
     "WorldChampionships": 0,
     "HighestRaceFinish": "1 (x2)",
-    "logo": "/img/teams/alpha-tauri/logo.jpg",
-    "Image1": "/img/teams/alpha-tauri/img-1.jpg",
-    "Image2": "/img/teams/alpha-tauri/img-2.jpg",
-    "Image3": "/img/teams/alpha-tauri/img-3.jpg",
-    "Image4": "/img/teams/alpha-tauri/img-4.jpg",
+    "logo": "/formula-one/img/teams/alpha-tauri/logo.jpg",
+    "Image1": "/formula-one/img/teams/alpha-tauri/img-1.jpg",
+    "Image2": "/formula-one/img/teams/alpha-tauri/img-2.jpg",
+    "Image3": "/formula-one/img/teams/alpha-tauri/img-3.jpg",
+    "Image4": "/formula-one/img/teams/alpha-tauri/img-4.jpg",
     "Drivers": [
       {
-        "Image": "/img/teams/alpha-tauri/Yuki.jpg",
+        "Image": "/formula-one/img/teams/alpha-tauri/Yuki.jpg",
         "ID": 17,
         "Driver": "Yuki Tsunoda"
       },
       {
-        "Image": "/img/teams/alpha-tauri/gasly.jpg",
+        "Image": "/formula-one/img/teams/alpha-tauri/gasly.jpg",
         "ID": 14,
         "Driver": "Pierre Gasly"
       }
@@ -351,19 +351,19 @@
     "FirstTeamEntry": 1978,
     "WorldChampionships": 9,
     "HighestRaceFinish": "1 (x114)",
-    "logo": "/img/teams/williams/logo.jpg",
-    "Image1": "/img/teams/williams/img-1.jpg",
-    "Image2": "/img/teams/williams/img-2.jpg",
-    "Image3": "/img/teams/williams/img-3.jpg",
-    "Image4": "/img/teams/williams/img-4.jpg",
+    "logo": "/formula-one/img/teams/williams/logo.jpg",
+    "Image1": "/formula-one/img/teams/williams/img-1.jpg",
+    "Image2": "/formula-one/img/teams/williams/img-2.jpg",
+    "Image3": "/formula-one/img/teams/williams/img-3.jpg",
+    "Image4": "/formula-one/img/teams/williams/img-4.jpg",
     "Drivers": [
       {
-        "Image": "/img/teams/williams/albon.jpg",
+        "Image": "/formula-one/img/teams/williams/albon.jpg",
         "ID": 19,
         "Driver": "Alexander Albon"
       },
       {
-        "Image": "/img/teams/williams/latifi.jpg",
+        "Image": "/formula-one/img/teams/williams/latifi.jpg",
         "ID": 20,
         "Driver": "Nicholas Latifi"
       }
