@@ -6,10 +6,10 @@ export const Jumbotron = ({ title, description }) => {
       style={{
         borderBottom: "2px solid #ddd",
         marginBottom: "20px",
+        width: "100%",
       }}
     >
       <h1
-        className="display-3"
         style={{
           width: "100%",
         }}

@@ -1,5 +1,4 @@
 import React from "react";
-import "./SeasonChanges.css";
 
 // Import components
 import { Jumbotron } from "../../../components/Jumbotron/Jumbotron";

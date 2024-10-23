@@ -27,7 +27,11 @@ export const Landing = () => {
               had been planned for 2021, but were delayed until 2022 due to the
               COVID-19 pandemic.
             </Card.Text>
-            <Link to="/home/SeasonIntroduction" title="Go to Season introduction" className="btn">
+            <Link
+              to="/home/SeasonIntroduction"
+              title="Go to Season introduction"
+              className="btn"
+            >
               READ MORE
             </Link>
           </Card.Body>
@@ -46,7 +50,11 @@ export const Landing = () => {
               scale of aerodynamic testing based on the constructors’ standings,
               and a return to a two-part pre-season test.
             </Card.Text>
-            <Link to="/home/RegulationChanges" title="Go to Regulation changes" className="btn">
+            <Link
+              to="/home/RegulationChanges"
+              title="Go to Regulation changes"
+              className="btn"
+            >
               READ MORE
             </Link>
           </Card.Body>
@@ -65,7 +73,11 @@ export const Landing = () => {
               for Red Bull Racing. Red Bull Racing won their fifth World
               Constructors Championship.
             </Card.Text>
-            <Link to="/home/SeasonSummary" title="Go to Season summary" className="btn">
+            <Link
+              to="/home/SeasonSummary"
+              title="Go to Season summary"
+              className="btn"
+            >
               READ MORE
             </Link>
           </Card.Body>
@@ -84,7 +96,11 @@ export const Landing = () => {
               the 2021 championship. Ahead of the Bahrain Grand Prix, Sebastian
               Vettel tested positive for coronavirus...
             </Card.Text>
-            <Link to="/home/SeasonChanges" title="Go to Team, driver and mid-season changes" className="btn">
+            <Link
+              to="/home/SeasonChanges"
+              title="Go to Team, driver and mid-season changes"
+              className="btn"
+            >
               READ MORE
             </Link>
           </Card.Body>
@@ -94,15 +110,22 @@ export const Landing = () => {
           <Card.Body>
             <Card.Title>About</Card.Title>
             <Card.Text>
-              Anim esse consequat dolore voluptate deserunt. Reprehenderit esse ullamco voluptate elit. Labore excepteur nulla veniam deserunt enim irure dolore nostrud aliqua labore nisi aliqua incididunt veniam.
+              Project made by Rafael Gómez Guillén. Technlogies used:{" "}
+              <span
+                style={{
+                  fontWeight: "500",
+                }}
+              >
+                Vite React JS, Boostrap and apexcharts and GH Pages.
+              </span>
             </Card.Text>
-            <a
-              src="https://github.com/RafaGomezGuillen/formula-one"
+            <Link
+              to="https://github.com/RafaGomezGuillen/formula-one"
               className="btn"
               title="Go to GitHub repository"
             >
               READ MORE
-            </a>
+            </Link>
           </Card.Body>
         </Card>
       </section>
