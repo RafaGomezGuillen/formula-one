@@ -10,50 +10,10 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 // Import images
 import F1Logo from "../../assets/img/F1Logo.svg";
 
-export const NavigationBar = () => {
-  const carData = [
-    {
-      title: "Red Bull",
-      link: "RedBull",
-    },
-    {
-      title: "Mercedes",
-      link: "Mercedes",
-    },
-    {
-      title: "Ferrari",
-      link: "Mercedes",
-    },
-    {
-      title: "McLaren",
-      link: "McLaren",
-    },
-    {
-      title: "Alpine",
-      link: "Alpine",
-    },
-    {
-      title: "Aston Martin",
-      link: "AstonMartin",
-    },
-    {
-      title: "Alfa Romeo",
-      link: "AlfaRomeo",
-    },
-    {
-      title: "Haas",
-      link: "Haas",
-    },
-    {
-      title: "Williams",
-      link: "Williams",
-    },
-    {
-      title: "AlphaTauri",
-      link: "AlphaTauri",
-    }
-  ];
+// Import JSON
+import teams from "../../assets/json/TeamStats.json";
 
+export const NavigationBar = () => {
   return (
     <Navbar
       expand="lg"
@@ -81,9 +41,9 @@ export const NavigationBar = () => {
             </Nav.Link>
             <NavDropdown title="Teams" id="basic-nav-dropdown">
               <div className="team-container">
-                {carData.map((car, index) => (
-                  <NavDropdown.Item key={index} href={`/teams/${car.link}`}>
-                    {car.title}
+                {teams.map((team) => (
+                  <NavDropdown.Item key={team.Pos} href={`/Team/${team.Pos}`}>
+                    {team.Team}
                   </NavDropdown.Item>
                 ))}
               </div>

@@ -1,0 +1,32 @@
+.team-stats-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 5px;
+  grid-row-gap: 0px;
+
+  .team-drivers-container {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+
+    a {
+      color: #000;
+    }
+
+    a:hover {
+      background-color: #000;
+      color: #fff;
+    }
+
+    @media screen and (max-width: 500px) {
+      flex-direction: column;
+    }
+  }
+
+  @media screen and (max-width: 1050px) {
+    grid-template-columns: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 5px;
+  }
+}

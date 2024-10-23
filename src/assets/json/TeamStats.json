@@ -10,7 +10,31 @@
     "PolePositions": 8,
     "FastestLaps": 8,
     "LapsLed": 645,
-    "Points": 759
+    "Points": 759,
+    "FullTeamName": "Oracle Red Bull Racing",
+    "Base": "Milton Keynes, United Kingdom",
+    "TeamChief": "Christian Horner",
+    "TechnicalChief": "Pierre Waché",
+    "FirstTeamEntry": 1997,
+    "WorldChampionships": 5,
+    "HighestRaceFinish": "1 (x92)",
+    "logo": "/img/teams/red-bull/logo.jpg",
+    "Image1": "/img/teams/red-bull/img-1.jpg",
+    "Image2": "/img/teams/red-bull/img-2.jpg",
+    "Image3": "/img/teams/red-bull/img-3.jpg",
+    "Image4": "/img/teams/red-bull/img-4.jpg",
+    "Drivers": [
+      {
+        "Image": "/img/teams/red-bull/max.jpg",
+        "ID": 1,
+        "Driver": "Max Verstappen"
+      },
+      {
+        "Image": "/img/teams/red-bull/sergio.jpg",
+        "ID": 3,
+        "Driver": "Sergio Perez"
+      }
+    ]
   },
   {
     "Pos": 2,
@@ -23,7 +47,31 @@
     "PolePositions": 12,
     "FastestLaps": 5,
     "LapsLed": 382,
-    "Points": 554
+    "Points": 554,
+    "FullTeamName": "Scuderia Ferrari",
+    "Base": "Maranello, Italy",
+    "TeamChief": "Mattia Binotto",
+    "TechnicalChief": "Enrico Cardile / Enrico Gualtieri",
+    "FirstTeamEntry": 1950,
+    "WorldChampionships": 16,
+    "HighestRaceFinish": "1 (x243)",
+    "logo": "/img/teams/ferrari/logo.jpg",
+    "Image1": "/img/teams/ferrari/img-1.jpg",
+    "Image2": "/img/teams/ferrari/img-2.jpg",
+    "Image3": "/img/teams/ferrari/img-3.jpg",
+    "Image4": "/img/teams/ferrari/img-4.jpg",
+    "Drivers": [
+      {
+        "Image": "/img/teams/ferrari/leclerc.jpg",
+        "ID": 2,
+        "Driver": "Charles Leclerc"
+      },
+      {
+        "Image": "/img/teams/ferrari/sainz.jpg",
+        "ID": 5,
+        "Driver": "Carlos Sainz"
+      }
+    ]
   },
   {
     "Pos": 3,
@@ -36,7 +84,31 @@
     "PolePositions": 1,
     "FastestLaps": 6,
     "LapsLed": 64,
-    "Points": 515
+    "Points": 515,
+    "FullTeamName": "Mercedes-AMG Petronas Formula One Team",
+    "Base": "Brackley, United Kingdom",
+    "TeamChief": "Toto Wolff",
+    "TechnicalChief": "Mike Elliott",
+    "FirstTeamEntry": 1970,
+    "WorldChampionships": 8,
+    "HighestRaceFinish": "1 (x116)",
+    "logo": "/img/teams/mercedes/logo.jpg",
+    "Image1": "/img/teams/mercedes/img-1.jpg",
+    "Image2": "/img/teams/mercedes/img-2.jpg",
+    "Image3": "/img/teams/mercedes/img-3.jpg",
+    "Image4": "/img/teams/mercedes/img-4.jpg",
+    "Drivers": [
+      {
+        "Image": "/img/teams/mercerdes/hamilton.jpg",
+        "ID": 6,
+        "Driver": "Lewis Hamilton"
+      },
+      {
+        "Image": "/img/teams/mercerdes/russell.jpg",
+        "ID": 4,
+        "Driver": "George Russell"
+      }
+    ]
   },
   {
     "Pos": 4,
@@ -49,7 +121,31 @@
     "PolePositions": 0,
     "FastestLaps": 0,
     "LapsLed": 1,
-    "Points": 173
+    "Points": 173,
+    "FullTeamName": "BWT Alpine F1 Team",
+    "Base": "Enstone, United Kingdom",
+    "TeamChief": "Otmar Szafnauer",
+    "TechnicalChief": "Pat Fry",
+    "FirstTeamEntry": 1986,
+    "WorldChampionships": 2,
+    "HighestRaceFinish": "1st",
+    "logo": "/img/teams/alpine/logo.jpg",
+    "Image1": "/img/teams/alpine/img-1.jpg",
+    "Image2": "/img/teams/alpine/img-2.jpg",
+    "Image3": "/img/teams/alpine/img-3.jpg",
+    "Image4": "/img/teams/alpine/img-4.jpg",
+    "Drivers": [
+      {
+        "Image": "/img/teams/alpine/alonso.jpg",
+        "ID": 9,
+        "Driver": "Fernando Alonso"
+      },
+      {
+        "Image": "/img/teams/alpine/ocon.jpg",
+        "ID": 8,
+        "Driver": "Estaban Ocon"
+      }
+    ]
   },
   {
     "Pos": 5,
@@ -62,7 +158,31 @@
     "PolePositions": 0,
     "FastestLaps": 2,
     "LapsLed": 0,
-    "Points": 159
+    "Points": 159,
+    "FullTeamName": "McLaren F1 Team",
+    "Base": "Woking, United Kingdom",
+    "TeamChief": "Andreas Seidl",
+    "TechnicalChief": "James Key",
+    "FirstTeamEntry": 1966,
+    "WorldChampionships": 8,
+    "HighestRaceFinish": "1 (x183)",
+    "logo": "/img/teams/mclaren/logo.jpg",
+    "Image1": "/img/teams/mclaren/img-1.jpg",
+    "Image2": "/img/teams/mclaren/img-2.jpg",
+    "Image3": "/img/teams/mclaren/img-3.jpg",
+    "Image4": "/img/teams/mclaren/img-4.jpg",
+    "Drivers": [
+      {
+        "Image": "/img/teams/mclaren/lando.jpg",
+        "ID": 7,
+        "Driver": "Lando Norris"
+      },
+      {
+        "Image": "/img/teams/mclaren/daniel.jpg",
+        "ID": 11,
+        "Driver": "Daniel Ricciardo"
+      }
+    ]
   },
   {
     "Pos": 6,
@@ -75,7 +195,31 @@
     "PolePositions": 0,
     "FastestLaps": 1,
     "LapsLed": 0,
-    "Points": 55
+    "Points": 55,
+    "FullTeamName": "Alfa Romeo F1 Team ORLEN",
+    "Base": "Hinwil, Switzerland",
+    "TeamChief": "Frédéric Vasseur",
+    "TechnicalChief": "Jan Monchaux",
+    "FirstTeamEntry": 1993,
+    "WorldChampionships": 0,
+    "HighestRaceFinish": "1 (x1)",
+    "logo": "/img/teams/alfa-romeo/logo.jpg",
+    "Image1": "/img/teams/alfa-romeo/img-1.jpg",
+    "Image2": "/img/teams/alfa-romeo/img-2.jpg",
+    "Image3": "/img/teams/alfa-romeo/img-3.jpg",
+    "Image4": "/img/teams/alfa-romeo/img-4.jpg",
+    "Drivers": [
+      {
+        "Image": "/img/teams/alfa-romeo/bottas.jpg",
+        "ID": 10,
+        "Driver": "Valeterri Bottas"
+      },
+      {
+        "Image": "/img/teams/alfa-romeo/zhou.jpg",
+        "ID": 18,
+        "Driver": "Guanyu Zhou"
+      }
+    ]
   },
   {
     "Pos": 7,
@@ -88,7 +232,31 @@
     "PolePositions": 0,
     "FastestLaps": 0,
     "LapsLed": 2,
-    "Points": 55
+    "Points": 55,
+    "FullTeamName": "Aston Martin Aramco Cognizant Formula One Team",
+    "Base": "Silverstone, United Kingdom",
+    "TeamChief": "Mike Krack",
+    "TechnicalChief": "Andrew Green",
+    "FirstTeamEntry": 2018,
+    "WorldChampionships": 0,
+    "HighestRaceFinish": "1 (x1)",
+    "logo": "/img/teams/aston-martin/logo.jpg",
+    "Image1": "/img/teams/aston-martin/img-1.jpg",
+    "Image2": "/img/teams/aston-martin/img-2.jpg",
+    "Image3": "/img/teams/aston-martin/img-3.jpg",
+    "Image4": "/img/teams/aston-martin/img-4.jpg",
+    "Drivers": [
+      {
+        "Image": "/img/teams/aston-martin/vettel.jpg",
+        "ID": 12,
+        "Driver": "Sebastian Vettel"
+      },
+      {
+        "Image": "/img/teams/aston-martin/stroll.jpg",
+        "ID": 15,
+        "Driver": "Lance Stroll"
+      }
+    ]
   },
   {
     "Pos": 8,
@@ -101,7 +269,31 @@
     "PolePositions": 1,
     "FastestLaps": 0,
     "LapsLed": 0,
-    "Points": 37
+    "Points": 37,
+    "FullTeamName": "Haas F1 Team",
+    "Base": "Kannapolis, United States",
+    "TeamChief": "Guenther Steiner",
+    "TechnicalChief": "Simone Resta",
+    "FirstTeamEntry": 2016,
+    "WorldChampionships": 0,
+    "HighestRaceFinish": "4 (x1)",
+    "logo": "/img/teams/hass/logo.jpg",
+    "Image1": "/img/teams/hass/img-1.jpg",
+    "Image2": "/img/teams/hass/img-2.jpg",
+    "Image3": "/img/teams/hass/img-3.jpg",
+    "Image4": "/img/teams/hass/img-4.jpg",
+    "Drivers": [
+      {
+        "Image": "/img/teams/haas/mick.jpg",
+        "ID": 16,
+        "Driver": "Mick Schumacher"
+      },
+      {
+        "Image": "/img/teams/haas/magnussen.jpg",
+        "ID": 13,
+        "Driver": "Kevin Magnussen"
+      }
+    ]
   },
   {
     "Pos": 9,
@@ -114,7 +306,31 @@
     "PolePositions": 0,
     "FastestLaps": 0,
     "LapsLed": 0,
-    "Points": 35
+    "Points": 35,
+    "FullTeamName": "Scuderia AlphaTauri",
+    "Base": "Faenza, Italy",
+    "TeamChief": "Franz Tost",
+    "TechnicalChief": "Jody Egginton",
+    "FirstTeamEntry": 1985,
+    "WorldChampionships": 0,
+    "HighestRaceFinish": "1 (x2)",
+    "logo": "/img/teams/alpha-tauri/logo.jpg",
+    "Image1": "/img/teams/alpha-tauri/img-1.jpg",
+    "Image2": "/img/teams/alpha-tauri/img-2.jpg",
+    "Image3": "/img/teams/alpha-tauri/img-3.jpg",
+    "Image4": "/img/teams/alpha-tauri/img-4.jpg",
+    "Drivers": [
+      {
+        "Image": "/img/teams/alpha-tauri/Yuki.jpg",
+        "ID": 17,
+        "Driver": "Yuki Tsunoda"
+      },
+      {
+        "Image": "/img/teams/alpha-tauri/gasly.jpg",
+        "ID": 14,
+        "Driver": "Pierre Gasly"
+      }
+    ]
   },
   {
     "Pos": 10,
@@ -127,6 +343,30 @@
     "PolePositions": 0,
     "FastestLaps": 0,
     "LapsLed": 0,
-    "Points": 8
+    "Points": 8,
+    "FullTeamName": "Williams Racing",
+    "Base": "Brackley, United Kingdom",
+    "TeamChief": "Jost Capito",
+    "TechnicalChief": "François-Xavier Demaison",
+    "FirstTeamEntry": 1978,
+    "WorldChampionships": 9,
+    "HighestRaceFinish": "1 (x114)",
+    "logo": "/img/teams/williams/logo.jpg",
+    "Image1": "/img/teams/williams/img-1.jpg",
+    "Image2": "/img/teams/williams/img-2.jpg",
+    "Image3": "/img/teams/williams/img-3.jpg",
+    "Image4": "/img/teams/williams/img-4.jpg",
+    "Drivers": [
+      {
+        "Image": "/img/teams/williams/albon.jpg",
+        "ID": 19,
+        "Driver": "Alexander Albon"
+      },
+      {
+        "Image": "/img/teams/williams/latifi.jpg",
+        "ID": 20,
+        "Driver": "Nicholas Latifi"
+      }
+    ]
   }
 ]
