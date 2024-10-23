@@ -30,7 +30,7 @@ export const Team = ({ team }) => {
         <div className="team-drivers-container">
           {team.Drivers.map((driver) => (
             <Link
-              to={`/formula-one/driver/${driver.ID}`}
+              to={`/driver/${driver.ID}`}
               title={`Go to ${driver.Driver} page`}
               key={driver.ID}
             >

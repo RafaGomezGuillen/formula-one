@@ -28,21 +28,21 @@ export const SeasonIntroduction = () => {
       title: "Regulation changes",
       description:
         "The 2022 F1 season will see the introduction of a new generation of cars, designed to improve the quality of racing and allow closer battles on track. In addition to the technical changes, the 2022 season will also see some changes in the sporting regulations, such as a frozen power unit development, a sliding scale of aerodynamic testing based on the constructors’ standings, and a return to a two-part pre-season test.",
-      link: "/formula-one/home/RegulationChanges",
+      link: "/home/RegulationChanges",
     },
     {
       image: image5,
       title: "Season summary",
       description:
         "Max Verstappen won his second consecutive World Drivers Championship driving for Red Bull Racing. Charles Leclerc finished runner-up, driving for Ferrari. Sergio Pérez was third, driving for Red Bull Racing. Red Bull Racing won their fifth World Constructors Championship.",
-      link: "/formula-one/home/SeasonSummary",
+      link: "/home/SeasonSummary",
     },
     {
       image: image6,
       title: "Team, driver and mid-season changes",
       description:
         "Honda initially stated that they would not supply power units beyond 2021. Kimi Räikkönen retired following the conclusion of the 2021 championship. Ahead of the Bahrain Grand Prix, Sebastian Vettel tested positive for coronavirus...",
-      link: "/formula-one/home/SeasonChanges",
+      link: "/home/SeasonChanges",
     },
   ];
 

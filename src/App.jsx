@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 // Import CSS
 import "./App.css";
@@ -51,7 +51,7 @@ function App() {
   });
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <NavigationBar />
       <main
         style={{
@@ -60,37 +60,37 @@ function App() {
         }}
       >
         <Routes>
-          <Route path="/formula-one/" element={<Landing />} />
+          <Route path="/" element={<Landing />} />
 
           {/* Import home pages */}
-          <Route path="/formula-one/home/SeasonSummary" element={<SeasonSummary />} />
+          <Route path="/home/SeasonSummary" element={<SeasonSummary />} />
           <Route
-            path="/formula-one/home/SeasonIntroduction"
+            path="/home/SeasonIntroduction"
             element={<SeasonIntroduction />}
           />
-          <Route path="/formula-one/home/SeasonChanges" element={<SeasonChanges />} />
+          <Route path="/home/SeasonChanges" element={<SeasonChanges />} />
           <Route
-            path="/formula-one/home/RegulationChanges"
+            path="/home/RegulationChanges"
             element={<RegulationChanges />}
           />
-          <Route path="/formula-one/results" element={<Results />} />
+          <Route path="/results" element={<Results />} />
 
           {/* Import driver pages */}
-          <Route path="/formula-one/drivers" element={<LandingDrivers />} />
+          <Route path="/drivers" element={<LandingDrivers />} />
           {combinedDrivers.map((driver) => (
             <Route
               key={driver.Pos}
-              path={`/formula-one/driver/${driver.Pos}`}
+              path={`/driver/${driver.Pos}`}
               element={<Driver driver={driver} />}
             />
           ))}
 
           {/* Import schedule / circuits pages */}
-          <Route path="/formula-one/schedule" element={<LandingSchedule />} />
+          <Route path="/schedule" element={<LandingSchedule />} />
           {circuits.map((circuit) => (
             <Route
               key={circuit.Round}
-              path={`/formula-one/schedule/${circuit.Round}`}
+              path={`/schedule/${circuit.Round}`}
               element={<Circuit circuit={circuit} />}
             />
           ))}
@@ -99,14 +99,14 @@ function App() {
           {teams.map((team) => (
             <Route
               key={team.Pos}
-              path={`/formula-one/team/${team.Pos}`}
+              path={`/team/${team.Pos}`}
               element={<Team team={team} />}
             />
           ))}
         </Routes>
       </main>
       <Footer />
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

@@ -17,7 +17,7 @@ export const Footer = () => {
             <ul>
               <li>
                 <Link
-                  to="/formula-one/home/RegulationChanges"
+                  to="/home/RegulationChanges"
                   title="Go to Regulation Changes page"
                 >
                   Regulation Changes
@@ -25,20 +25,20 @@ export const Footer = () => {
               </li>
               <li>
                 <Link
-                  to="/formula-one/home/SeasonChanges"
+                  to="/home/SeasonChanges"
                   title="Go to Season Changes page"
                 >
                   Season Changes
                 </Link>
               </li>
               <li>
-                <Link to="/formula-one/home/SeasonIntroduction" title="Go to page">
+                <Link to="/home/SeasonIntroduction" title="Go to page">
                   Season Introduction
                 </Link>
               </li>
               <li>
                 <Link
-                  to="/formula-one/home/SeasonSummary"
+                  to="/home/SeasonSummary"
                   title="Go to Season Summary page"
                 >
                   Season Summary
@@ -58,17 +58,17 @@ export const Footer = () => {
             <h4>Pages</h4>
             <ul>
               <li>
-                <Link to="/formula-one/drivers" title="Go to Drivers page">
+                <Link to="/drivers" title="Go to Drivers page">
                   Drivers
                 </Link>
               </li>
               <li>
-                <Link to="/formula-one/schedule" title="Go to Schedule page">
+                <Link to="/schedule" title="Go to Schedule page">
                   Schedule
                 </Link>
               </li>
               <li>
-                <Link to="/formula-one/results" title="Go to Results page">
+                <Link to="/results" title="Go to Results page">
                   Results
                 </Link>
               </li>
@@ -135,7 +135,7 @@ export const Footer = () => {
         </div>
         <div className="footer-row">
           <div className="footer-col" style={{ marginTop: "20px" }}>
-            <Link to="/formula-one/" title="Go to home page">
+            <Link to="/" title="Go to home page">
               <img
                 src={F1Logo}
                 alt="Formula One logo"

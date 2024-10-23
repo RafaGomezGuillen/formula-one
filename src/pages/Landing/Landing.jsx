@@ -28,7 +28,7 @@ export const Landing = () => {
               COVID-19 pandemic.
             </Card.Text>
             <Link
-              to="/formula-one/home/SeasonIntroduction"
+              to="/home/SeasonIntroduction"
               title="Go to Season introduction"
               className="btn"
             >
@@ -51,7 +51,7 @@ export const Landing = () => {
               and a return to a two-part pre-season test.
             </Card.Text>
             <Link
-              to="/formula-one/home/RegulationChanges"
+              to="/home/RegulationChanges"
               title="Go to Regulation changes"
               className="btn"
             >
@@ -74,7 +74,7 @@ export const Landing = () => {
               Constructors Championship.
             </Card.Text>
             <Link
-              to="/formula-one/home/SeasonSummary"
+              to="/home/SeasonSummary"
               title="Go to Season summary"
               className="btn"
             >
@@ -97,7 +97,7 @@ export const Landing = () => {
               Vettel tested positive for coronavirus...
             </Card.Text>
             <Link
-              to="/formula-one/home/SeasonChanges"
+              to="/home/SeasonChanges"
               title="Go to Team, driver and mid-season changes"
               className="btn"
             >

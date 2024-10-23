@@ -160,7 +160,7 @@ export const SeasonSummary = () => {
       {seasonSummaries.map((summary, index) => (
         <div key={index} className="season-summary-content">
           <div>
-            <img src={`/formula-one/img/rounds/Round${index}.jpg`} alt={summary.title} />
+            <img src={`/img/rounds/Round${index}.jpg`} alt={summary.title} />
           </div>
           <div>
             {summary.title ? (
