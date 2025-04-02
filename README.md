@@ -1,29 +1,42 @@
-# Formula One
+# 🏎️ Formula One
 
-Formula One is a Web Page inspired in the [Oficial Formula One Web Page](https://www.formula1.com/).
-It was created using [Vite React JS](https://vite.dev/).
-Layout, components and charts were created using the [Boostrap](https://react-bootstrap.github.io/) and [apexcharts](https://apexcharts.com/).
-All data were extracted from the [Formula One 2022 Season Wikipedia](https://en.wikipedia.org/wiki/2022_Formula_One_World_ChampionshipFormula).
+Formula One is a web page inspired by the [Oficial Formula One Web Page](https://www.formula1.com/).
 
-### Prerequisites
+🔗 View it live: [Formula One Website](https://rafagomezguillen.github.io/formula-one/)
 
-Make sure you have [Node.js](https://nodejs.org/en) installed on your machine. You can check if Node.js is installed by running the following command in your terminal:
+## 🚀 About the Project
+
+This project was built using **Vite + React.js**. The layout, components, and charts were created using:
+
+- [Bootstrap](https://react-bootstrap.github.io/) for styling and responsive design.
+- [ApexCharts][apexcharts](https://apexcharts.com/) for interactive charts and data visualization.
+- Data extracted from the [Formula One 2022 Season Wikipedia](https://en.wikipedia.org/wiki/2022_Formula_One_World_ChampionshipFormula).
+
+
+## ✅ Prerequisites
+
+Ensure you have the following installed:
+
+- [Vite React JS](https://vite.dev/) (Check installation with: `node -v`)
+
+## 📥 Installation
+
+Clone the repository and install dependencies:
 
 ```cmd
-node -v
-```
+# Clone the repository
+git clone https://github.com/RafaGomezGuillen/formula-one.git
 
-### Installation
+# Navigate into the project directory
+cd formula-one
 
+# Install dependencies
 npm install
-
-```cmd
-npm i
 ```
 
-### Running the Application
+## 🏃 Running the Application
 
-After the installation, start the development server:
+Start the development server:
 
 ```cmd
 npm run dev
