@@ -4,6 +4,10 @@ Formula One is a web page inspired by the [Oficial Formula One Web Page](https:/
 
 🔗 View it live: [Formula One Website](https://rafagomezguillen.github.io/formula-one/)
 
+## 🎥 Watch the YouTube video to see the Formula One 2022 Season in action!
+
+[![Watch the video](https://img.youtube.com/vi/B6uNYUcfuR8/0.jpg)](https://www.youtube.com/watch?v=B6uNYUcfuR8)
+
 ## 🚀 About the Project
 
 This project was built using **Vite + React.js**. The layout, components, and charts were created using:
